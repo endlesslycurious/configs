@@ -66,7 +66,7 @@ cask "xmind"                    # Mind mapping
 # Mac AppStore applications
 mas "AdGuard for Safari", id: 1440147259        # Ad blocking
 mas "BaseCamp", id: 411052274                   # Garmin Mapping
-mas "CopyClip", id: 595191960                   # Clipboard history
+mas "CopyClip 2", id: 1020812363                 # Clipboard manager
 mas "Disk Speed Test", id: 425264550            # HD profiling
 mas "iMovie", id: 408981434                     # Movie editing
 mas "Kindle", id: 405399194                     # Kindle reader
