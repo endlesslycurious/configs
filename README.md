@@ -12,3 +12,4 @@ Sets up symbolic links from files in repo to expected install locations on disk.
 
 ## Package manifests
 * Brewfile - Homebrew for Mac.
+* Chocolatey.config - Chocolatey for Windows.
