@@ -5,7 +5,9 @@ Sets up symbolic links from files in repo to expected install locations on disk.
 * setup.sh - For Mac & Linux, use 'chmod u+x setup.sh' to make this script executable.
 
 ## Editor Configuration files
+* Sublime 3  - Sublime3.sublime-settings
 * Vim  - .vimrc
+* VS Code  - VSCode.json
 
 ## Environment Configuration files
 * Bash - .bash_profile
