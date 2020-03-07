@@ -58,7 +58,7 @@ set wildignore=*.o,*.obj,*~,*.d
 " Directory to put temp files in..
 ""set dir=c:/vim/temp
 set undofile
-if has("win32") ||as("win64")
+if has("win32") || has("win64")
     set backupdir=c:/tmp
     set undodir=c:/tmp
     set pythonthreehome=C:/Users/ayounger/scoop/apps/python/current
