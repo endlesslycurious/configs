@@ -1,7 +1,7 @@
 "----------------------------------------------------------------------------
 " Language stuff
 language en_GB.UTF-8 		" set message language to English.
-set langmenu=en_US.UTF-8 	" set menu language to English.
+set langmenu=en_GB.UTF-8 	" set menu language to English.
 
 "----------------------------------------------------------------------------
 " Settings
