@@ -1,10 +1,18 @@
 REM setup symbolic links to config files
-ECHO OFF
+@ECHO OFF
+@SETLOCAL
 
 REM VIM
-if exist %HOMEDRIVE%%HOMEPATH%\_vimrc del %HOMEDRIVE%%HOMEPATH%\_vimrc
-mklink %HOMEDRIVE%%HOMEPATH%\_vimrc %CD%\.vimrc
+set target=%HOMEDRIVE%%HOMEPATH%\_vimrc 
+if exist %target% del %target%
+mklink %target% %CD%\.vimrc
+
+REM Sublime 3
+set target="%APPDATA%\Sublime Text 3\Packages\User\Preferences.sublime-settings" 
+if exist %target% del %target%
+mklink %target% %CD%\Sublime3.sublime-settings
 
 REM Chocolatey
-if exist %HOMEDRIVE%%HOMEPATH%\choco.config del %HOMEDRIVE%%HOMEPATH%\choco.config
-mklink %HOMEDRIVE%%HOMEPATH%\choco.config %CD%\Chocolatey.config
+set target=%HOMEDRIVE%%HOMEPATH%\choco.config 
+if exist %target% del %target%
+mklink %target% %CD%\Chocolatey.config
