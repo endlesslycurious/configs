@@ -1,6 +1,6 @@
 "----------------------------------------------------------------------------
 " Language stuff
-language mes en 			" set message language to English.
+language en_GB.UTF-8 		" set message language to English.
 set langmenu=en_US.UTF-8 	" set menu language to English.
 
 "----------------------------------------------------------------------------
