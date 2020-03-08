@@ -8,6 +8,9 @@ if [ "$(uname)" == "Darwin" ]; then
 	echo "Setting .vimrc"
 	ln -F -s $PWD/.vimrc ~/.vimrc	
 
+	echo "Setting Sublime Text 3"
+	ln -F -s $PWD/Sublime3.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
+
 	echo "Setting .bash_profile"
 	ln -F -s $PWD/.bash_profile ~/.bash_profile	
 	
