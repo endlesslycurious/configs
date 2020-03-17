@@ -58,15 +58,17 @@ cask "speedcrunch"              # Calculator
 cask "sublime-text"             # Text editor
 cask "synologyassistant"        # NAS management
 cask "visual-studio-code"       # IDE
+cask "virtualbox"               # Virtual Machines
 cask "vlc"                      # Video player
 cask "wacom-tablet"             # Wacom tablet drivers
 cask "wireshark"                # Packet sniffer
 cask "xmind"                    # Mind mapping
+cask "zoomus"                   # Work VoIP solution
 
 # Mac AppStore applications
 mas "AdGuard for Safari", id: 1440147259        # Ad blocking
 mas "BaseCamp", id: 411052274                   # Garmin Mapping
-mas "CopyClip 2", id: 1020812363                 # Clipboard manager
+mas "CopyClip 2", id: 1020812363                # Clipboard manager
 mas "Disk Speed Test", id: 425264550            # HD profiling
 mas "iMovie", id: 408981434                     # Movie editing
 mas "Kindle", id: 405399194                     # Kindle reader
