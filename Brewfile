@@ -1,5 +1,9 @@
-# File generated using 'brew bundle dump'
-# Run using 'brew bundle install'
+# Manifest file for homebrew using the brew file addon.
+#   Generate	brew bundle dump
+#   Check		brew bundle check
+#   Update		brew bundle install
+#   Clean		brew bundle cleanup
+# More output with --verbose option
 
 # Brew extensions
 tap "homebrew/bundle"           # brew files
