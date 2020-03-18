@@ -49,17 +49,17 @@ au BufRead,BufNewFile *.ddf   setfiletype cs
 
 "----------------------------------------------------------------------------
 " Key bindings
-" FZF File Search, pipe rg --files through fzf for fastest file find performance
+" F2 - FZF File Search, pipe rg --files through fzf for fastest file find performance
 nnoremap <silent> <F2> :call fzf#run({'source': 'rg --files --no-ignore-vcs', 'sink': 'e', 'options': '-m -x +s', 'down' : '40%'})<CR>
-" Show Most Recently Used file list
+" F3 - Show Most Recently Used file list
 nnoremap <silent> <F3> :MRU<CR> 
-" Show NERDTree explorer root on current file
+" F4 - Show NERDTree explorer root on current file
 nnoremap <silent> <F4> :NERDTreeToggle %<CR> 
-" Paste current file path to system clipboard  
+" F5 - Paste current file path to system clipboard  
 nnoremap <silent> <F5> :let @+=expand("%:p")<CR>
-" Set current working directory to that of current file
+" F6 - Set current working directory to that of current file
 nnoremap <silent> <F6> :lcd %:p:h<CR>
-" Open buffer list with FZF search
+" F7 - Open buffer list with FZF search
 nnoremap <silent> <F7> :Buffers<CR>
  
 "----------------------------------------------------------------------------
