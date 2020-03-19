@@ -62,7 +62,6 @@ cask "speedcrunch"              # Calculator
 cask "sublime-text"             # Text editor
 cask "synologyassistant"        # NAS management
 cask "visual-studio-code"       # IDE
-cask "virtualbox"               # Virtual Machines
 cask "vlc"                      # Video player
 cask "wacom-tablet"             # Wacom tablet drivers
 cask "wireshark"                # Packet sniffer
