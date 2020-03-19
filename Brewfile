@@ -77,6 +77,7 @@ mas "Disk Speed Test", id: 425264550            # HD profiling
 mas "iMovie", id: 408981434                     # Movie editing
 mas "Kindle", id: 405399194                     # Kindle reader
 mas "Microsoft Remote Desktop", id: 1295203466  # Windows remote desktop
+mas "Parallels Desktop", id: 1085114709         # Virtual machines
 mas "Reeder", id: 880001334                     # RSS reader
 mas "Screeny", id: 440991524                    # Partial screen capture
 mas "Slack", id: 803453959                      # Chat app
