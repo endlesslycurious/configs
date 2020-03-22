@@ -45,6 +45,7 @@ cask "docker"                   # Container engine
 cask "dropbox"                  # Cloud file storage/syncing
 cask "firefox"                  # Browser
 cask "garmin-express"           # Garmin express
+cask "geekbench"                # Performance benchmarking
 cask "google-chrome"            # Browser
 cask "google-earth-pro"         # Google earth
 cask "iterm2"                   # Better terminal interface
