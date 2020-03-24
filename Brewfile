@@ -67,7 +67,6 @@ cask "vlc"                      # Video player
 cask "wacom-tablet"             # Wacom tablet drivers
 cask "wireshark"                # Packet sniffer
 cask "xmind"                    # Mind mapping
-cask "zoomus"                   # Work VoIP solution
 
 # Mac AppStore applications
 mas "AdGuard for Safari", id: 1440147259        # Ad blocking
@@ -76,7 +75,6 @@ mas "CopyClip 2", id: 1020812363                # Clipboard manager
 mas "Disk Speed Test", id: 425264550            # HD profiling
 mas "iMovie", id: 408981434                     # Movie editing
 mas "Kindle", id: 405399194                     # Kindle reader
-mas "Microsoft Remote Desktop", id: 1295203466  # Windows remote desktop
 mas "Parallels Desktop", id: 1085114709         # Virtual machines
 mas "Reeder", id: 880001334                     # RSS reader
 mas "Screeny", id: 440991524                    # Partial screen capture
