@@ -60,6 +60,7 @@ cask "rstudio"                  # R IDE
 cask "sizeup"                   # Window management
 cask "skype"                    # VOIP calling
 cask "speedcrunch"              # Calculator
+cask "steam"                    # Gaming
 cask "sublime-text"             # Text editor
 cask "synologyassistant"        # NAS management
 cask "visual-studio-code"       # IDE
