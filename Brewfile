@@ -19,9 +19,9 @@ brew "clang-format"             # Clang pretty printer
 brew "cmake"                    # C++ build system
 brew "exercism"                 # Coding puzzles
 brew "fzf"                      # Fuzzy file finder
-brew "gpg"                      # GNO Pretty good privicy package
 brew "git"                      # Git source control
 brew "go"                       # Go programming language
+brew "gpg"                      # GNO Pretty good privicy package
 brew "htop"                     # CPU utilisation monitor
 brew "mas"                      # Brew Mac App Store integration
 brew "mongodb-community"        # MongoDB database
@@ -54,6 +54,7 @@ cask "macvim"                   # Vim for Mac
 cask "obs"                      # Screen capture
 cask "opera"                    # Browser
 cask "p4v"                      # Perforce App
+cask "parallels"                # Vitrual Machines
 cask "perforce"                 # Perforce source control
 cask "robo-3t"                  # MongoDB admin
 cask "rstudio"                  # R IDE
@@ -75,7 +76,6 @@ mas "CopyClip 2", id: 1020812363                # Clipboard manager
 mas "Disk Speed Test", id: 425264550            # HD profiling
 mas "iMovie", id: 408981434                     # Movie editing
 mas "Kindle", id: 405399194                     # Kindle reader
-mas "Parallels Desktop", id: 1085114709         # Virtual machines
 mas "Reeder", id: 880001334                     # RSS reader
 mas "Screeny", id: 440991524                    # Partial screen capture
 mas "Slack", id: 803453959                      # Chat app
