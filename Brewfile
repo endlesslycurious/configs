@@ -41,6 +41,7 @@ cask "anki"                     # Flashcards
 cask "appcleaner"               # Application file cleanup
 cask "balenaetcher"             # Card writer
 cask "beyond-compare"           # File/Directory differ
+cask "cpuinfo"                  # CPU usage monitor
 cask "disk-drill"               # Deleted file recovery
 cask "docker"                   # Container engine
 cask "dropbox"                  # Cloud file storage/syncing
