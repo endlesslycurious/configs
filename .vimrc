@@ -66,6 +66,7 @@ nnoremap <silent> <F7> :Buffers<CR>
 " Plugins managed by Plug
 call plug#begin('~/vimfiles/plugged')
 
+Plug 'fatih/vim-go', {'for' : 'go'}		" Golang integration
 Plug 'junegunn/fzf' 					" FZF - fuzzy file finder integration
 Plug 'junegunn/fzf.vim' 				" FZF - fuzzy file finder advanced functionality
 Plug 'junegunn/rainbow_parentheses.vim' " Rainbow Parentheses
