@@ -29,7 +29,6 @@ brew "protobuf"                 # Google Protocol buffer
 brew "python"                   # Python programming language
 brew "r"                        # R programming language
 brew "ripgrep"                  # Faster grep
-brew "sshpass"                  # SSH scripting util
 brew "tmux"                     # Better terminal
 brew "tree"                     # Directory listor
 
@@ -43,6 +42,7 @@ cask "balenaetcher"             # Card writer
 cask "beyond-compare"           # File/Directory differ
 cask "cpuinfo"                  # CPU usage monitor
 cask "disk-drill"               # Deleted file recovery
+cask "disk-inventory-x"         # Disk space utility
 cask "docker"                   # Container engine
 cask "dropbox"                  # Cloud file storage/syncing
 cask "firefox"                  # Browser
@@ -52,9 +52,11 @@ cask "google-chrome"            # Browser
 cask "google-earth-pro"         # Google earth
 cask "iterm2"                   # Better terminal interface
 cask "lastpass"                 # Password manager
+cask "logitech-camera-settings" # Webcam settings
 cask "macvim"                   # Vim for Mac
 cask "obs"                      # Screen capture
 cask "opera"                    # Browser
+cask "oversight"                # Webcam security
 cask "p4v"                      # Perforce App
 cask "parallels"                # Vitrual Machines
 cask "perforce"                 # Perforce source control
@@ -74,6 +76,7 @@ cask "xmind"                    # Mind mapping
 # Mac AppStore applications
 mas "AdGuard for Safari", id: 1440147259        # Ad blocking
 mas "BaseCamp", id: 411052274                   # Garmin Mapping
+mas "Be Focused", id: 973134470                 # Focus Timer
 mas "CopyClip 2", id: 1020812363                # Clipboard manager
 mas "Disk Speed Test", id: 425264550            # HD profiling
 mas "iMovie", id: 408981434                     # Movie editing
