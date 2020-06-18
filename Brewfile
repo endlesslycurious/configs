@@ -76,13 +76,13 @@ cask "xmind"                    # Mind mapping
 # Mac AppStore applications
 mas "AdGuard for Safari", id: 1440147259        # Ad blocking
 mas "BaseCamp", id: 411052274                   # Garmin Mapping
-mas "Be Focused", id: 973134470                 # Focus Timer
 mas "CopyClip 2", id: 1020812363                # Clipboard manager
 mas "Disk Speed Test", id: 425264550            # HD profiling
 mas "iMovie", id: 408981434                     # Movie editing
 mas "Kindle", id: 405399194                     # Kindle reader
 mas "Reeder", id: 880001334                     # RSS reader
 mas "Screeny", id: 440991524                    # Partial screen capture
+mas "Streaks", id: 1493327990					# Habit tracking
 mas "Slack", id: 803453959                      # Chat app
 mas "Space Gremlin", id: 414515628              # HD space explorer
 mas "WiFi Explorer", id: 494803304              # Wifi profiler
