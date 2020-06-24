@@ -79,7 +79,6 @@ mas "BaseCamp", id: 411052274                   # Garmin Mapping
 mas "CopyClip 2", id: 1020812363                # Clipboard manager
 mas "Disk Speed Test", id: 425264550            # HD profiling
 mas "iMovie", id: 408981434                     # Movie editing
-mas "Kindle", id: 405399194                     # Kindle reader
 mas "Reeder", id: 880001334                     # RSS reader
 mas "Screeny", id: 440991524                    # Partial screen capture
 mas "Streaks", id: 1493327990					# Habit tracking
