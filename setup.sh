@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # Use 'chmod u+x setup.sh' to make this script executable
+# Run with './setup.sh'
 
 if [ "$(uname)" == "Darwin" ]; then
     # Mac OS X setup 
