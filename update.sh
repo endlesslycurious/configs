@@ -6,7 +6,7 @@
 if [ "$(uname)" == "Darwin" ]; then
     # Mac OS X setup 
 
-	echo "--- Refresh bew version & forumulas ---"
+	echo "--- Refresh brew version & forumulas ---"
 	brew update
 
 	echo "--- Install updates using brew bundle ---"
