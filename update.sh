@@ -12,6 +12,9 @@ if [ "$(uname)" == "Darwin" ]; then
 	echo "--- Install updates using brew bundle ---"
 	brew bundle --verbose
 
+	echo "--- Listing redundant dependencies to remove manually with 'brew bundle cleanup -f' ---s"
+	brew bundle cleanup
+
 	echo "--- Cleanup old versions and temp file ---s"
 	brew cleanup
 

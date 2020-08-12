@@ -57,7 +57,6 @@ cask "macvim"                   # Vim for Mac
 cask "obs"                      # Screen capture
 cask "opera"                    # Browser
 cask "oversight"                # Webcam security
-cask "p4v"                      # Perforce App
 cask "parallels"                # Vitrual Machines
 cask "perforce"                 # Perforce source control
 cask "robo-3t"                  # MongoDB admin
@@ -65,6 +64,7 @@ cask "rstudio"                  # R IDE
 cask "sizeup"                   # Window management
 cask "skype"                    # VOIP calling
 cask "speedcrunch"              # Calculator
+cask "sqlitestudio"             # SQLite tools
 cask "sublime-text"             # Text editor
 cask "synologyassistant"        # NAS management
 cask "visual-studio-code"       # IDE
