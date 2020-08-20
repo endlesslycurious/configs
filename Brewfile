@@ -58,7 +58,6 @@ cask "obs"                      # Screen capture
 cask "opera"                    # Browser
 cask "oversight"                # Webcam security
 cask "parallels"                # Vitrual Machines
-cask "perforce"                 # Perforce source control
 cask "robo-3t"                  # MongoDB admin
 cask "rstudio"                  # R IDE
 cask "sizeup"                   # Window management
