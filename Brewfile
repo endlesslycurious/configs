@@ -11,6 +11,7 @@ tap "homebrew/cask"             # applications
 tap "homebrew/cask-drivers"     # Garmin-Express
 tap "homebrew/core"     
 tap "mongodb/brew"              # MongoDB
+tap "hudochenkov/sshpass"       # Unoffical sshpass
 
 # Packages
 brew "ansible"                  # Remote automation
@@ -29,6 +30,7 @@ brew "protobuf"                 # Google Protocol buffer
 brew "python"                   # Python programming language
 brew "r"                        # R programming language
 brew "ripgrep"                  # Faster grep
+brew "sshpass"                  # Required for Ansible bootstrap of pico cluster
 brew "tmux"                     # Better terminal
 brew "tree"                     # Directory listor
 
