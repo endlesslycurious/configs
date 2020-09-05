@@ -10,9 +10,16 @@ Sets up symbolic links from files in repo to expected install locations on disk.
 * Vim  - .vimrc
 * VS Code  - VSCode.json
 
+### VS Code Extensions
+* code-ext.txt - extensions list generated from 'code --list-extensions'
+* code-update.sh/bat - installs extensions listed in code-ext.txt
+
 ## Environment Configuration files
 * Bash - .bash_profile
 
 ## Package manifests
 * Chocolatey for Windows - Chocolatey.config
 * Homebrew for Mac - Brewfile
+
+### Package update scripts
+* update.sh/bat - Runs brew/choco package update & cleanup process
