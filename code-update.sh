@@ -7,6 +7,7 @@ if [ "$(uname)" == "Darwin" ]; then
 	# MAC OS: installing VS.Code extensions from code-ext.txt file, use
 	# 'code --list-extensions > code-ext.txt' to update extensions list
 
+	# See https://stackoverflow.com/a/1521498
 	while read ext; do
 		code --install-extension $ext
 	done <code-ext.txt
