@@ -6,5 +6,7 @@
     "files.associations": {
         "*.build": "xml"
     },
-    "go.useLanguageServer": true
+    "go.useLanguageServer": true,
+    "editor.renderWhitespace": "all",
+    "editor.columnSelection": false
 }

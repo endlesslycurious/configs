@@ -1,4 +1,7 @@
-echo --- Upgrading installed packages ---
+echo --- List outdated packages ---
+choco outdated
+
+echo --- Upgrading outdated packages ---
 choco upgrade all -y
 
 echo --- Installing from manifest ---
