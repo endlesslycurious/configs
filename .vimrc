@@ -9,11 +9,6 @@ set autoread 						" Auto read files changed outside VIM.
 set clipboard=unnamed 				" Use system clipboard.
 set cursorline 						" Highlight line the cursor is on.
 set expandtab 						" Replace tabs with spaces automatically.
-if has('macunix')
-	set guifont=Droid\ Sans\ Mono:h10 	" Set font & font size.
-else
-	set guifont=Droid\ Sans\ Mono:h8 	" Set font & font size.
-endif
 set guioptions+=b 					" Turn on horizontal scroll bar.
 set guioptions-=a 					" Turn off auto clipboarding of selected text.
 set guioptions-=m 					" Turn off GUI text menu options.
@@ -24,6 +19,14 @@ set nobackup 						" Don't make backup files, they confuse GIT.
 set noswapfile 						" Disable'swap files' (eg. .myfile.txt.swp) from being created
 set nowrap 							" Horizontal line wrapping off.
 set nu 								" Line numbers on.
+
+"----------------------------------------------------------------------------
+" Platform specific settings
+if has('macunix')
+	set guifont=Droid\ Sans\ Mono:h10 	" Set font & font size.
+else
+	set guifont=Droid\ Sans\ Mono:h8 	" Set font & font size.
+endif
 
 "----------------------------------------------------------------------------
 " Search - use RG instead of grep
