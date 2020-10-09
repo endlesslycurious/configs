@@ -61,6 +61,9 @@ nnoremap <silent> <F5> :let @+=expand("%:p")<CR>
 nnoremap <silent> <F6> :lcd %:p:h<CR>
 " F7 - Open buffer list with FZF search
 nnoremap <silent> <F7> :Buffers<CR>
+" F8 - Cleanup callstack from Visual Studio: delete leading whitespace, binary
+" name, tailing language name and finally blank lines
+nnoremap <silent> <F8> :%s/^[> \t]*//g<CR>:%s/[a-zA-Z0-9_.]*\!//g<CR>:%s/\tC++//g<CR>:g/^$/d<CR>
  
 "----------------------------------------------------------------------------
 " Plugins managed by Plug
