@@ -10,7 +10,6 @@ tap "homebrew/bundle"           # brew files
 tap "homebrew/cask"             # applications
 tap "homebrew/cask-drivers"     # Garmin-Express
 tap "homebrew/core"     
-tap "mongodb/brew"              # MongoDB
 tap "hudochenkov/sshpass"       # Unoffical sshpass
 
 # Packages
@@ -25,7 +24,6 @@ brew "go"                       # Go programming language
 brew "gpg"                      # GNO Pretty good privicy package
 brew "htop"                     # CPU utilisation monitor
 brew "mas"                      # Brew Mac App Store integration
-brew "mongodb-community"        # MongoDB database
 brew "protobuf"                 # Google Protocol buffer
 brew "python"                   # Python programming language
 brew "r"                        # R programming language
@@ -56,16 +54,15 @@ cask "iterm2"                   # Better terminal interface
 cask "lastpass"                 # Password manager
 cask "logitech-camera-settings" # Webcam settings
 cask "macvim"                   # Vim for Mac
+cask "mongodb-compass"          # GUI for MongoDB
 cask "obs"                      # Screen capture
 cask "opera"                    # Browser
 cask "oversight"                # Webcam security
 cask "parallels"                # Vitrual Machines
-cask "robo-3t"                  # MongoDB admin
 cask "rstudio"                  # R IDE
 cask "sizeup"                   # Window management
 cask "skype"                    # VOIP calling
 cask "speedcrunch"              # Calculator
-cask "sqlitestudio"             # SQLite tools
 cask "sublime-text"             # Text editor
 cask "synologyassistant"        # NAS management
 cask "visual-studio-code"       # IDE
