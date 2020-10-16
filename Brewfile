@@ -11,6 +11,7 @@ tap "homebrew/cask"             # applications
 tap "homebrew/cask-drivers"     # Garmin-Express
 tap "homebrew/core"     
 tap "hudochenkov/sshpass"       # Unoffical sshpass
+tap "mongodb/brew"              # MongoDB
 
 # Packages
 brew "ansible"                  # Remote automation
@@ -24,6 +25,7 @@ brew "go"                       # Go programming language
 brew "gpg"                      # GNO Pretty good privicy package
 brew "htop"                     # CPU utilisation monitor
 brew "mas"                      # Brew Mac App Store integration
+brew "mongodb-community-shell"  # MongoDB Shell
 brew "protobuf"                 # Google Protocol buffer
 brew "python"                   # Python programming language
 brew "r"                        # R programming language
