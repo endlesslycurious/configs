@@ -27,6 +27,7 @@ brew "hey"                      # HTTP load generator for server profiling
 brew "htop"                     # CPU utilisation monitor
 brew "mas"                      # Brew Mac App Store integration
 brew "mongodb-community-shell"  # MongoDB Shell
+brew "node"                     # Node.js
 brew "protobuf"                 # Google Protocol buffer
 brew "python"                   # Python programming language
 brew "r"                        # R programming language
