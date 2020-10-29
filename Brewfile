@@ -81,6 +81,7 @@ mas "BaseCamp", id: 411052274                   # Garmin Mapping
 mas "CopyClip 2", id: 1020812363                # Clipboard manager
 mas "Disk Speed Test", id: 425264550            # HD profiling
 mas "iMovie", id: 408981434                     # Movie editing
+mas "KakaoTalk", id: 869223134                  # KakaoTalk chat client
 mas "Screeny", id: 440991524                    # Partial screen capture
 mas "Streaks", id: 1493327990					# Habit tracking
 mas "Slack", id: 803453959                      # Chat app
