@@ -72,6 +72,7 @@ cask "synologyassistant"        # NAS management
 cask "visual-studio-code"       # IDE
 cask "vlc"                      # Video player
 cask "wacom-tablet"             # Wacom tablet drivers
+cask "whatsapp"                 # Whats App chat
 cask "wireshark"                # Packet sniffer
 cask "xmind"                    # Mind mapping
 
