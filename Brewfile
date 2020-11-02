@@ -55,6 +55,7 @@ cask "geekbench"                # Performance benchmarking
 cask "google-chrome"            # Browser
 cask "google-earth-pro"         # Google earth
 cask "iterm2"                   # Better terminal interface
+cask "insomnia"                 # REST/HTTP & GraphQL client
 cask "lastpass"                 # Password manager
 cask "logitech-camera-settings" # Webcam settings
 cask "macvim"                   # Vim for Mac
