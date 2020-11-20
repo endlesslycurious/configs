@@ -15,6 +15,7 @@ tap "mongodb/brew"              # MongoDB
 
 # Packages
 brew "ansible"                  # Remote automation
+brew "ansible-lint"             # Linter for Ansible
 brew "bash-completion"          # CLI auto complete
 brew "clang-format"             # Clang pretty printer
 brew "cmake"                    # C++ build system
@@ -25,6 +26,7 @@ brew "go"                       # Go programming language
 brew "gpg"                      # GNO Pretty good privicy package
 brew "hey"                      # HTTP load generator for server profiling
 brew "htop"                     # CPU utilisation monitor
+brew "httpie"                   # User friendly cURL replacement
 brew "mas"                      # Brew Mac App Store integration
 brew "mongodb-community-shell"  # MongoDB Shell
 brew "node"                     # Node.js
