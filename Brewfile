@@ -16,25 +16,31 @@ tap "mongodb/brew"              # MongoDB
 # Packages
 brew "ansible"                  # Remote automation
 brew "ansible-lint"             # Linter for Ansible
+brew "awscli"                   # AWS command line
 brew "bash-completion"          # CLI auto complete
 brew "clang-format"             # Clang pretty printer
+brew "cloud-nuke"               # Cloud resources cleanup
 brew "cmake"                    # C++ build system
 brew "exercism"                 # Coding puzzles
 brew "fzf"                      # Fuzzy file finder
 brew "git"                      # Git source control
 brew "go"                       # Go programming language
 brew "gpg"                      # GNO Pretty good privicy package
+brew "graphviz"                 # Graph rendering for dot format
 brew "hey"                      # HTTP load generator for server profiling
 brew "htop"                     # CPU utilisation monitor
 brew "httpie"                   # User friendly cURL replacement
 brew "mas"                      # Brew Mac App Store integration
 brew "mongodb-community-shell"  # MongoDB Shell
 brew "node"                     # Node.js
+brew "packer"                   # Amazon Machine Image builder
 brew "protobuf"                 # Google Protocol buffer
 brew "python"                   # Python programming language
 brew "r"                        # R programming language
+brew "redis"                    # Redis in memory data store
 brew "ripgrep"                  # Faster grep
 brew "sshpass"                  # Required for Ansible bootstrap of pico cluster
+brew "terraform"                # Terraform infrastructure as code
 brew "tmux"                     # Better terminal
 brew "tree"                     # Directory listor
 
