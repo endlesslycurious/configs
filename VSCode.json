@@ -8,6 +8,10 @@
     },
     "go.useLanguageServer": true,
     "editor.renderWhitespace": "all",
-    "editor.columnSelection": false
-    "python.linting.enabled": true
+    "editor.columnSelection": false,
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.linting.pylintUseMinimalCheckers": false,
+    "python.testing.unittestEnabled": true,
+    "python.terminal.activateEnvInCurrentTerminal": true
 }
