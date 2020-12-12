@@ -25,4 +25,7 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
 
+# pipenv create virtual environment folders inside projects
+export PIPENV_VENV_IN_PROJECT=1
+
 complete -C /usr/local/bin/terraform terraform
