@@ -92,9 +92,10 @@ mas "CopyClip 2", id: 1020812363                # Clipboard manager
 mas "Disk Speed Test", id: 425264550            # HD profiling
 mas "iMovie", id: 408981434                     # Movie editing
 mas "KakaoTalk", id: 869223134                  # KakaoTalk chat client
+mas "MuteKey", id: 1509590766                   # Microphone Mute utility
 mas "Screeny", id: 440991524                    # Partial screen capture
-mas "Streaks", id: 1493327990					# Habit tracking
 mas "Slack", id: 803453959                      # Chat app
 mas "Space Gremlin", id: 414515628              # HD space explorer
+mas "Streaks", id: 1493327990                   # Habit tracking
 mas "WiFi Explorer", id: 494803304              # Wifi profiler
 mas "Xcode", id: 497799835                      # IDE
