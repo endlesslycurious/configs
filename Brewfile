@@ -75,6 +75,7 @@ cask "parallels"                # Vitrual Machines
 cask "rstudio"                  # R IDE
 cask "sizeup"                   # Window management
 cask "skype"                    # VOIP calling
+cask "sonos"                    # Sonos speaker control
 cask "speedcrunch"              # Calculator
 cask "sublime-text"             # Text editor
 cask "synologyassistant"        # NAS management
