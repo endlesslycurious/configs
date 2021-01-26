@@ -72,6 +72,7 @@ cask "obs"                      # Screen capture
 cask "opera"                    # Browser
 cask "oversight"                # Webcam security
 cask "parallels"                # Vitrual Machines
+cask "parsec"                   # Desktop streaming for gaming
 cask "rstudio"                  # R IDE
 cask "sizeup"                   # Window management
 cask "skype"                    # VOIP calling
