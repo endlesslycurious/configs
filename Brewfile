@@ -30,6 +30,7 @@ brew "graphviz"                 # Graph rendering for dot format
 brew "hey"                      # HTTP load generator for server profiling
 brew "htop"                     # CPU utilisation monitor
 brew "httpie"                   # User friendly cURL replacement
+brew "jq"        		        # Command line JSON processor
 brew "mas"                      # Brew Mac App Store integration
 brew "mongodb-community-shell"  # MongoDB Shell
 brew "node"                     # Node.js
@@ -86,6 +87,7 @@ cask "wacom-tablet"             # Wacom tablet drivers
 cask "whatsapp"                 # Whats App chat
 cask "wireshark"                # Packet sniffer
 cask "xmind"                    # Mind mapping
+cask "zoom"                     # Video calling
 
 # Mac AppStore applications
 mas "AdGuard for Safari", id: 1440147259        # Ad blocking
@@ -94,7 +96,6 @@ mas "CopyClip 2", id: 1020812363                # Clipboard manager
 mas "Disk Speed Test", id: 425264550            # HD profiling
 mas "iMovie", id: 408981434                     # Movie editing
 mas "KakaoTalk", id: 869223134                  # KakaoTalk chat client
-mas "MuteKey", id: 1509590766                   # Microphone Mute utility
 mas "Screeny", id: 440991524                    # Partial screen capture
 mas "Slack", id: 803453959                      # Chat app
 mas "Space Gremlin", id: 414515628              # HD space explorer
