@@ -44,6 +44,7 @@ brew "sshpass"                  # Required for Ansible bootstrap of pico cluster
 brew "terraform"                # Terraform infrastructure as code
 brew "tmux"                     # Better terminal
 brew "tree"                     # Directory listor
+brew "watch"                    # Watch command
 
 # Applications
 cask "0xed"                     # Hex editor
