@@ -1,18 +1,40 @@
 {
+    // Appearence and colours
     "editor.fontSize": 11,
-    "workbench.colorTheme": "Default Light+",
     "editor.fontFamily": "Droid Sans Mono",
+    "editor.renderWhitespace": "all",
+    "editor.columnSelection": false,
+    "editor.tokenColorCustomizations": {
+        "comments": "#909090",
+    },
+    "workbench.colorTheme": "Default Light+",
+    "workbench.colorCustomizations": {
+        "editor.background": "#fafafa",
+        "editorLineNumber.foreground": "#a0a0a0",
+    },
+
+    // File handling
     "files.autoGuessEncoding": true,
     "files.associations": {
         "*.build": "xml"
     },
-    "go.useLanguageServer": true,
-    "editor.renderWhitespace": "all",
-    "editor.columnSelection": false,
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+
+    // Python
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
     "python.linting.pylintUseMinimalCheckers": false,
     "python.testing.unittestEnabled": true,
     "python.terminal.activateEnvInCurrentTerminal": true,
-    "python.languageServer": "Pylance"
+    "python.languageServer": "Pylance",
+
+    // Go
+    "go.useLanguageServer": true,
+    "go.toolsManagement.autoUpdate": true,
+    "go.coverageOptions": "showUncoveredCodeOnly"
 }
