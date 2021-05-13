@@ -1,23 +1,26 @@
 {
+    // Global VSCode settings
+
     // Appearence and colours
-    "editor.fontSize": 11,
-    "editor.fontFamily": "Droid Sans Mono",
-    "editor.renderWhitespace": "all",
     "editor.columnSelection": false,
+    "editor.fontFamily": "Droid Sans Mono",
+    "editor.fontSize": 11,
+    "editor.renderControlCharacters": false,
+    "editor.renderWhitespace": "all",
     "editor.tokenColorCustomizations": {
-        "comments": "#909090",
+        "comments": "#909090"
     },
-    "workbench.colorTheme": "Default Light+",
     "workbench.colorCustomizations": {
         "editor.background": "#fafafa",
-        "editorLineNumber.foreground": "#a0a0a0",
+        "editorLineNumber.foreground": "#a0a0a0"
     },
+    "workbench.colorTheme": "Default Light+",
 
     // File handling
-    "files.autoGuessEncoding": true,
     "files.associations": {
         "*.build": "xml"
     },
+    "files.autoGuessEncoding": true,
     "workbench.editorAssociations": [
         {
             "viewType": "jupyter.notebook.ipynb",
@@ -25,16 +28,30 @@
         }
     ],
 
+    // Terminal
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+
     // Python
-    "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true,
-    "python.linting.pylintUseMinimalCheckers": false,
-    "python.testing.unittestEnabled": true,
-    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.analysis.diagnosticMode": "workspace",
+    "python.analysis.typeCheckingMode": "basic",
     "python.languageServer": "Pylance",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintUseMinimalCheckers": false,
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./tests",
+        "-p",
+        "test_*.py"
+    ],
+    "python.testing.unittestEnabled": true,
 
     // Go
-    "go.useLanguageServer": true,
+    "go.coverageOptions": "showUncoveredCodeOnly",
     "go.toolsManagement.autoUpdate": true,
-    "go.coverageOptions": "showUncoveredCodeOnly"
+    "go.useLanguageServer": true
 }
