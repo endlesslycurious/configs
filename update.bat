@@ -20,4 +20,7 @@ python.exe -m pip install --upgrade pip
 echo --- Python: Install modules ---
 pip install -r python-modules.txt
 
+echo --- Diasble ctrl + scroll zooming ---
+copy ctrl-zoom.ahk "c:\Users\%USERNAME%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\ctrl-zoom.ahk"
+
 echo --- Done! ---
