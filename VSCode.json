@@ -5,6 +5,7 @@
     "editor.columnSelection": false,
     "editor.fontFamily": "Droid Sans Mono",
     "editor.fontSize": 11,
+    "editor.formatOnSave": true,
     "editor.renderControlCharacters": false,
     "editor.renderWhitespace": "all",
     "editor.tokenColorCustomizations": {
@@ -21,12 +22,9 @@
         "*.build": "xml"
     },
     "files.autoGuessEncoding": true,
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
 
     // Terminal
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
@@ -38,6 +36,7 @@
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": true,
     "python.linting.pylintUseMinimalCheckers": false,
+    "python.formatting.provider": "black",
     "python.terminal.activateEnvInCurrentTerminal": true,
     "python.testing.nosetestsEnabled": false,
     "python.testing.pytestEnabled": false,
