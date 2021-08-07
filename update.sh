@@ -18,6 +18,12 @@ if [ "$(uname)" == "Darwin" ]; then
 	echo "--- Cleanup old versions and temp file ---"
 	brew cleanup
 
+	echo "--- Python: Upgrade PIP ---"
+	python3 -m pip install --upgrade pip
+
+	echo "--- Python: Install/Upgrade modules ---"
+	pip3 install --upgrade -r python-modules.txt
+
 	echo "--- Done! ---"
 
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
