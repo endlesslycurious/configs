@@ -71,6 +71,7 @@ cask "logitech-camera-settings" # Webcam settings
 cask "macvim"                   # Vim for Mac
 cask "mongodb-compass"          # GUI for MongoDB
 cask "obs"                      # Screen capture
+cask "obsidian"                 # Note taking
 cask "opera"                    # Browser
 cask "oversight"                # Webcam security
 cask "parallels"                # Vitrual Machines
@@ -97,6 +98,7 @@ mas "CopyClip 2", id: 1020812363                # Clipboard manager
 mas "Disk Speed Test", id: 425264550            # HD profiling
 mas "iMovie", id: 408981434                     # Movie editing
 mas "KakaoTalk", id: 869223134                  # KakaoTalk chat client
+mas "Kindle", id: 405399194						# Kindle reader
 mas "Screeny", id: 440991524                    # Partial screen capture
 mas "Slack", id: 803453959                      # Chat app
 mas "Space Gremlin", id: 414515628              # HD space explorer
