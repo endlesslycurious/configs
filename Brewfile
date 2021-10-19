@@ -19,6 +19,7 @@ brew "ansible-lint"             # Linter for Ansible
 brew "awscli"                   # AWS command line
 brew "bash-completion"          # CLI auto complete
 brew "clang-format"             # Clang pretty printer
+brew "cloc"             		# Count lines of code
 brew "cloud-nuke"               # Cloud resources cleanup
 brew "cmake"                    # C++ build system
 brew "exercism"                 # Coding puzzles
