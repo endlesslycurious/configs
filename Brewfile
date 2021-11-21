@@ -88,6 +88,7 @@ cask "zoom"                     # Video calling
 
 # Mac AppStore applications
 mas "AdGuard for Safari", id: 1440147259        # Ad blocking
+mas "Be Focused - Focus Timer", id: 973134470	# Pomodoro timer
 mas "BaseCamp", id: 411052274                   # Garmin Mapping
 mas "CopyClip 2", id: 1020812363                # Clipboard manager
 mas "Disk Speed Test", id: 425264550            # HD profiling
