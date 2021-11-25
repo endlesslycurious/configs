@@ -1,12 +1,9 @@
-eg2.vscode-npm-script
 emilast.LogFileHighlighter
 golang.go
 hashicorp.terraform
 ms-azuretools.vscode-docker
 ms-python.python
 ms-python.vscode-pylance
-ms-toolsai.jupyter
-ms-toolsai.jupyter-keymap
 ms-vscode-remote.remote-containers
 ms-vscode-remote.remote-ssh
 ms-vscode-remote.remote-ssh-edit
@@ -17,7 +14,5 @@ ms-vscode.cpptools
 ms-vscode.hexeditor
 redhat.ansible
 redhat.vscode-yaml
-slevesque.perforce
 twxs.cmake
 xaver.clang-format
-zxh404.vscode-proto3

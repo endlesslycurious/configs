@@ -17,6 +17,11 @@
     },
     "workbench.colorTheme": "Default Light+",
 
+    // Behaviour
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never",
+    "editor.suggestSelection": "first",
+
     // File handling
     "files.associations": {
         "*.build": "xml"
@@ -52,5 +57,11 @@
     // Go
     "go.coverageOptions": "showUncoveredCodeOnly",
     "go.toolsManagement.autoUpdate": true,
-    "go.useLanguageServer": true
+    "go.useLanguageServer": true,
+
+    // YAML
+    "yaml.customTags": [
+        "!encrypted/pkcs1-oaep scalar",
+        "!vault scalar"
+    ]
 }
