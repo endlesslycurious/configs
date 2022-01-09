@@ -87,6 +87,7 @@ cask "xmind"                    # Mind mapping
 cask "zoom"                     # Video calling
 
 # Mac AppStore applications
+mas "about-blank", id: 1239207203				# Site blocking safari extension
 mas "AdGuard for Safari", id: 1440147259        # Ad blocking
 mas "Be Focused Pro", id: 961632517				# Pomodoro timer
 mas "BaseCamp", id: 411052274                   # Garmin Mapping
