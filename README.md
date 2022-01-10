@@ -24,3 +24,8 @@ See https://code.visualstudio.com/docs/editor/extension-gallery#_command-line-ex
 
 ### Package update scripts
 * update.sh/bat - Runs brew/choco package update & cleanup process
+
+## Automation Scripts
+
+### Mac
+* MinimiseAll.scpt - Minimise all applications, schedule using crontab
