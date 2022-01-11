@@ -16,7 +16,7 @@ See https://code.visualstudio.com/docs/editor/extension-gallery#_command-line-ex
 * code-update.sh/bat - installs extensions listed in code-ext.txt
 
 ## Environment Configuration files
-* Bash - .bash_profile
+* Bash - .bash_profile for Mac
 
 ## Package manifests
 * Chocolatey for Windows - Chocolatey.config
