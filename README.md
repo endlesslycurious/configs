@@ -10,7 +10,7 @@ Sets up symbolic links from files in repo to expected install locations on disk.
 * Vim  - .vimrc
 * VS Code  - VSCode.json
 
-### VS Code Extensions
+### Visual Studio Code Extensions
 See https://code.visualstudio.com/docs/editor/extension-gallery#_command-line-extension-management
 * code-ext.txt - extensions list generated from 'code --list-extensions'
 * code-update.sh/bat - installs extensions listed in code-ext.txt
