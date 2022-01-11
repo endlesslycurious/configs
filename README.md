@@ -29,3 +29,8 @@ See https://code.visualstudio.com/docs/editor/extension-gallery#_command-line-ex
 
 ### Mac
 * MinimiseAll.scpt - Minimise all applications, schedule using crontab
+
+## Misc
+
+### Windows
+* ctrl-zoom.ahk - auto hot key config to surpress control+zoom text scaling.
