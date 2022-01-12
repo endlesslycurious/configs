@@ -15,6 +15,8 @@ if EXIST %store% (
 			winget install "%%A" --accept-package-agreements
 		)
 	)
+) else (
+	echo No winget file for %COMPUTERNAME%
 )
 
 REM Check for admin privileges ie ran with gsudo or elevated command line
