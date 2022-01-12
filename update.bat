@@ -21,8 +21,8 @@ if EXIST %manifest% (
 
 
 REM Pin Python versions if python installed
-where /Q python
-if ERRORLEVEL 0 (
+find /C "python" %manifest% > NUL
+if %ERRORLEVEL% EQU 0 (
 	echo --- Choco: Pinning Python versions ---
 	choco pin add -n=python
 	choco pin add -n=python3
@@ -43,8 +43,8 @@ if EXIST %temp% (
 REM Update pip if python installed
 set piplist=%COMPUTERNAME%-pip.txt
 
-where /Q python
-if ERRORLEVEL 0 (
+find /C "python" %manifest% > NUL
+if %ERRORLEVEL% EQU 0 (
 	echo --- Python: Update PIP ---
 	python.exe -m ensurepip --upgrade
 
