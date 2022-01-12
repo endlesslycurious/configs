@@ -2,6 +2,21 @@
 
 setlocal
 
+REM Install apps from Microsoft Store via winget
+set store=%COMPUTERNAME%-winget.txt
+
+if EXIST %store% (
+	REM Install app named on each line of file
+	for /F "tokens=*" %%A in (%store%) do (
+		REM Check if app is installed first
+		winget list -q "%%A" > NUL
+
+		if %ERRORlEVEL% NEQ 0 (
+			winget install "%%A" --accept-package-agreements
+		)
+	)
+)
+
 REM Check for admin privileges ie ran with gsudo or elevated command line
 NET FILE 1>NUL 2>NUL
 if ERRORLEVEL 1 (
