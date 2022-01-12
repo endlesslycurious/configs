@@ -30,6 +30,9 @@ See https://code.visualstudio.com/docs/editor/extension-gallery#_command-line-ex
 ### Mac
 * MinimiseAll.scpt - Minimise all applications, schedule using crontab
 
+### Windows
+* hosts.bat - Setup distracting site blocking in hosts file
+
 ## Misc
 
 ### Windows
