@@ -10,8 +10,7 @@ if ERRORLEVEL 1 (
 )
 
 set hostfile=C:\Windows\System32\drivers\etc\hosts
-
-REM Run this script with admin privileges
+echo Checking %hostfile%
 
 REM Loop through hosts in input text file
 for /F "tokens=*" %%A in (hosts.txt) do (
@@ -21,9 +20,9 @@ for /F "tokens=*" %%A in (hosts.txt) do (
 	
 	REM Map site to localhost if its not in file
 	if ERRORLEVEL 1 (
-		echo "Inserting %%A"
+		echo Inserting %%A
 		echo 127.0.0.1 %%A >> %hostfile%
 	) else (
-		echo "Found %%A"
+		echo Found %%A
 	)
 )
