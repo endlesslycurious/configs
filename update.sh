@@ -18,11 +18,15 @@ if [ "$(uname)" == "Darwin" ]; then
 	echo "--- Cleanup old versions and temp file ---"
 	brew cleanup
 
-	echo "--- Python: Upgrade PIP ---"
-	python3 -m pip install --upgrade pip
+	if grep python Brewfile; then
+		
+		echo "--- Python: Upgrade PIP ---"
+		python3 -m pip install --upgrade pip
 
-	echo "--- Python: Install/Upgrade modules ---"
-	pip3 install --upgrade -r python-modules.txt
+		echo "--- Python: Install/Upgrade modules ---"
+		pip3 install --upgrade -r $HOSTNAME-pip.txt
+
+	fi
 
 	echo "--- Done! ---"
 
