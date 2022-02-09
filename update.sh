@@ -24,7 +24,7 @@ if [ "$(uname)" == "Darwin" ]; then
 		python3 -m pip install --upgrade pip
 
 		echo "--- Python: Install/Upgrade modules ---"
-		pip3 install --upgrade -r $HOSTNAME-pip.txt
+		pip3 install --user--user  --upgrade -r $HOSTNAME-pip.txt
 
 	fi
 
