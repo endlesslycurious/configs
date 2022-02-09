@@ -43,14 +43,13 @@ brew "watch"                    # Watch command
 
 # Applications
 cask "0xed"                     # Hex editor
-cask "adobe-acrobat-reader"     # PDF reader
+cask "adobe-acrobat-reader"     # PDF reader and form filling
 cask "adobe-creative-cloud"     # Adobe creative cloud
 cask "anki"                     # Flashcards
 cask "appcleaner"               # Application file cleanup
 cask "balenaetcher"             # Card writer
 cask "beyond-compare"           # File/Directory differ
 cask "cpuinfo"                  # CPU usage monitor
-cask "disk-drill"               # Deleted file recovery
 cask "disk-inventory-x"         # Disk space utility
 cask "docker"                   # Container engine
 cask "dropbox"                  # Cloud file storage/syncing
