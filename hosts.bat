@@ -22,6 +22,9 @@ for /F "tokens=*" %%A in (hosts.txt) do (
 	if ERRORLEVEL 1 (
 		echo Inserting %%A
 		echo 127.0.0.1 %%A >> %hostfile%
+
+		echo Inserting www.%%A
+		echo 127.0.0.1 www.%%A >> %hostfile%
 	) else (
 		echo Found %%A
 	)

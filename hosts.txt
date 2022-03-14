@@ -3,10 +3,13 @@ bbc.co.uk
 bbc.com
 cbc.ca
 dailyhive.com
+macrumors.com
 news.ycombinator.com
 politico.com
 politico.eu
+polygon.com
 reddit.com
 slashdot.org
 theguardian.com
+theverge.com
 vox.com
