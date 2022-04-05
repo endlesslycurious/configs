@@ -53,6 +53,7 @@ cask "cpuinfo"                  # CPU usage monitor
 cask "disk-inventory-x"         # Disk space utility
 cask "docker"                   # Container engine
 cask "dropbox"                  # Cloud file storage/syncing
+cask "elgato-camera-hub"        # Facecam settings
 cask "firefox"                  # Browser
 cask "garmin-express"           # Garmin express
 cask "geekbench"                # Performance benchmarking
@@ -71,6 +72,7 @@ cask "oversight"                # Webcam security
 cask "parallels"                # Vitrual Machines
 cask "parsec"                   # Desktop streaming for gaming
 cask "quitter"                  # Auto exit select apps after time period
+cask "rode-central"             # Microphone settings
 cask "rstudio"                  # R IDE
 cask "sizeup"                   # Window management
 cask "skype"                    # VOIP calling
