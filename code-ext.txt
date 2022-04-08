@@ -14,5 +14,6 @@ ms-vscode.cpptools
 ms-vscode.hexeditor
 redhat.ansible
 redhat.vscode-yaml
+streetsidesoftware.code-spell-checker
 twxs.cmake
 xaver.clang-format

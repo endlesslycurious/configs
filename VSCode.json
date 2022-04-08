@@ -63,5 +63,15 @@
     "yaml.customTags": [
         "!encrypted/pkcs1-oaep scalar",
         "!vault scalar"
-    ]
+    ],
+
+    // security
+    "security.workspace.trust.untrustedFiles": "open",
+
+    // spelling
+    "cSpell.language": "en-GB",
+    "cSpell.enableFiletypes": [
+        "bat",
+        "dockerfile"
+    ],
 }
