@@ -41,7 +41,6 @@ REM Pin Python versions if python installed
 find /C "python" %manifest% > NUL
 if %ERRORLEVEL% EQU 0 (
 	echo --- Choco: Pinning Python versions ---
-	choco pin add -n=python
 	choco pin add -n=python3
 )
 
