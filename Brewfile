@@ -62,7 +62,6 @@ cask "google-earth-pro"         # Google earth
 cask "iterm2"                   # Better terminal interface
 cask "insomnia"                 # REST/HTTP & GraphQL client
 cask "lastpass"                 # Password manager
-cask "logitech-camera-settings" # Webcam settings
 cask "macvim"                   # Vim for Mac
 cask "mongodb-compass"          # GUI for MongoDB
 cask "obs"                      # Screen capture
@@ -101,6 +100,6 @@ mas "Kindle", id: 405399194						# Kindle reader
 mas "Screeny", id: 440991524                    # Partial screen capture
 mas "Slack", id: 803453959                      # Chat app
 mas "Space Gremlin", id: 414515628              # HD space explorer
-mas "Streaks", id: 963034692                   # Habit tracking
+mas "Streaks", id: 963034692                    # Habit tracking
 mas "WiFi Explorer", id: 494803304              # Wifi profiler
 mas "Xcode", id: 497799835                      # IDE
