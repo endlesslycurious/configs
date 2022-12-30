@@ -95,7 +95,7 @@ mas "Fit File Explorer", id: 1244431640         # Garmin fit file viewer
 mas "iMovie", id: 408981434                     # Movie editing
 mas "KakaoTalk", id: 869223134                  # KakaoTalk chat client
 mas "Keynote", id: 409183694                    # Presentations
-mas "Kindle", id: 405399194						# Kindle reader
+mas "Kindle", id: 405399194                     # Kindle reader
 mas "Numbers", id: 409203825                    # Spreadsheets
 mas "Pages", id: 409201541                      # Word processing
 mas "Screeny", id: 440991524                    # Partial screen capture
