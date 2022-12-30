@@ -29,20 +29,18 @@ brew "graphviz"                 # Graph rendering for dot format
 brew "hey"                      # HTTP load generator for server profiling
 brew "htop"                     # CPU utilisation monitor
 brew "httpie"                   # User friendly cURL replacement
+brew "k9s"                      # Kubernetes enhanced CLI 
 brew "mas"                      # Brew Mac App Store integration
 brew "mongodb-community-shell"  # MongoDB Shell
 brew "protobuf"                 # Google Protocol buffer
 brew "python"                   # Python programming language
-brew "r"                        # R programming language
 brew "ripgrep"                  # Faster grep
 brew "sshpass"                  # Required for Ansible bootstrap of pico cluster
-brew "terraform"                # Terraform infrastructure as code
 brew "tmux"                     # Better terminal
 brew "tree"                     # Directory listor
 brew "watch"                    # Watch command
 
 # Applications
-cask "0xed"                     # Hex editor
 cask "adobe-acrobat-reader"     # PDF reader and form filling
 cask "adobe-creative-cloud"     # Adobe creative cloud
 cask "anki"                     # Flashcards
@@ -62,23 +60,21 @@ cask "google-earth-pro"         # Google earth
 cask "iterm2"                   # Better terminal interface
 cask "insomnia"                 # REST/HTTP & GraphQL client
 cask "lastpass"                 # Password manager
+cask "logitech-options"         # Logitech configuration
 cask "macvim"                   # Vim for Mac
 cask "mongodb-compass"          # GUI for MongoDB
 cask "obs"                      # Screen capture
 cask "obsidian"                 # Note taking
 cask "opera"                    # Browser
 cask "oversight"                # Webcam security
-cask "parallels"                # Vitrual Machines
 cask "parsec"                   # Desktop streaming for gaming
 cask "quitter"                  # Auto exit select apps after time period
 cask "rode-central"             # Microphone settings
-cask "rstudio"                  # R IDE
 cask "sizeup"                   # Window management
 cask "skype"                    # VOIP calling
 cask "sonos"                    # Sonos speaker control
 cask "speedcrunch"              # Calculator
 cask "sublime-text"             # Text editor
-cask "synologyassistant"        # NAS management
 cask "visual-studio-code"       # IDE
 cask "vlc"                      # Video player
 cask "wacom-tablet"             # Wacom tablet drivers
@@ -90,16 +86,20 @@ cask "zoom"                     # Video calling
 # Mac AppStore applications
 mas "about-blank", id: 1239207203				# Site blocking safari extension
 mas "AdGuard for Safari", id: 1440147259        # Ad blocking
-mas "Be Focused Pro", id: 961632517				# Pomodoro timer
 mas "BaseCamp", id: 411052274                   # Garmin Mapping
+mas "Be Focused Pro", id: 961632517             # Pomodoro timer
+mas "Blackmagic Disk Speed Test", id: 425264550 # Disk speed testing
 mas "CopyClip 2", id: 1020812363                # Clipboard manager
 mas "Disk Speed Test", id: 425264550            # HD profiling
+mas "Fit File Explorer", id: 1244431640         # Garmin fit file viewer
 mas "iMovie", id: 408981434                     # Movie editing
 mas "KakaoTalk", id: 869223134                  # KakaoTalk chat client
+mas "Keynote", id: 409183694                    # Presentations
 mas "Kindle", id: 405399194						# Kindle reader
+mas "Numbers", id: 409203825                    # Spreadsheets
+mas "Pages", id: 409201541                      # Word processing
 mas "Screeny", id: 440991524                    # Partial screen capture
 mas "Slack", id: 803453959                      # Chat app
-mas "Space Gremlin", id: 414515628              # HD space explorer
 mas "Streaks", id: 963034692                    # Habit tracking
 mas "WiFi Explorer", id: 494803304              # Wifi profiler
 mas "Xcode", id: 497799835                      # IDE
