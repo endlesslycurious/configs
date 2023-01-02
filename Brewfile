@@ -70,6 +70,7 @@ cask "oversight"                # Webcam security
 cask "parsec"                   # Desktop streaming for gaming
 cask "quitter"                  # Auto exit select apps after time period
 cask "rode-central"             # Microphone settings
+cask "samsung-portable-ssd-t7"  # Samsung T7 app
 cask "sizeup"                   # Window management
 cask "skype"                    # VOIP calling
 cask "sonos"                    # Sonos speaker control
@@ -100,6 +101,6 @@ mas "Numbers", id: 409203825                    # Spreadsheets
 mas "Pages", id: 409201541                      # Word processing
 mas "Screeny", id: 440991524                    # Partial screen capture
 mas "Slack", id: 803453959                      # Chat app
-mas "Streaks", id: 963034692                    # Habit tracking
+# mas "Streaks", id: 963034692                    # Habit tracking
 mas "WiFi Explorer", id: 494803304              # Wifi profiler
 mas "Xcode", id: 497799835                      # IDE
