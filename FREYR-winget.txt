@@ -1,3 +1,5 @@
 9NBLGGH5R558
 Microsoft.Office
 9P9TQF7MRM4R
+Elgato.CameraHub
+
