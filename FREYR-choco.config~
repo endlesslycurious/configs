@@ -41,5 +41,4 @@
   <package id="windirstat" />                   <!-- Hard drive space explorer -->
   <package id="windows-performance-toolkit" />  <!-- Windows Performance Analyzer -->
   <package id="wireshark" />                    <!-- Network packet sniffer -->
-  <package id="zoom" />                         <!-- Video calls -->
 </packages>
