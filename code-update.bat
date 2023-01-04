@@ -1,7 +1,15 @@
+@echo off
+
+setlocal
+
 REM Install VS.Code extensions listed in code-ext.txt, generated 
 REM by running 'code --list-extensions >> code-ext.txt'
 
-REM Processing text file in batch - https://stackoverflow.com/a/163873
-for /F "tokens=*" %%E in (code-ext.txt) do (
-	code --install-extension %%E
+set exts=%COMPUTERNAME%-code-ext.txt
+
+if EXIST %exts% (
+	REM Install app named on each line of file
+	for /F "tokens=*" %%E in (%exts%) do (
+		code --install-extension %%E
+	)
 )

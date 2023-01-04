@@ -10,7 +10,7 @@ if [ "$(uname)" == "Darwin" ]; then
 	# See https://stackoverflow.com/a/1521498
 	while read ext; do
 		code --install-extension $ext
-	done <code-ext.txt
+	done <odin-code-ext.txt
 
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     # GNU/Linux setup
