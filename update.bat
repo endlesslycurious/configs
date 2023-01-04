@@ -12,7 +12,7 @@ if EXIST %store% (
 		winget list -q "%%A" > NUL
 
 		if %ERRORlEVEL% NEQ 0 (
-			winget install "%%A" --accept-package-agreements
+			winget install --id "%%A" --accept-package-agreements
 		)
 	)
 ) else (
