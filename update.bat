@@ -2,6 +2,13 @@
 
 setlocal
 
+REM Check for admin privileges ie ran with gsudo or elevated command line
+NET FILE 1>NUL 2>NUL
+if ERRORLEVEL 1 (
+        echo ERROR: Run script as admin!
+        goto :EOF
+)
+
 REM Install apps from Microsoft Store via winget
 set store=%COMPUTERNAME%-winget.txt
 
@@ -19,12 +26,6 @@ if EXIST %store% (
 	echo No winget file for %COMPUTERNAME%
 )
 
-REM Check for admin privileges ie ran with gsudo or elevated command line
-NET FILE 1>NUL 2>NUL
-if ERRORLEVEL 1 (
-        echo ERROR: Run script as admin!
-        goto :EOF
-)
 
 REM Install apps from chocolatey manifest if it exists
 set manifest=%COMPUTERNAME%-choco.config
@@ -35,7 +36,6 @@ if EXIST %manifest% (
 ) else (
 	echo No Choco config for %COMPUTERNAME%
 )
-
 
 REM Pin Python versions if python installed
 find /C "python" %manifest% > NUL
