@@ -13,12 +13,13 @@ REM Install apps from Microsoft Store via winget
 set store=%COMPUTERNAME%-winget.txt
 
 if EXIST %store% (
-	REM Install app named on each line of file
+	echo --- WinGet: Installing from manifest ---
 	for /F "tokens=*" %%A in (%store%) do (
 		REM Check if app is installed first
 		winget list -q "%%A" > NUL
 
 		if %ERRORlEVEL% NEQ 0 (
+			echo Installing %%A
 			winget install --id "%%A" --accept-package-agreements
 		)
 	)
@@ -70,6 +71,17 @@ if %ERRORLEVEL% EQU 0 (
 		pip install -r %piplist%
 	) else (
 		echo No Pip file for %COMPUTERNAME%
+	)
+)
+
+REM Install VS.Code extensions listed in code-ext.txt, generated 
+REM by running 'code --list-extensions >> code-ext.txt'
+set exts=%COMPUTERNAME%-code-ext.txt
+
+if EXIST %exts% (
+	echo --- VS Code: Installing Extensions ---
+	for /F "tokens=*" %%E in (%exts%) do (
+		code --install-extension %%E
 	)
 )
 
