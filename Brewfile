@@ -47,7 +47,6 @@ cask "anki"                     # Flashcards
 cask "appcleaner"               # Application file cleanup
 cask "balenaetcher"             # Card writer
 cask "beyond-compare"           # File/Directory differ
-cask "cpuinfo"                  # CPU usage monitor
 cask "disk-inventory-x"         # Disk space utility
 cask "docker"                   # Container engine
 cask "dropbox"                  # Cloud file storage/syncing
@@ -75,6 +74,7 @@ cask "sizeup"                   # Window management
 cask "skype"                    # VOIP calling
 cask "sonos"                    # Sonos speaker control
 cask "speedcrunch"              # Calculator
+cask "stats"                    # System usage monitor
 cask "sublime-text"             # Text editor
 cask "visual-studio-code"       # IDE
 cask "vlc"                      # Video player
