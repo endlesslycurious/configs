@@ -1,4 +1,5 @@
 firefox-devtools.vscode-firefox-debug
+mongodb.mongodb-vscode
 ms-python.isort
 ms-python.python
 ms-python.vscode-pylance
