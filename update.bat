@@ -16,17 +16,16 @@ if EXIST %store% (
 	echo --- WinGet: Installing from manifest ---
 	for /F "tokens=*" %%A in (%store%) do (
 		REM Check if app is installed first
-		winget list -q "%%A" > NUL
+		winget list -e -q "%%A" > NUL
 
-		if %ERRORlEVEL% NEQ 0 (
-			echo Installing %%A
-			winget install --id "%%A" --accept-package-agreements
+		if %ERRORlEVEL% NEQ 1 (
+			echo -- Installing %%A --
+			winget install -e -q "%%A" --accept-package-agreements
 		)
 	)
 ) else (
 	echo No winget file for %COMPUTERNAME%
 )
-
 
 REM Install apps from chocolatey manifest if it exists
 set manifest=%COMPUTERNAME%-choco.config

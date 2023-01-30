@@ -1,4 +1,4 @@
-9NBLGGH5R558
-Elgato.CameraHub
-Microsoft.Office
+Elgato Camera Hub
+Microsoft 365 Apps for enterprise
+Microsoft To Do
 
