@@ -15,13 +15,9 @@ set store=%COMPUTERNAME%-winget.txt
 if EXIST %store% (
 	echo --- WinGet: Installing from manifest ---
 	for /F "tokens=*" %%A in (%store%) do (
-		REM Check if app is installed first
-		winget list -e -q "%%A" > NUL
-
-		if %ERRORlEVEL% NEQ 1 (
-			echo -- Installing %%A --
-			winget install -e -q "%%A" --accept-package-agreements
-		)
+		REM WinGet install will upgrade if installed already
+		echo -- %%A --
+		winget install -e -q "%%A" --accept-package-agreements
 	)
 ) else (
 	echo No winget file for %COMPUTERNAME%
