@@ -23,47 +23,37 @@ if EXIST %store% (
 	echo No winget file for %COMPUTERNAME%
 )
 
-REM Install apps from chocolatey manifest if it exists
-set manifest=%COMPUTERNAME%-choco.config
+REM Install apps from scoop 
+set scoop-file=%COMPUTERNAME%-scoop.txt
 
-if EXIST %manifest% (
-	echo --- Choco: Installing from manifest ---
-	choco install %manifest% -y
+REM update scoop itself
+scoop update
+
+if EXIST %store% (
+	echo --- Scoop: Installing Apps ---
+	for /F "tokens=*" %%A in (%scoop-file%) do (
+		echo -- %%A --
+		scoop install %%A
+	)
 ) else (
-	echo No Choco config for %COMPUTERNAME%
+	echo No scoop file for %COMPUTERNAME%
 )
 
-REM Pin Python versions if python installed
-find /C "python" %manifest% > NUL
-if %ERRORLEVEL% EQU 0 (
-	echo --- Choco: Pinning Python versions ---
-	choco pin add -n=python3
-)
-
-REM Upgrade apps installed by chocolatey
-echo --- Choco: Upgrading outdated packages ---
-choco upgrade all -y
-
-REM Clean up temp install file cache
-set temp=C:\Users\%USERNAME%\AppData\Local\Temp\chocolatey
-
-if EXIST %temp% (
-	echo --- Choco: Delete temp install files ---
-	rmdir /Q /S C:\Users\%USERNAME%\AppData\Local\Temp\chocolatey
-)
+REM update scoop apps
+scoop update --all
 
 REM Update pip if python installed
 set piplist=%COMPUTERNAME%-pip.txt
 
-find /C "python" %manifest% > NUL
+find /C "python" %scoop-file% > NUL
 if %ERRORLEVEL% EQU 0 (
 	echo --- Python: Update PIP ---
-	python.exe -m ensurepip --upgrade
+	python3 -m ensurepip --upgrade
 
 	REM Install python modules if list file exists
 	if EXIST %piplist% (
 		echo --- Python: Installing modules ---
-		pip install -r %piplist%
+		python3 -m pip install -r %piplist%
 	) else (
 		echo No Pip file for %COMPUTERNAME%
 	)
