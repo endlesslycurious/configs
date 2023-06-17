@@ -18,10 +18,8 @@ gsudo
 hxd
 imageglass
 insomnia
-lastpass
-logioptionsplus
 mongodb-compass
-mongodbsh
+mongosh
 ntop
 paint.net
 prime95
