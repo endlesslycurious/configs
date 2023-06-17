@@ -17,17 +17,17 @@ if EXIST %store% (
 	for /F "tokens=*" %%A in (%store%) do (
 		REM WinGet install will upgrade if installed already
 		echo -- %%A --
-		winget install -e -q "%%A" --accept-package-agreements
+		winget install -e --accept-package-agreements "%%A" 
 	)
 ) else (
 	echo No winget file for %COMPUTERNAME%
 )
 
-REM Install apps from scoop 
-set scoop-file=%COMPUTERNAME%-scoop.txt
-
 REM update scoop itself
 scoop update
+
+REM Install apps from scoop 
+set scoop-file=%COMPUTERNAME%-scoop.txt
 
 if EXIST %store% (
 	echo --- Scoop: Installing Apps ---
