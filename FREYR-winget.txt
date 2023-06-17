@@ -1,6 +1,5 @@
 Elgato Camera Hub
 Microsoft 365 Apps for enterprise
-Microsoft To Do
 PowerToys (Preview) x64
 Todoist
 WhatsApp
