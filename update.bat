@@ -24,7 +24,7 @@ if EXIST %store% (
 )
 
 REM update scoop itself
-scoop update
+call scoop update
 
 REM Install apps from scoop 
 set scoop-file=%COMPUTERNAME%-scoop.txt
@@ -33,14 +33,14 @@ if EXIST %store% (
 	echo --- Scoop: Installing Apps ---
 	for /F "tokens=*" %%A in (%scoop-file%) do (
 		echo -- %%A --
-		scoop install %%A
+		call scoop install %%A
 	)
 ) else (
 	echo No scoop file for %COMPUTERNAME%
 )
 
 REM update scoop apps
-scoop update --all
+call scoop update --all
 
 REM Update pip if python installed
 set piplist=%COMPUTERNAME%-pip.txt
