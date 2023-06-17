@@ -21,7 +21,7 @@ insomnia
 lastpass
 logioptionsplus
 mongodb-compass
-mongodb-shell
+mongodbsh
 ntop
 paint.net
 prime95
