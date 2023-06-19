@@ -29,3 +29,9 @@ fi
 export PIPENV_VENV_IN_PROJECT=1
 
 complete -C /usr/local/bin/terraform terraform
+
+# for coursera algorithms course
+export CLASSPATH=$CLASSPATH:/usr/local/lift/lib/algs4.jar
+
+# set default kubernetes config to be for the picocluster
+export KUBECONFIG=~/Source/PicoCluster/k3s/k3s.yaml
