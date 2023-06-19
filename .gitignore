@@ -2,3 +2,5 @@
 *.un~
 # brew bundle lock
 Brewfile.lock.json
+# App cleaner file?
+default.profraw
