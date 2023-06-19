@@ -17,6 +17,7 @@ tap "mongodb/brew"              # MongoDB
 brew "ansible"                  # Remote automation
 brew "ansible-lint"             # Linter for Ansible
 brew "bash-completion"          # CLI auto complete
+brew "btop"                     # Terminal system monitor
 brew "clang-format"             # Clang pretty printer
 brew "cloc"             		# Count lines of code
 brew "cmake"                    # C++ build system
@@ -56,8 +57,8 @@ cask "garmin-express"           # Garmin express
 cask "geekbench"                # Performance benchmarking
 cask "google-chrome"            # Browser
 cask "google-earth-pro"         # Google earth
-cask "iterm2"                   # Better terminal interface
 cask "insomnia"                 # REST/HTTP & GraphQL client
+cask "iterm2"                   # Better terminal interface
 cask "lastpass"                 # Password manager
 cask "logitech-options"         # Logitech configuration
 cask "macvim"                   # Vim for Mac
@@ -83,6 +84,7 @@ cask "whatsapp"                 # Whats App chat
 cask "wireshark"                # Packet sniffer
 cask "xmind"                    # Mind mapping
 cask "zoom"                     # Video calling
+cask "zwift"                    # Cycling training
 
 # Mac AppStore applications
 mas "about-blank", id: 1239207203				# Site blocking safari extension
