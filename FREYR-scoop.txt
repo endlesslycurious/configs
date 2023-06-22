@@ -10,7 +10,6 @@ ditto
 Firefox
 furmark
 fzf
-gdrive
 git
 graphviz
 greenshot
@@ -26,7 +25,6 @@ prime95
 python310
 ripgrep
 skype
-slack
 speedcrunch
 steam
 sysinternals

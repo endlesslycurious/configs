@@ -1,8 +1,5 @@
 Elgato Camera Hub
-LastPass for Windows Desktop
 Logitech.OptionsPlus
-Microsoft 365 Apps for enterprise
 Microsoft.PowerToys
-Todoist
 WhatsApp.WhatsApp
 Winamp
