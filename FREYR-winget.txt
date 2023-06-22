@@ -3,3 +3,4 @@ Logitech.OptionsPlus
 Microsoft.PowerToys
 WhatsApp.WhatsApp
 Winamp
+Zwift
