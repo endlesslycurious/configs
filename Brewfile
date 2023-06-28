@@ -33,6 +33,7 @@ brew "httpie"                   # User friendly cURL replacement
 brew "k9s"                      # Kubernetes enhanced CLI 
 brew "mas"                      # Brew Mac App Store integration
 brew "mongodb-community-shell"  # MongoDB Shell
+brew "ncdu"                     # Command line disk usage
 brew "protobuf"                 # Google Protocol buffer
 brew "python"                   # Python programming language
 brew "ripgrep"                  # Faster grep
@@ -48,7 +49,6 @@ cask "anki"                     # Flashcards
 cask "appcleaner"               # Application file cleanup
 cask "balenaetcher"             # Card writer
 cask "beyond-compare"           # File/Directory differ
-cask "disk-inventory-x"         # Disk space utility
 cask "docker"                   # Container engine
 cask "dropbox"                  # Cloud file storage/syncing
 cask "elgato-camera-hub"        # Facecam settings
