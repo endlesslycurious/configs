@@ -15,7 +15,7 @@
         "editor.background": "#fafafa",
         "editorLineNumber.foreground": "#a0a0a0"
     },
-    "workbench.colorTheme": "Default Light+",
+    "workbench.colorTheme": "Default Light Modern",
 
     // Behaviour
     "editor.autoClosingBrackets": "never",
@@ -74,4 +74,5 @@
         "bat",
         "dockerfile"
     ],
+    "redhat.telemetry.enabled": false,
 }
