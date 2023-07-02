@@ -59,6 +59,7 @@ cask "google-chrome"            # Browser
 cask "google-earth-pro"         # Google earth
 cask "insomnia"                 # REST/HTTP & GraphQL client
 cask "iterm2"                   # Better terminal interface
+cask "klogg"                    # Log viewer
 cask "lastpass"                 # Password manager
 cask "logitech-options"         # Logitech configuration
 cask "macvim"                   # Vim for Mac
