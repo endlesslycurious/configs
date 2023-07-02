@@ -65,7 +65,6 @@ cask "macvim"                   # Vim for Mac
 cask "mongodb-compass"          # GUI for MongoDB
 cask "obs"                      # Screen capture
 cask "obsidian"                 # Note taking
-cask "opera"                    # Browser
 cask "oversight"                # Webcam security
 cask "parsec"                   # Desktop streaming for gaming
 cask "quitter"                  # Auto exit select apps after time period
@@ -76,7 +75,6 @@ cask "skype"                    # VOIP calling
 cask "sonos"                    # Sonos speaker control
 cask "speedcrunch"              # Calculator
 cask "stats"                    # System usage monitor
-cask "sublime-text"             # Text editor
 cask "visual-studio-code"       # IDE
 cask "vlc"                      # Video player
 cask "wacom-tablet"             # Wacom tablet drivers
