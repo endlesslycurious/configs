@@ -61,7 +61,6 @@ cask "insomnia"                 # REST/HTTP & GraphQL client
 cask "iterm2"                   # Better terminal interface
 cask "klogg"                    # Log viewer
 cask "lastpass"                 # Password manager
-cask "logitech-options"         # Logitech configuration
 cask "macvim"                   # Vim for Mac
 cask "mongodb-compass"          # GUI for MongoDB
 cask "obs"                      # Screen capture
