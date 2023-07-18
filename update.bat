@@ -70,12 +70,4 @@ if EXIST %exts% (
 	)
 )
 
-REM Copy auto hot key script to startup folder
-set dest= "c:\Users\%USERNAME%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\ctrl-zoom.ahk"
-
-if NOT EXIST %dest% (
-	echo --- Diasble ctrl + scroll zooming ---
-	copy ctrl-zoom.ahk %dest%
-)
-
 echo --- Done! ---
