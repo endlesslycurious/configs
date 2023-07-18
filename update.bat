@@ -45,15 +45,15 @@ if EXIST %store% (
 REM Update pip if python installed
 set piplist=%COMPUTERNAME%-pip.txt
 
-find /C "python" %scoop-file% > NUL
+find /C "Python" %store% > NUL
 if %ERRORLEVEL% EQU 0 (
 	echo --- Python: Update PIP ---
-	python3 -m ensurepip --upgrade
+	python -m ensurepip --upgrade
 
 	REM Install python modules if list file exists
 	if EXIST %piplist% (
 		echo --- Python: Installing modules ---
-		python3 -m pip install -r %piplist%
+		python -m pip install -r %piplist%
 	) else (
 		echo No Pip file for %COMPUTERNAME%
 	)
