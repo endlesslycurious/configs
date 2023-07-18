@@ -10,6 +10,7 @@ Doist.Todoist
 DuongDieuPhap.ImageGlass
 gerardog.gsudo
 Git.Git
+Google.Drive
 Graphviz.Graphviz
 Greenshot.Greenshot
 gsass1.NTop
