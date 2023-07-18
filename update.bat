@@ -35,12 +35,12 @@ if EXIST %store% (
 		echo -- %%A --
 		call scoop install %%A
 	)
+
+	REM update scoop apps
+	call scoop update --all
 ) else (
 	echo No scoop file for %COMPUTERNAME%
 )
-
-REM update scoop apps
-call scoop update --all
 
 REM Update pip if python installed
 set piplist=%COMPUTERNAME%-pip.txt
