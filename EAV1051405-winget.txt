@@ -1,11 +1,10 @@
 7zip.7zip
-Adobe.Acrobat.Reader.32-bit 
-AutoHotkey.AutoHotkey
+Adobe Acrobat Reader DC
 BurntSushi.ripgrep.MSVC
 CrystalDewWorld.CrystalDiskInfo
 cURL.cURL
 Derailed.k9s
-Ditto.Ditto 
+Ditto.Ditto
 Doist.Todoist
 DuongDieuPhap.ImageGlass
 gerardog.gsudo
@@ -32,7 +31,7 @@ Nvidia.GeForceNow
 OliverBetz.ExifTool
 Perforce.P4V
 Python.Python.3.10
-ScooterSoftware.BeyondCompare4 
+ScooterSoftware.BeyondCompare4
 SpeedCrunch.SpeedCrunch
 suse.RancherDesktop
 variar.klogg
