@@ -23,13 +23,13 @@ if EXIST %store% (
 	echo No winget file for %COMPUTERNAME%
 )
 
-REM update scoop itself
-call scoop update
-
 REM Install apps from scoop 
 set scoop-file=%COMPUTERNAME%-scoop.txt
 
 if EXIST %store% (
+	REM update scoop itself
+	call scoop update
+
 	echo --- Scoop: Installing Apps ---
 	for /F "tokens=*" %%A in (%scoop-file%) do (
 		echo -- %%A --
