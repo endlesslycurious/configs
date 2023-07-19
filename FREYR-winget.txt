@@ -1,6 +1,0 @@
-Elgato Camera Hub
-Logitech.OptionsPlus
-Microsoft.PowerToys
-WhatsApp.WhatsApp
-Winamp
-Zwift
