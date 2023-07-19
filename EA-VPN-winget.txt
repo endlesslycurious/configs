@@ -1,2 +1,14 @@
+7zip.7zip
+BurntSushi.ripgrep.MSVC
+cURL.cURL
+Ditto.Ditto
+Doist.Todoist
+gerardog.gsudo
+Git.Git
+junegunn.fzf
 Microsoft Remote Desktop
-Todoist
+Microsoft.PowerToys
+SpeedCrunch.SpeedCrunch
+Vim.Vim
+WinDirStat.WinDirStat
+Zoom.Zoom
