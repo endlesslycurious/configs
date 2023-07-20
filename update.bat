@@ -20,13 +20,13 @@ if EXIST %store% (
 		winget install -e --accept-package-agreements "%%A" 
 	)
 ) else (
-	echo No winget file for %COMPUTERNAME%
+	echo --- No winget file for %COMPUTERNAME% ---
 )
 
 REM Install apps from scoop 
 set scoop-file=%COMPUTERNAME%-scoop.txt
 
-if EXIST %store% (
+if EXIST %scoop-file% (
 	REM update scoop itself
 	call scoop update
 
@@ -39,7 +39,7 @@ if EXIST %store% (
 	REM update scoop apps
 	call scoop update --all
 ) else (
-	echo No scoop file for %COMPUTERNAME%
+	echo --- No scoop file for %COMPUTERNAME% ---
 )
 
 REM Update pip if python installed
@@ -55,7 +55,7 @@ if %ERRORLEVEL% EQU 0 (
 		echo --- Python: Installing modules ---
 		python -m pip install -r %piplist%
 	) else (
-		echo No Pip file for %COMPUTERNAME%
+		echo --- No Pip file for %COMPUTERNAME% ---
 	)
 )
 
@@ -68,6 +68,8 @@ if EXIST %exts% (
 	for /F "tokens=*" %%E in (%exts%) do (
 		code --install-extension %%E
 	)
+) else (
+	echo --- No code-ext file for %COMPUTERNAME% ---
 )
 
 echo --- Done! ---
