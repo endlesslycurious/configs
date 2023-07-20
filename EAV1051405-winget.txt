@@ -36,7 +36,7 @@ SpeedCrunch.SpeedCrunch
 suse.RancherDesktop
 variar.klogg
 VideoLAN.VLC
-Vim.Vim
+vim.vim
 voidtools.Everything
 WinDirStat.WinDirStat
 Xmind.Xmind.8

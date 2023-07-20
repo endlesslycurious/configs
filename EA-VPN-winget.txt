@@ -5,10 +5,11 @@ Ditto.Ditto
 Doist.Todoist
 gerardog.gsudo
 Git.Git
+Greenshot.Greenshot
 junegunn.fzf
 Microsoft Remote Desktop
 Microsoft.PowerToys
 SpeedCrunch.SpeedCrunch
-Vim.Vim
+vim.vim
 WinDirStat.WinDirStat
 Zoom.Zoom
