@@ -8,7 +8,7 @@
 # Brew extensions
 tap "homebrew/bundle"           # brew files
 tap "homebrew/cask"             # applications
-tap "homebrew/cask-drivers"     # Garmin-Express
+#tap "homebrew/cask-drivers"     # rode-central
 tap "homebrew/core"     
 tap "hudochenkov/sshpass"       # Unoffical sshpass
 tap "mongodb/brew"              # MongoDB
@@ -50,7 +50,7 @@ cask "appcleaner"               # Application file cleanup
 cask "balenaetcher"             # Card writer
 cask "beyond-compare"           # File/Directory differ
 cask "docker"                   # Container engine
-cask "dropbox"                  # Cloud file storage/syncing
+#cask "dropbox"                  # Cloud file storage/syncing
 cask "elgato-camera-hub"        # Facecam settings
 cask "firefox"                  # Browser
 cask "garmin-express"           # Garmin express
@@ -63,12 +63,14 @@ cask "klogg"                    # Log viewer
 cask "lastpass"                 # Password manager
 cask "macvim"                   # Vim for Mac
 cask "mongodb-compass"          # GUI for MongoDB
+cask "nvidia-geforce-now"       # Game streaming service
 cask "obs"                      # Screen capture
 cask "obsidian"                 # Note taking
 cask "oversight"                # Webcam security
+cask "parallels"                # Virtual Machine
 cask "parsec"                   # Desktop streaming for gaming
 cask "quitter"                  # Auto exit select apps after time period
-cask "rode-central"             # Microphone settings
+#cask "rode-central"             # Microphone settings
 cask "samsung-portable-ssd-t7"  # Samsung T7 app
 cask "sizeup"                   # Window management
 cask "skype"                    # VOIP calling

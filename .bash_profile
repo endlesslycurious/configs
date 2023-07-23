@@ -13,6 +13,8 @@ export PS1="$GREEN\u@$GREEN\h $BLUE\w$RESET$ "
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxbxegedabagaced
 
+# Add homebrew to path
+export PATH="/opt/homebrew/bin:$PATH"
 
 # Go variable for project location
 export GOPATH="$HOME/Source/GoWorkspace"
