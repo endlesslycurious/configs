@@ -77,6 +77,7 @@ cask "skype"                    # VOIP calling
 cask "sonos"                    # Sonos speaker control
 cask "speedcrunch"              # Calculator
 cask "stats"                    # System usage monitor
+cask "steam"                    # Games library
 cask "visual-studio-code"       # IDE
 cask "vlc"                      # Video player
 cask "wacom-tablet"             # Wacom tablet drivers
