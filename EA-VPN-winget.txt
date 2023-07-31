@@ -9,6 +9,7 @@ Greenshot.Greenshot
 junegunn.fzf
 Microsoft Remote Desktop
 Microsoft.PowerToys
+OneNoteFreeRetail - en-us
 SpeedCrunch.SpeedCrunch
 vim.vim
 WinDirStat.WinDirStat
