@@ -50,7 +50,6 @@ cask "appcleaner"               # Application file cleanup
 cask "balenaetcher"             # Card writer
 cask "beyond-compare"           # File/Directory differ
 cask "docker"                   # Container engine
-#cask "dropbox"                  # Cloud file storage/syncing
 cask "elgato-camera-hub"        # Facecam settings
 cask "firefox"                  # Browser
 cask "garmin-express"           # Garmin express
@@ -62,6 +61,7 @@ cask "iterm2"                   # Better terminal interface
 cask "klogg"                    # Log viewer
 cask "lastpass"                 # Password manager
 cask "macvim"                   # Vim for Mac
+cask "maestral"                 # Dropbox client
 cask "mongodb-compass"          # GUI for MongoDB
 cask "nvidia-geforce-now"       # Game streaming service
 cask "obs"                      # Screen capture
