@@ -34,6 +34,7 @@ brew "k9s"                      # Kubernetes enhanced CLI
 brew "mas"                      # Brew Mac App Store integration
 brew "mongodb-community-shell"  # MongoDB Shell
 brew "ncdu"                     # Command line disk usage
+brew "neovim"                   # Modern VIM
 brew "protobuf"                 # Google Protocol buffer
 brew "python"                   # Python programming language
 brew "ripgrep"                  # Faster grep
@@ -59,7 +60,6 @@ cask "google-earth-pro"         # Google earth
 cask "insomnia"                 # REST/HTTP & GraphQL client
 cask "iterm2"                   # Better terminal interface
 cask "klogg"                    # Log viewer
-cask "lastpass"                 # Password manager
 cask "macvim"                   # Vim for Mac
 cask "maestral"                 # Dropbox client
 cask "mongodb-compass"          # GUI for MongoDB
@@ -88,7 +88,7 @@ cask "zoom"                     # Video calling
 cask "zwift"                    # Cycling training
 
 # Mac AppStore applications
-mas "about-blank", id: 1239207203				# Site blocking safari extension
+mas "about-blank", id: 1239207203               # Site blocking safari extension
 mas "AdGuard for Safari", id: 1440147259        # Ad blocking
 mas "BaseCamp", id: 411052274                   # Garmin Mapping
 mas "Be Focused Pro", id: 961632517             # Pomodoro timer
@@ -99,11 +99,12 @@ mas "Fit File Explorer", id: 1244431640         # Garmin fit file viewer
 mas "iMovie", id: 408981434                     # Movie editing
 mas "KakaoTalk", id: 869223134                  # KakaoTalk chat client
 mas "Keynote", id: 409183694                    # Presentations
-mas "Kindle", id: 405399194                     # Kindle reader
+mas "Kindle", id:  302584613                    # (new) Kindle reader
+mas "LastPass", id: 926036361			# Password manager
 mas "Numbers", id: 409203825                    # Spreadsheets
 mas "Pages", id: 409201541                      # Word processing
 mas "Screeny", id: 440991524                    # Partial screen capture
+mas "SimpleMind - Mind Mapping", id: 439654198  # Mind mapping
 mas "Slack", id: 803453959                      # Chat app
-# mas "Streaks", id: 963034692                    # Habit tracking
 mas "WiFi Explorer", id: 494803304              # Wifi profiler
 mas "Xcode", id: 497799835                      # IDE
