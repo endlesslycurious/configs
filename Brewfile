@@ -14,12 +14,10 @@ tap "hudochenkov/sshpass"       # Unoffical sshpass
 tap "mongodb/brew"              # MongoDB
 
 # Packages
-brew "ansible"                  # Remote automation
-brew "ansible-lint"             # Linter for Ansible
 brew "bash-completion"          # CLI auto complete
 brew "btop"                     # Terminal system monitor
 brew "clang-format"             # Clang pretty printer
-brew "cloc"             		# Count lines of code
+brew "cloc"                     # Count lines of code
 brew "cmake"                    # C++ build system
 brew "exercism"                 # Coding puzzles
 brew "fzf"                      # Fuzzy file finder
@@ -30,6 +28,7 @@ brew "graphviz"                 # Graph rendering for dot format
 brew "hey"                      # HTTP load generator for server profiling
 brew "htop"                     # CPU utilisation monitor
 brew "httpie"                   # User friendly cURL replacement
+brew "jupyterlab"               # Jupyter interactive coding notebooks
 brew "k9s"                      # Kubernetes enhanced CLI 
 brew "mas"                      # Brew Mac App Store integration
 brew "mongodb-community-shell"  # MongoDB Shell
@@ -47,6 +46,7 @@ brew "watch"                    # Watch command
 # Applications
 cask "adobe-acrobat-reader"     # PDF reader and form filling
 cask "adobe-creative-cloud"     # Adobe creative cloud
+cask "android-file-transfer"    # Used to access wahoo bolt files
 cask "anki"                     # Flashcards
 cask "appcleaner"               # Application file cleanup
 cask "balenaetcher"             # Card writer
