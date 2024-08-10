@@ -35,6 +35,7 @@ brew "mas"                      # Brew Mac App Store integration
 brew "mongodb-community-shell"  # MongoDB Shell
 brew "ncdu"                     # Command line disk usage
 brew "neovim"                   # Modern VIM
+brew "pipenv"                   # Python virtual environment management
 brew "protobuf"                 # Google Protocol buffer
 brew "python"                   # Python programming language
 brew "ripgrep"                  # Faster grep
@@ -70,7 +71,7 @@ cask "oversight"                # Webcam security
 cask "parallels"                # Virtual Machine
 cask "parsec"                   # Desktop streaming for gaming
 cask "quitter"                  # Auto exit select apps after time period
-#cask "rode-central"             # Microphone settings
+cask "rode-central"             # Microphone settings
 cask "samsung-portable-ssd-t7"  # Samsung T7 app
 cask "sizeup"                   # Window management
 cask "skype"                    # VOIP calling
