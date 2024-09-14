@@ -71,6 +71,7 @@ cask "oversight"                # Webcam security
 cask "parallels"                # Virtual Machine
 cask "parsec"                   # Desktop streaming for gaming
 cask "quitter"                  # Auto exit select apps after time period
+cask "rectangle"                # Window managers
 cask "rode-central"             # Microphone settings
 cask "samsung-portable-ssd-t7"  # Samsung T7 app
 cask "sizeup"                   # Window management
