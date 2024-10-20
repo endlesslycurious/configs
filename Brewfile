@@ -42,6 +42,7 @@ brew "sshpass"                  # Required for Ansible bootstrap of pico cluster
 brew "tmux"                     # Better terminal
 brew "tree"                     # Directory listor
 brew "watch"                    # Watch command
+brew "zola"			# Rust based static site generator
 
 # Applications
 cask "adobe-acrobat-reader"     # PDF reader and form filling
