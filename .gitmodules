@@ -1,0 +1,3 @@
+[submodule "iterm2/catppucin"]
+	path = iterm2/catppucin
+	url = https://github.com/catppuccin/iterm
