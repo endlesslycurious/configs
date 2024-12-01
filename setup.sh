@@ -4,10 +4,10 @@
 # Run with './setup.sh'
 
 if [ "$(uname)" == "Darwin" ]; then
-    # Mac OS X setup 
+    # Mac OS X setup
 
 	echo "Configuring .vimrc"
-	ln -F -s $PWD/.vimrc ~/.vimrc	
+	ln -F -s $PWD/.vimrc ~/.vimrc
 
 	echo "Configuring Sublime Text 3"
 	ln -F -s $PWD/Sublime3.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
@@ -15,12 +15,15 @@ if [ "$(uname)" == "Darwin" ]; then
 	echo "Configuring VS Code"
 	ln -F -s $PWD/VSCode.json ~/Library/Application\ Support/Code/User/settings.json
 
-	echo "Configuring .bash_profile"
-	ln -F -s $PWD/.bash_profile ~/.bash_profile	
+	echo "Configuring bash"
+	ln -F -s $PWD/.bash_profile ~/.bash_profile
 	
+	echo "Configuring zsh"
+	ln -F -s $PWD/.zshrc ~/.zshrc
+
 	echo "Configuring Brewfile"
-	ln -F -s $PWD/Brewfile ~/Brewfile	
+	ln -F -s $PWD/Brewfile ~/Brewfile
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     # GNU/Linux setup
-	echo "Not written yet!"		
+	echo "Not written yet!"	
 fi
