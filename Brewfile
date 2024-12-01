@@ -19,6 +19,7 @@ brew "btop"                     # Terminal system monitor
 brew "clang-format"             # Clang pretty printer
 brew "cloc"                     # Count lines of code
 brew "cmake"                    # C++ build system
+brew "delve"                    # Go debugger
 brew "exercism"                 # Coding puzzles
 brew "fzf"                      # Fuzzy file finder
 brew "git"                      # Git source control
