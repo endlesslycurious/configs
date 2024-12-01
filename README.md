@@ -3,6 +3,10 @@ This repo contains various configuration files I use for development.
 ## Cloning
 You need to close this repository with the `--recurse-submodules` option or run `git submodule init` then `git submodule update` after cloning to update the submodules.
 
+### Submodules
+- Catppucin iterm color scheme.
+- Neovim configuration from my kickstart fork.
+
 ## Windows Setup
 You need to set `HOME` environment vairable to `%USERPROFILE%` then open new console to get git to clone this repo!
 

@@ -6,7 +6,10 @@
 if [ "$(uname)" == "Darwin" ]; then
     # Mac OS X setup
 
-	echo "Configuring .vimrc"
+	echo "Configuring neovim"
+	ln -F -s $PWD/nvim ~/.config/nvim
+
+	echo "Configuring vim"
 	ln -F -s $PWD/.vimrc ~/.vimrc
 
 	echo "Configuring Sublime Text 3"
