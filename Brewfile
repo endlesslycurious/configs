@@ -34,6 +34,7 @@ brew "mas"                      # Brew Mac App Store integration
 brew "mongodb-community-shell"  # MongoDB Shell
 brew "ncdu"                     # Command line disk usage
 brew "neovim"                   # Modern VIM
+brew "oh-my-posh"		# prompt theme engine
 brew "pipenv"                   # Python virtual environment management
 brew "protobuf"                 # Google Protocol buffer
 brew "python"                   # Python programming language
@@ -65,6 +66,7 @@ cask "klogg"                    # Log viewer
 cask "macvim"                   # Vim for Mac
 cask "maestral"                 # Dropbox client
 cask "mongodb-compass"          # GUI for MongoDB
+cask "font-hack-nerd-font"	# Programming fonts
 cask "nvidia-geforce-now"       # Game streaming service
 cask "obs"                      # Screen capture
 cask "obsidian"                 # Note taking
