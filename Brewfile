@@ -24,6 +24,7 @@ brew "exercism"                 # Coding puzzles
 brew "fzf"                      # Fuzzy file finder
 brew "git"                      # Git source control
 brew "go"                       # Go programming language
+brew "golangci-lint"            # Go linter
 brew "gpg"                      # GNO Pretty good privicy package
 brew "graphviz"                 # Graph rendering for dot format
 brew "hey"                      # HTTP load generator for server profiling
