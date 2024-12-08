@@ -1,0 +1,66 @@
+# Manifest file for homebrew using the brew file addon.
+#   Generate	brew bundle dump
+#   Check		brew bundle check
+#   Update		brew bundle install
+#   Clean		brew bundle cleanup
+# More output with --verbose option
+
+# Brew extensions
+tap "homebrew/bundle"           # brew files
+tap "hudochenkov/sshpass"       # Unoffical sshpass
+tap "mongodb/brew"              # MongoDB
+
+# Packages
+brew "btop"                     # Terminal system monitor
+brew "cloc"                     # Count lines of code
+brew "delve"                    # Go debugger
+brew "exercism"                 # Coding puzzles
+brew "fzf"                      # Fuzzy file finder
+brew "git"                      # Git source control
+brew "go"                       # Go programming language
+brew "golangci-lint"            # Go linter
+brew "graphviz"                 # Graph rendering for dot format
+brew "htop"                     # CPU utilisation monitor
+brew "mas"                      # Brew Mac App Store integration
+brew "ncdu"                     # Command line disk usage
+brew "neovim"                   # Modern VIM
+brew "oh-my-posh"		# prompt theme engine
+brew "pipenv"                   # Python virtual environment management
+brew "python"                   # Python programming language
+brew "ripgrep"                  # Faster grep
+brew "tmux"                     # Better terminal
+brew "tree"                     # Directory lister
+brew "watch"                    # Watch command
+brew "zola"			# Rust based static site generator
+
+# Applications
+cask "adobe-acrobat-reader"     # PDF reader and form filling
+cask "anki"                     # Flashcards
+cask "appcleaner"               # Application file cleanup
+cask "beyond-compare"           # File/Directory differ
+cask "google-chrome"            # Browser
+cask "iterm2"                   # Better terminal interface
+cask "lastpass"			# Password manager
+cask "maestral"                 # Dropbox client
+cask "font-hack-nerd-font"	# Programming fonts
+cask "quitter"                  # Auto exit select apps after time period
+cask "speedcrunch"              # Calculator
+cask "stats"                    # System usage monitor
+cask "zoom"                     # Video calling
+
+# Mac AppStore applications
+mas "about-blank", id: 1239207203               # Site blocking safari extension
+mas "AdGuard for Safari", id: 1440147259        # Ad blocking
+mas "Be Focused Pro", id: 961632517             # Pomodoro timer
+mas "CopyClip 2", id: 1020812363                # Clipboard manager
+mas "iMovie", id: 408981434                     # Movie editing
+mas "KakaoTalk", id: 869223134                  # KakaoTalk chat client
+mas "Keynote", id: 409183694                    # Presentations
+mas "Kindle", id:  302584613                    # (new) Kindle reader
+mas "Numbers", id: 409203825                    # Spreadsheets
+mas "Pages", id: 409201541                      # Word processing
+mas "Streaks", id: 963034692                    # Habit tracking
+mas "SimpleMind - Mind Mapping", id: 439654198  # Mind mapping
+mas "Slack", id: 803453959                      # Chat app
+mas "WiFi Explorer", id: 494803304              # Wifi profiler
+mas "WhatsApp", id: 310633997              	# Messaging app
