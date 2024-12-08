@@ -9,12 +9,15 @@ if [ "$(uname)" == "Darwin" ]; then
 	echo "--- Refresh brew version & forumulas ---"
 	brew update
 
-	echo "--- Install updates using brew bundle ---"
+	echo "--- Install missing tools using brew bundle ---"
 	brewfile=./Brewfile.$HOSTNAME
 	brew bundle --file=$brewfile --verbose
 
+	echo "--- Update casks to latest ---"
+	brew upgrade --cask --greedy
+
 	echo "--- Listing redundant dependencies to remove manually with 'brew bundle cleanup -f' ---"
-	brew bundle cleanup
+	brew bundle --file=$brewfile cleanup
 
 	echo "--- Cleanup old versions and temp file ---"
 	brew cleanup
