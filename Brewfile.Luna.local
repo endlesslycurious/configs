@@ -38,6 +38,7 @@ cask "adobe-acrobat-reader"     # PDF reader and form filling
 cask "anki"                     # Flashcards
 cask "appcleaner"               # Application file cleanup
 cask "beyond-compare"           # File/Directory differ
+cask "cyberduck"                # FTP client
 cask "google-chrome"            # Browser
 cask "iterm2"                   # Better terminal interface
 cask "lastpass"			# Password manager
