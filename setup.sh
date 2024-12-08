@@ -7,6 +7,7 @@ if [ "$(uname)" == "Darwin" ]; then
     # Mac OS X setup
 
 	echo "Configuring neovim"
+	mkdir -p ~/.config
 	ln -F -s $PWD/nvim ~/.config/nvim
 
 	echo "Configuring vim"
@@ -27,6 +28,7 @@ if [ "$(uname)" == "Darwin" ]; then
 	echo "Configuring Brewfile"
 	brewfile=$PWD/Brewfile.$HOSTNAME
 	ln -F -s $brewfile ~/Brewfile
+
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     # GNU/Linux setup
 	echo "Not written yet!"	
