@@ -25,7 +25,8 @@ if [ "$(uname)" == "Darwin" ]; then
 	ln -F -s $PWD/.zshrc ~/.zshrc
 
 	echo "Configuring Brewfile"
-	ln -F -s $PWD/Brewfile ~/Brewfile
+	brewfile=$PWD/Brewfile.$HOSTNAME
+	ln -F -s $brewfile ~/Brewfile
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     # GNU/Linux setup
 	echo "Not written yet!"	
