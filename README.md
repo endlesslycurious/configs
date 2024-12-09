@@ -16,13 +16,13 @@ Sets up symbolic links from files in repo to expected install locations on disk.
 * Windows - setup.bat
 
 ## Editor Configuration files
-* Sublime 3  - `Sublime3.sublime-settings`
-* Vim  - `.vimrc`
-* VS Code  - `VSCode.json`
+* Sublime 3  - `sublime/Sublime3.sublime-settings`
+* Vim  - `vim/.vimrc`
+* VS Code  - `vscode/VSCode.json`
 
 ## Environment Configuration files
-* Bash - `.bash_profile` for Mac
-* Zsh - `.zshrc` for Max
+* Bash - `bash/.bash_profile` for Mac
+* Zsh - `zsh/.zshrc` for Mac
 
 ### iterm2 themes
 Theme setup is a bit manual:
@@ -32,8 +32,8 @@ Theme setup is a bit manual:
 4. Select the imported theme from the drop down!
 
 ## Package manifests
-* Homebrew for Mac - `Brewfile`
-* VS Code Extensions - `*-code-ext.txt`
+* Homebrew for Mac - `Brewfile.*.local`
+* VS Code Extensions - `vscode/*-code-ext.txt`
 * Win Get for Windows Store `*- winget.txt`
 
 ### Package update scripts
@@ -41,8 +41,6 @@ Theme setup is a bit manual:
 
 ## Automation Scripts
 
-### Mac
-* `MinimiseAll.scpt` - Minimise all applications, schedule using crontab
-
 ### Windows
-* `hosts.bat` - Setup distracting site blocking in hosts file
+* `hosts/hosts.bat` - Setup distracting site blocking in hosts file
+
