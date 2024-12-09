@@ -23,25 +23,6 @@ if EXIST %store% (
 	echo --- No winget file for %COMPUTERNAME% ---
 )
 
-REM Install apps from scoop 
-set scoop-file=%COMPUTERNAME%-scoop.txt
-
-if EXIST %scoop-file% (
-	REM update scoop itself
-	call scoop update
-
-	echo --- Scoop: Installing Apps ---
-	for /F "tokens=*" %%A in (%scoop-file%) do (
-		echo -- %%A --
-		call scoop install %%A
-	)
-
-	REM update scoop apps
-	call scoop update --all
-) else (
-	echo --- No scoop file for %COMPUTERNAME% ---
-)
-
 REM Update pip if python installed
 set piplist=%COMPUTERNAME%-pip.txt
 
@@ -61,7 +42,7 @@ if %ERRORLEVEL% EQU 0 (
 
 REM Install VS.Code extensions listed in code-ext.txt, generated 
 REM by running 'code --list-extensions >> code-ext.txt'
-set exts=%COMPUTERNAME%-code-ext.txt
+set exts=vscode/%COMPUTERNAME%-code-ext.txt
 
 if EXIST %exts% (
 	echo --- VS Code: Installing Extensions ---
