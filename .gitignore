@@ -4,3 +4,5 @@
 Brewfile.lock.json
 # App cleaner file?
 default.profraw
+# Mac file
+.DS_Store
