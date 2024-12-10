@@ -1,15 +1,18 @@
 7zip.7zip
+9NBLGGH5R558
+9WZDNCRFJ3PS
 BurntSushi.ripgrep.MSVC
 cURL.cURL
 Ditto.Ditto
-Doist.Todoist
+dotPDN.PaintDotNet
+DuongDieuPhap.ImageGlass
 gerardog.gsudo
 Git.Git
 Greenshot.Greenshot
 junegunn.fzf
-Microsoft Remote Desktop
-Microsoft.PowerToys
+Neovim.Neovim
 OneNoteFreeRetail - en-us
+SlackTechnologies.Slack
 SpeedCrunch.SpeedCrunch
 vim.vim
 WinDirStat.WinDirStat
