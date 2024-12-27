@@ -23,6 +23,7 @@ brew "golangci-lint"            # Go linter
 brew "graphviz"                 # Graph rendering for dot format
 brew "htop"                     # CPU utilisation monitor
 brew "isort"                    # Python import sorter
+brew "tldr"                     # Better man pages
 brew "mas"                      # Brew Mac App Store integration
 brew "ncdu"                     # Command line disk usage
 brew "neovim"                   # Modern VIM

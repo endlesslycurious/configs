@@ -33,6 +33,7 @@ brew "htop"                     # CPU utilisation monitor
 brew "httpie"                   # User friendly cURL replacement
 brew "isort"                    # Python import sorter
 brew "jupyterlab"               # Jupyter interactive coding notebooks
+brew "tldr"                     # Better man pages
 brew "k9s"                      # Kubernetes enhanced CLI 
 brew "mas"                      # Brew Mac App Store integration
 brew "mongodb-community-shell"  # MongoDB Shell
