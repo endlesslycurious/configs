@@ -11,18 +11,14 @@ tap "hudochenkov/sshpass"       # Unoffical sshpass
 tap "mongodb/brew"              # MongoDB
 
 # Packages
-brew "black"                    # Python formatter
 brew "btop"                     # Terminal system monitor
 brew "cloc"                     # Count lines of code
-brew "delve"                    # Go debugger
 brew "exercism"                 # Coding puzzles
 brew "fzf"                      # Fuzzy file finder
 brew "git"                      # Git source control
 brew "go"                       # Go programming language
-brew "golangci-lint"            # Go linter
 brew "graphviz"                 # Graph rendering for dot format
 brew "htop"                     # CPU utilisation monitor
-brew "isort"                    # Python import sorter
 brew "tldr"                     # Better man pages
 brew "mas"                      # Brew Mac App Store integration
 brew "ncdu"                     # Command line disk usage
@@ -30,8 +26,6 @@ brew "neovim"                   # Modern VIM
 brew "oh-my-posh"               # prompt theme engine
 brew "pipenv"                   # Python virtual environment management
 brew "python"                   # Python programming language
-brew "pylint"                   # Python linter
-brew "pyright"                  # Python language server
 brew "ripgrep"                  # Faster grep
 brew "tmux"                     # Better terminal
 brew "tree"                     # Directory lister
