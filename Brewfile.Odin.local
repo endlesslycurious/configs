@@ -8,47 +8,41 @@
 # Brew extensions
 tap "homebrew/bundle"           # brew files
 tap "homebrew/cask"             # applications
-#tap "homebrew/cask-drivers"     # rode-central
 tap "homebrew/core"     
 tap "hudochenkov/sshpass"       # Unoffical sshpass
 tap "mongodb/brew"              # MongoDB
 
 # Packages
 brew "bash-completion"          # CLI auto complete
-brew "black"                    # Python formatter
 brew "btop"                     # Terminal system monitor
 brew "clang-format"             # Clang pretty printer
 brew "cloc"                     # Count lines of code
 brew "cmake"                    # C++ build system
-brew "delve"                    # Go debugger
 brew "exercism"                 # Coding puzzles
 brew "fzf"                      # Fuzzy file finder
 brew "git"                      # Git source control
 brew "go"                       # Go programming language
-brew "golangci-lint"            # Go linter
 brew "gpg"                      # GNO Pretty good privicy package
 brew "graphviz"                 # Graph rendering for dot format
 brew "hey"                      # HTTP load generator for server profiling
 brew "htop"                     # CPU utilisation monitor
 brew "httpie"                   # User friendly cURL replacement
-brew "isort"                    # Python import sorter
 brew "jupyterlab"               # Jupyter interactive coding notebooks
-brew "tldr"                     # Better man pages
 brew "k9s"                      # Kubernetes enhanced CLI 
 brew "mas"                      # Brew Mac App Store integration
 brew "mongodb-community-shell"  # MongoDB Shell
 brew "ncdu"                     # Command line disk usage
 brew "neovim"                   # Modern VIM
+brew "npm"                      # Node package manager, required for pyright install
 brew "oh-my-posh"               # prompt theme engine
 brew "pipenv"                   # Python virtual environment management
 brew "protobuf"                 # Google Protocol buffer
 brew "python"                   # Python programming language
-brew "pylint"                   # Python linter
-brew "pyright"                  # Python language server
 brew "ripgrep"                  # Faster grep
 brew "sshpass"                  # Required for Ansible bootstrap of pico cluster
+brew "tldr"                     # Better man pages
 brew "tmux"                     # Better terminal
-brew "tree"                     # Directory listor
+brew "tree"                     # Directory lister
 brew "watch"                    # Watch command
 brew "zola"                     # Rust based static site generator
 
@@ -60,9 +54,11 @@ cask "anki"                     # Flashcards
 cask "appcleaner"               # Application file cleanup
 cask "balenaetcher"             # Card writer
 cask "beyond-compare"           # File/Directory differ
+cask "cyberduck"                # FTP client
 cask "docker"                   # Container engine
 cask "elgato-camera-hub"        # Facecam settings
 cask "firefox"                  # Browser
+cask "font-hack-nerd-font"	# Programming fonts
 cask "garmin-express"           # Garmin express
 cask "geekbench"                # Performance benchmarking
 cask "google-chrome"            # Browser
@@ -73,7 +69,6 @@ cask "klogg"                    # Log viewer
 cask "macvim"                   # Vim for Mac
 cask "maestral"                 # Dropbox client
 cask "mongodb-compass"          # GUI for MongoDB
-cask "font-hack-nerd-font"	# Programming fonts
 cask "nvidia-geforce-now"       # Game streaming service
 cask "obs"                      # Screen capture
 cask "obsidian"                 # Note taking
@@ -118,5 +113,6 @@ mas "Pages", id: 409201541                      # Word processing
 mas "Screeny", id: 440991524                    # Partial screen capture
 mas "SimpleMind - Mind Mapping", id: 439654198  # Mind mapping
 mas "Slack", id: 803453959                      # Chat app
+mas "Streaks", id: 963034692                    # Habit tracking
 mas "WiFi Explorer", id: 494803304              # Wifi profiler
 mas "Xcode", id: 497799835                      # IDE
