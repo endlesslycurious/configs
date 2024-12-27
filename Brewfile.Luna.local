@@ -19,7 +19,6 @@ brew "git"                      # Git source control
 brew "go"                       # Go programming language
 brew "graphviz"                 # Graph rendering for dot format
 brew "htop"                     # CPU utilisation monitor
-brew "tldr"                     # Better man pages
 brew "mas"                      # Brew Mac App Store integration
 brew "ncdu"                     # Command line disk usage
 brew "neovim"                   # Modern VIM
@@ -28,6 +27,7 @@ brew "oh-my-posh"               # prompt theme engine
 brew "pipenv"                   # Python virtual environment management
 brew "python"                   # Python programming language
 brew "ripgrep"                  # Faster grep
+brew "tldr"                     # Better man pages
 brew "tmux"                     # Better terminal
 brew "tree"                     # Directory lister
 brew "watch"                    # Watch command
@@ -39,11 +39,11 @@ cask "anki"                     # Flashcards
 cask "appcleaner"               # Application file cleanup
 cask "beyond-compare"           # File/Directory differ
 cask "cyberduck"                # FTP client
+cask "font-hack-nerd-font"      # Programming fonts
 cask "google-chrome"            # Browser
 cask "iterm2"                   # Better terminal interface
-cask "lastpass"			# Password manager
+cask "lastpass"                 # Password manager
 cask "maestral"                 # Dropbox client
-cask "font-hack-nerd-font"	# Programming fonts
 cask "quitter"                  # Auto exit select apps after time period
 cask "speedcrunch"              # Calculator
 cask "stats"                    # System usage monitor
@@ -60,8 +60,8 @@ mas "Keynote", id: 409183694                    # Presentations
 mas "Kindle", id:  302584613                    # (new) Kindle reader
 mas "Numbers", id: 409203825                    # Spreadsheets
 mas "Pages", id: 409201541                      # Word processing
-mas "Streaks", id: 963034692                    # Habit tracking
 mas "SimpleMind - Mind Mapping", id: 439654198  # Mind mapping
 mas "Slack", id: 803453959                      # Chat app
+mas "Streaks", id: 963034692                    # Habit tracking
+mas "WhatsApp", id: 310633997                   # Messaging app
 mas "WiFi Explorer", id: 494803304              # Wifi profiler
-mas "WhatsApp", id: 310633997              	# Messaging app
