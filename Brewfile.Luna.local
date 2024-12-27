@@ -23,6 +23,7 @@ brew "tldr"                     # Better man pages
 brew "mas"                      # Brew Mac App Store integration
 brew "ncdu"                     # Command line disk usage
 brew "neovim"                   # Modern VIM
+brew "npm"                      # Node package manager, required for pyright install
 brew "oh-my-posh"               # prompt theme engine
 brew "pipenv"                   # Python virtual environment management
 brew "python"                   # Python programming language
