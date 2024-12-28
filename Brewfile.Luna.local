@@ -47,6 +47,7 @@ cask "maestral"                 # Dropbox client
 cask "quitter"                  # Auto exit select apps after time period
 cask "speedcrunch"              # Calculator
 cask "stats"                    # System usage monitor
+cask "whatsapp"                 # Messaging app
 cask "zoom"                     # Video calling
 
 # Mac AppStore applications
@@ -63,5 +64,4 @@ mas "Pages", id: 409201541                      # Word processing
 mas "SimpleMind - Mind Mapping", id: 439654198  # Mind mapping
 mas "Slack", id: 803453959                      # Chat app
 mas "Streaks", id: 963034692                    # Habit tracking
-mas "WhatsApp", id: 310633997                   # Messaging app
 mas "WiFi Explorer", id: 494803304              # Wifi profiler
