@@ -10,18 +10,18 @@ These should be getting installed by `winget`.
 
 ## Setup
 
-Sadly this is fairly manual:
+Sadly this is a fairly manual process!
 
 ### Terminal Font
 
 1. Install the hack font with `oh-my-posh font install hack`.
 2. Reload cmd/terminal and select the default font in settings.
 
-### Terminal colour scheme
+### Terminal Colour Scheme
 
 Follow the catppuccin [windows-terminal instructions](https://github.com/catppuccin/windows-terminal) to modify Windows Terminal's config file.
 
-### Terminal 
+### Terminal Prompt
 
 Following these [oh my posh instructions](https://ohmyposh.dev/docs/installation/prompt):
 1. Use `clink info` to find the location of clinks scripts directory.
