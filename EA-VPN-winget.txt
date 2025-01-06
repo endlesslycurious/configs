@@ -12,6 +12,7 @@ Greenshot.Greenshot
 junegunn.fzf
 Neovim.Neovim
 OneNoteFreeRetail - en-us
+OpenJS.NodeJS
 SlackTechnologies.Slack
 SpeedCrunch.SpeedCrunch
 vim.vim
