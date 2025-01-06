@@ -2,6 +2,7 @@
 9NBLGGH5R558
 9WZDNCRFJ3PS
 BurntSushi.ripgrep.MSVC
+chrisant996.Clink
 cURL.cURL
 Ditto.Ditto
 dotPDN.PaintDotNet
@@ -9,6 +10,7 @@ DuongDieuPhap.ImageGlass
 gerardog.gsudo
 Git.Git
 Greenshot.Greenshot
+JanDeDobbeleer.OhMyPosh
 junegunn.fzf
 Neovim.Neovim
 OneNoteFreeRetail - en-us
