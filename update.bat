@@ -10,7 +10,7 @@ if ERRORLEVEL 1 (
 )
 
 REM Install apps from Microsoft Store via winget
-set store=%COMPUTERNAME%-winget.txt
+set store=winget/%COMPUTERNAME%-winget.txt
 
 if EXIST %store% (
 	echo --- WinGet: Installing from manifest ---
@@ -24,7 +24,7 @@ if EXIST %store% (
 )
 
 REM Update pip if python installed
-set piplist=%COMPUTERNAME%-pip.txt
+set piplist=pip/%COMPUTERNAME%-pip.txt
 
 find /C "Python" %store% > NUL
 if %ERRORLEVEL% EQU 0 (
