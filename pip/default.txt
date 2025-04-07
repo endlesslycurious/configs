@@ -1,3 +1,1 @@
 pipenv>=2020.11.15
-black>=21.6b0
-openshift>=0.12.1
