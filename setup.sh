@@ -27,7 +27,7 @@ if [ "$(uname)" == "Darwin" ]; then
 
 	echo "Configuring Brewfile"
 	brewfile=$PWD/brew/Brewfile.$HOSTNAME
-	ln -sF $brewfile ~/Brewfile
+	ln -sF $brewfile ~/.Brewfile
 
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     # GNU/Linux setup
