@@ -21,6 +21,9 @@ if [ "$(uname)" == "Darwin" ]; then
 	echo "--- Cleanup old versions and temp file ---"
 	brew cleanup
 
+	echo "--- Checking for issues ---"
+	brew doctor
+
 	echo "--- Done! ---"
 
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then

@@ -6,7 +6,6 @@
 # More output with --verbose option
 
 # Brew extensions
-tap "hudochenkov/sshpass"       # Unoffical sshpass
 tap "mongodb/brew"              # MongoDB
 
 # Packages
@@ -21,7 +20,7 @@ brew "git"                      # Git source control
 brew "go"                       # Go programming language
 brew "gpg"                      # GNO Pretty good privicy package
 brew "graphviz"                 # Graph rendering for dot format
-brew "hey"                      # HTTP load generator for server profiling
+brew "oha"                      # HTTP load generator for server profiling
 brew "htop"                     # CPU utilisation monitor
 brew "httpie"                   # User friendly cURL replacement
 brew "jupyterlab"               # Jupyter interactive coding notebooks
@@ -37,7 +36,7 @@ brew "protobuf"                 # Google Protocol buffer
 brew "python"                   # Python programming language
 brew "ripgrep"                  # Faster grep
 brew "sshpass"                  # Required for Ansible bootstrap of pico cluster
-brew "tldr"                     # Better man pages
+brew "tealdeer"                 # Better man pages
 brew "tmux"                     # Better terminal
 brew "tree"                     # Directory lister
 brew "watch"                    # Watch command
