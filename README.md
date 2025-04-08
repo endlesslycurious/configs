@@ -16,6 +16,7 @@ Sets up symbolic links from files in repo to expected install locations on disk.
 * Windows - setup.bat
 
 ## Editor Configuration files
+* NeoVim - `nvim`
 * Sublime 3  - `sublime/Sublime3.sublime-settings`
 * Vim  - `vim/.vimrc`
 * VS Code  - `vscode/VSCode.json`
