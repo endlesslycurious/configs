@@ -4,7 +4,7 @@ This repo contains various configuration files I use for development.
 You need to close this repository with the `--recurse-submodules` option or run `git submodule init` then `git submodule update` after cloning to update the submodules.
 
 ### Submodules
-- Catppucin iterm color scheme.
+- Catppucin iterm  & CMD color scheme.
 - Neovim configuration from my kickstart fork.
 
 ## Windows Setup
