@@ -20,7 +20,6 @@ brew "git"                      # Git source control
 brew "go"                       # Go programming language
 brew "gpg"                      # GNO Pretty good privicy package
 brew "graphviz"                 # Graph rendering for dot format
-brew "oha"                      # HTTP load generator for server profiling
 brew "htop"                     # CPU utilisation monitor
 brew "httpie"                   # User friendly cURL replacement
 brew "jupyterlab"               # Jupyter interactive coding notebooks
@@ -31,6 +30,7 @@ brew "ncdu"                     # Command line disk usage
 brew "neovim"                   # Modern VIM
 brew "npm"                      # Node package manager, required for pyright install
 brew "oh-my-posh"               # prompt theme engine
+brew "oha"                      # HTTP load generator for server profiling
 brew "pipenv"                   # Python virtual environment management
 brew "protobuf"                 # Google Protocol buffer
 brew "python"                   # Python programming language
