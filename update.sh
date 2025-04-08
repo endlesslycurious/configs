@@ -10,7 +10,7 @@ if [ "$(uname)" == "Darwin" ]; then
 	brew update
 
 	echo "--- Install missing tools using brew bundle ---"
-	brewfile=./brew/Brewfile.$HOST
+	brewfile=./brew/Brewfile.$HOSTNAME
 	brew bundle --file=$brewfile --verbose
 
 	echo "--- Update casks to latest ---"
