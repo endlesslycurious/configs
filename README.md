@@ -32,9 +32,9 @@ Theme setup is a bit manual:
 4. Select the imported theme from the drop down!
 
 ## Package manifests
-* Homebrew for Mac - `Brewfile.*.local`
-* VS Code Extensions - `vscode/*-code-ext.txt`
-* Win Get for Windows Store `*- winget.txt`
+* Homebrew for Mac - `brew/Brewfile.*.local`
+* VS Code Extensions - `vscode/code-ext.txt`
+* Win Get for Windows Store `winget/*.txt`
 
 ### Package update scripts
 * `update.sh/bat` - Runs brew/choco package update & cleanup process
