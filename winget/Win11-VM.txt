@@ -12,6 +12,7 @@ Git.Git
 Greenshot.Greenshot
 JanDeDobbeleer.OhMyPosh
 junegunn.fzf
+Logitech.GHUB
 Neovim.Neovim
 OneNoteFreeRetail - en-us
 OpenJS.NodeJS
