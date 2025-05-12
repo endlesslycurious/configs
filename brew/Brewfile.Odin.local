@@ -75,7 +75,6 @@ cask "quitter"                  # Auto exit select apps after time period
 cask "raspberry-pi-imager"      # Raspberry Pi imaging tool
 cask "rectangle"                # Window managers
 cask "rode-central"             # Microphone settings
-cask "skype"                    # VOIP calling
 cask "sonos"                    # Sonos speaker control
 cask "speedcrunch"              # Calculator
 cask "stats"                    # System usage monitor
