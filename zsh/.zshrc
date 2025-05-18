@@ -1,6 +1,9 @@
 # add homebrew to path
 export PATH="/opt/homebrew/bin:$PATH"
 
+# add homebrew LLVM to path
+export PATH="/opt/homebrew/opt/llvm/bin/:$PATH"
+
 # Go variable for project location
 export GOPATH="$HOME/Source/GoWorkspace"
 

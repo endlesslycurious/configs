@@ -23,6 +23,7 @@ brew "graphviz"                 # Graph rendering for dot format
 brew "htop"                     # CPU utilisation monitor
 brew "httpie"                   # User friendly cURL replacement
 brew "jupyterlab"               # Jupyter interactive coding notebooks
+brew "llvm"                     # C++ toolchain
 brew "k9s"                      # Kubernetes enhanced CLI 
 brew "mas"                      # Brew Mac App Store integration
 brew "mongodb-community-shell"  # MongoDB Shell
