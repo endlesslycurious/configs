@@ -53,6 +53,7 @@ cask "beyond-compare"           # File/Directory differ
 cask "chatgpt"                  # Chat-GPT client
 cask "cyberduck"                # FTP client
 cask "docker"                   # Container engine
+cask "discord"                  # VoIP app
 cask "elgato-camera-hub"        # Facecam settings
 cask "firefox"                  # Browser
 cask "font-hack-nerd-font"	# Programming fonts
@@ -100,6 +101,7 @@ mas "Keynote", id: 409183694                    # Presentations
 mas "Kindle", id:  302584613                    # (new) Kindle reader
 mas "Numbers", id: 409203825                    # Spreadsheets
 mas "Pages", id: 409201541                      # Word processing
+mas "Photomator", id: 1444636541		# Photo editor
 mas "Screeny", id: 440991524                    # Partial screen capture
 mas "SimpleMind - Mind Mapping", id: 439654198  # Mind mapping
 mas "Slack", id: 803453959                      # Chat app
