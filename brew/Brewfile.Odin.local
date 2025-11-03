@@ -16,6 +16,7 @@ brew "cloc"                     # Count lines of code
 brew "cmake"                    # C++ build system
 brew "exercism"                 # Coding puzzles
 brew "fzf"                      # Fuzzy file finder
+brew "fd"                       # find alternative
 brew "git"                      # Git source control
 brew "go"                       # Go programming language
 brew "gpg"                      # GNO Pretty good privicy package
@@ -41,6 +42,7 @@ brew "tealdeer"                 # Better man pages
 brew "tmux"                     # Better terminal
 brew "tree"                     # Directory lister
 brew "watch"                    # Watch command
+brew "wget"                     # Internet file retriever
 brew "zola"                     # Rust based static site generator
 
 # Applications
