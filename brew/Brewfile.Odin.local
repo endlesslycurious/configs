@@ -67,6 +67,7 @@ cask "klogg"                    # Log viewer
 cask "macvim"                   # Vim for Mac
 cask "maestral"                 # Dropbox client
 cask "mongodb-compass"          # GUI for MongoDB
+cask "neovide-app"              # Window mode for NeoVim
 cask "nvidia-geforce-now"       # Game streaming service
 cask "obs"                      # Screen capture
 cask "obsidian"                 # Note taking
