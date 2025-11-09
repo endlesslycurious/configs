@@ -10,10 +10,12 @@ tap "mongodb/brew"              # MongoDB
 
 # Packages
 brew "bash-completion"          # CLI auto complete
+brew "bat"                      # Cat with syntax highlighting and Git integration
 brew "btop"                     # Terminal system monitor
 brew "clang-format"             # Clang pretty printer
 brew "cloc"                     # Count lines of code
 brew "cmake"                    # C++ build system
+brew "dust"                     # du (disk usage) port in Rust
 brew "exercism"                 # Coding puzzles
 brew "fzf"                      # Fuzzy file finder
 brew "fd"                       # find alternative
