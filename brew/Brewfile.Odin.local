@@ -10,12 +10,15 @@ tap "mongodb/brew"              # MongoDB
 
 # Packages
 brew "bash-completion"          # CLI auto complete
+brew "bat"                      # Cat with syntax highlighting and Git integration
 brew "btop"                     # Terminal system monitor
 brew "clang-format"             # Clang pretty printer
 brew "cloc"                     # Count lines of code
 brew "cmake"                    # C++ build system
+brew "dust"                     # du (disk usage) port in Rust
 brew "exercism"                 # Coding puzzles
 brew "fzf"                      # Fuzzy file finder
+brew "fd"                       # find alternative
 brew "git"                      # Git source control
 brew "go"                       # Go programming language
 brew "gpg"                      # GNO Pretty good privicy package
@@ -41,6 +44,7 @@ brew "tealdeer"                 # Better man pages
 brew "tmux"                     # Better terminal
 brew "tree"                     # Directory lister
 brew "watch"                    # Watch command
+brew "wget"                     # Internet file retriever
 brew "zola"                     # Rust based static site generator
 
 # Applications
@@ -53,6 +57,7 @@ cask "beyond-compare"           # File/Directory differ
 cask "chatgpt"                  # Chat-GPT client
 cask "cyberduck"                # FTP client
 cask "docker"                   # Container engine
+cask "discord"                  # VoIP app
 cask "elgato-camera-hub"        # Facecam settings
 cask "firefox"                  # Browser
 cask "font-hack-nerd-font"	# Programming fonts
@@ -66,6 +71,7 @@ cask "klogg"                    # Log viewer
 cask "macvim"                   # Vim for Mac
 cask "maestral"                 # Dropbox client
 cask "mongodb-compass"          # GUI for MongoDB
+cask "neovide-app"              # Window mode for NeoVim
 cask "nvidia-geforce-now"       # Game streaming service
 cask "obs"                      # Screen capture
 cask "obsidian"                 # Note taking
@@ -100,6 +106,7 @@ mas "Keynote", id: 409183694                    # Presentations
 mas "Kindle", id:  302584613                    # (new) Kindle reader
 mas "Numbers", id: 409203825                    # Spreadsheets
 mas "Pages", id: 409201541                      # Word processing
+mas "Photomator", id: 1444636541		# Photo editor
 mas "Screeny", id: 440991524                    # Partial screen capture
 mas "SimpleMind - Mind Mapping", id: 439654198  # Mind mapping
 mas "Slack", id: 803453959                      # Chat app
