@@ -1,0 +1,34 @@
+{
+  "workbench.colorTheme": "Catppuccin Latte",
+  "workbench.iconTheme": "catppuccin-latte",
+  "catppuccin.accentColor": "sky",
+
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 11,
+
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.highlightActiveIndentation": true,
+  "editor.rulers": [100, 120, 160],
+
+  "python.linting.enabled": false,
+  "python.formatting.provider": "ruff",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.diagnosticMode": "workspace",
+
+  "gopls": {
+    "ui.inlayhint.hints": {
+      "assignVariableTypes": false,
+      "compositeLiteralFields": true,
+      "parameterNames": true,
+      "rangeVariableTypes": false
+    }
+  },
+
+  "cmake.useCMakePresets": "always",
+  "cmake.generator": "Unix Makefiles",
+  "security.workspace.trust.untrustedFiles": "open",
+
+  "cSpell.language": "en-GB"
+}

@@ -1,0 +1,13 @@
+code --profile "Home" --install-extension golang.go
+code --profile "Home" --install-extension ms-python.python
+code --profile "Home" --install-extension ms-python.vscode-pylance
+code --profile "Home" --install-extension charliermarsh.ruff
+code --profile "Home" --install-extension ms-vscode.cmake-tools
+code --profile "Home" --install-extension ms-vscode.cpptools
+code --profile "Home" --install-extension ms-azuretools.vscode-docker
+code --profile "Home" --install-extension redhat.vscode-yaml
+code --profile "Home" --install-extension streetsidesoftware.code-spell-checker
+code --profile "Home" --install-extension openai.openai-chatgpt
+code --profile "Home" --install-extension ms-toolsai.jupyter
+code --profile "Home" --install-extension Catppuccin.catppuccin-vsc
+code --profile "Home" --install-extension Catppuccin.catppuccin-vsc-icons

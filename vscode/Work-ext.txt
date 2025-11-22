@@ -1,0 +1,14 @@
+code --profile "Work" --install-extension golang.go
+code --profile "Work" --install-extension ms-python.python
+code --profile "Work" --install-extension ms-python.vscode-pylance
+code --profile "Work" --install-extension charliermarsh.ruff
+code --profile "Work" --install-extension ms-vscode.cmake-tools
+code --profile "Work" --install-extension ms-vscode.cpptools
+code --profile "Work" --install-extension ms-azuretools.vscode-docker
+code --profile "Work" --install-extension redhat.vscode-yaml
+code --profile "Work" --install-extension streetsidesoftware.code-spell-checker
+code --profile "Work" --install-extension github.copilot
+code --profile "Work" --install-extension github.copilot-chat
+code --profile "Work" --install-extension ms-toolsai.jupyter
+code --profile "Work" --install-extension Catppuccin.catppuccin-vsc
+code --profile "Work" --install-extension Catppuccin.catppuccin-vsc-icons
