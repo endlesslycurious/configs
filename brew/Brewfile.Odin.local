@@ -48,51 +48,52 @@ brew "wget"                     # Internet file retriever
 brew "zola"                     # Rust based static site generator
 
 # Applications
-cask "adobe-creative-cloud"     # Adobe creative cloud
-cask "android-file-transfer"    # Used to access wahoo bolt files
-cask "anki"                     # Flashcards
-cask "appcleaner"               # Application file cleanup
-cask "balenaetcher"             # Card writer
-cask "beyond-compare"           # File/Directory differ
-cask "chatgpt"                  # Chat-GPT client
-cask "cyberduck"                # FTP client
-cask "docker"                   # Container engine
-cask "discord"                  # VoIP app
-cask "elgato-camera-hub"        # Facecam settings
-cask "firefox"                  # Browser
-cask "font-hack-nerd-font"	# Programming fonts
-cask "garmin-express"           # Garmin express
-cask "geekbench"                # Performance benchmarking
-cask "google-chrome"            # Browser
-cask "google-earth-pro"         # Google earth
-cask "insomnia"                 # REST/HTTP & GraphQL client
-cask "iterm2"                   # Better terminal interface
-cask "klogg"                    # Log viewer
-cask "macvim"                   # Vim for Mac
-cask "maestral"                 # Dropbox client
-cask "mongodb-compass"          # GUI for MongoDB
-cask "neovide-app"              # Window mode for NeoVim
-cask "nvidia-geforce-now"       # Game streaming service
-cask "obs"                      # Screen capture
-cask "obsidian"                 # Note taking
-cask "oversight"                # Webcam security
-cask "parallels"                # Virtual Machine
-cask "parsec"                   # Desktop streaming for gaming
-cask "quitter"                  # Auto exit select apps after time period
-cask "raspberry-pi-imager"      # Raspberry Pi imaging tool
-cask "rectangle"                # Window managers
-cask "rode-central"             # Microphone settings
-cask "sonos"                    # Sonos speaker control
-cask "speedcrunch"              # Calculator
-cask "stats"                    # System usage monitor
-cask "steam"                    # Games library
-cask "visual-studio-code"       # IDE
-cask "vlc"                      # Video player
-cask "whatsapp"                 # Whats App chat
-cask "wireshark"                # Packet sniffer
-cask "xmind"                    # Mind mapping
-cask "zoom"                     # Video calling
-cask "zwift"                    # Cycling training
+cask "adobe-creative-cloud"          # Adobe creative cloud
+cask "android-file-transfer"         # Used to access wahoo bolt files
+cask "anki"                          # Flashcards
+cask "appcleaner"                    # Application file cleanup
+cask "balenaetcher"                  # Card writer
+cask "beyond-compare"                # File/Directory differ
+cask "chatgpt"                       # Chat-GPT client
+cask "cyberduck"                     # FTP client
+cask "docker"                        # Container engine
+cask "discord"                       # VoIP app
+cask "elgato-camera-hub"             # Facecam settings
+cask "firefox"                       # Browser
+cask "font-hack-nerd-font"	     # Programming fonts
+cask "garmin-express"                # Garmin express
+cask "geekbench"                     # Performance benchmarking
+cask "google-chrome"                 # Browser
+cask "google-earth-pro"              # Google earth
+cask "insomnia"                      # REST/HTTP & GraphQL client
+cask "iterm2"                        # better terminal interface
+cask "font-jetbrains-mono-nerd-font" # Nerd font
+cask "klogg"                         # Log viewer
+cask "macvim"                        # Vim for Mac
+cask "maestral"                      # Dropbox client
+cask "mongodb-compass"               # GUI for MongoDB
+cask "neovide-app"                   # Window mode for NeoVim
+cask "nvidia-geforce-now"            # Game streaming service
+cask "obs"                           # Screen capture
+cask "obsidian"                      # Note taking
+cask "oversight"                     # Webcam security
+cask "parallels"                     # Virtual Machine
+cask "parsec"                        # Desktop streaming for gaming
+cask "quitter"                       # Auto exit select apps after time period
+cask "raspberry-pi-imager"           # Raspberry Pi imaging tool
+cask "rectangle"                     # Window managers
+cask "rode-central"                  # Microphone settings
+cask "sonos"                         # Sonos speaker control
+cask "speedcrunch"                   # Calculator
+cask "stats"                         # System usage monitor
+cask "steam"                         # Games library
+cask "visual-studio-code"            # IDE
+cask "vlc"                           # Video player
+cask "whatsapp"                      # Whats App chat
+cask "wireshark"                     # Packet sniffer
+cask "xmind"                         # Mind mapping
+cask "zoom"                          # Video calling
+cask "zwift"                         # Cycling training
 
 # Mac AppStore applications
 mas "AdGuard for Safari", id: 1440147259        # Ad blocking
