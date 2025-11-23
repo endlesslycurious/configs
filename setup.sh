@@ -16,9 +16,6 @@ if [ "$(uname)" == "Darwin" ]; then
 	echo "Configuring Sublime Text 3"
 	ln -F -s $PWD/sublime/Sublime3.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
 
-	echo "Configuring VS Code"
-	ln -F -s $PWD/vscode/VSCode.json ~/Library/Application\ Support/Code/User/settings.json
-
 	echo "Configuring bash"
 	ln -F -s $PWD/bash/.bash_profile ~/.bash_profile
 	

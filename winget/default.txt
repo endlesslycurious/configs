@@ -27,6 +27,7 @@ MongoDB.Compass.Full
 MongoDB.Shell
 Mozilla.Firefox
 Mythicsoft.AgentRansack
+NerdFonts.JetBrainsMono
 Nvidia.GeForceNow
 OliverBetz.ExifTool
 Perforce.P4V

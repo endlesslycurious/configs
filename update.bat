@@ -50,26 +50,4 @@ if %ERRORLEVEL% EQU 0 (
 	)
 )
 
-REM If VS.Code is installed..
-WHERE code.exe >nul 2>nul
-IF %ERRORLEVEL% EQU 0 (
-	REM Install VS.Code extensions listed in code-ext.txt, generated 
-	REM by running 'code --list-extensions >> code-ext.txt'	
-	set exts=vscode/%COMPUTERNAME%-code-ext.txt
-
-	if NOT EXIST %exts% (
-		REM use default if no machine specific exists
-		set exts=vscode/code-ext.txt
-	)
-
-	if EXIST %exts% (
-		echo --- VS Code: Installing Extensions ---
-		for /F "tokens=*" %%E in (%exts%) do (
-			code --install-extension %%E
-		)
-	) else (
-		echo --- No code-ext file for %COMPUTERNAME% ---
-	)
-)
-
 echo --- Done! ---

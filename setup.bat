@@ -19,9 +19,3 @@ REM Configuring Sublime 3
 set target="%APPDATA%\Sublime Text 3\Packages\User\Preferences.sublime-settings" 
 if exist %target% del %target%
 mklink %target% %CD%\sublime\Sublime3.sublime-settings
-
-REM Configuring VS Code
-set target="%APPDATA%\Code\User\settings.json" 
-if exist %target% del %target%
-mklink %target% %CD%\vscode\VSCode.json
-
