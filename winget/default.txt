@@ -4,6 +4,7 @@ BurntSushi.ripgrep.MSVC
 chrisant996.Clink
 CrystalDewWorld.CrystalDiskInfo
 cURL.cURL
+dbrgn.tealdeer
 Derailed.k9s
 Ditto.Ditto
 Doist.Todoist
@@ -11,7 +12,8 @@ dotPDN.PaintDotNet
 DuongDieuPhap.ImageGlass
 gerardog.gsudo
 Git.Git
-Google.Drive
+GoLang.Go
+Google.GoogleDrive
 Grammarly.Grammarly
 Graphviz.Graphviz
 Greenshot.Greenshot
