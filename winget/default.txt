@@ -22,6 +22,7 @@ Insomnia.Insomnia
 JanDeDobbeleer.OhMyPosh
 junegunn.fzf
 Kubernetes.kubectl
+LLVM.LLVM
 Logitech.CameraSettings
 Logitech.OptionsPlus
 MHNexus.HxD
