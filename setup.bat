@@ -5,7 +5,7 @@ REM setup symbolic links to config files
 REM Configuring NEOVIM
 set target=%HOMEDRIVE%%HOMEPATH%\AppData\Local\nvim 
 if exist %target% del %target%
-mklink %target% %CD%\nvim\
+mklink /D %target% %CD%\nvim\
 
 REM Configuring VIM
 set target=%HOMEDRIVE%%HOMEPATH%\_vimrc 
