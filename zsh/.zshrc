@@ -15,6 +15,3 @@ export PIPENV_VENV_IN_PROJECT=1
 
 # oh-my-posh setup
 eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/catppuccin_macchiato.omp.json)"
-
-# load .env file, if it exists
-[ -f ~/.env ] && source ~/.env
