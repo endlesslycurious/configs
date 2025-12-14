@@ -5,20 +5,20 @@ set langmenu=en_GB	" set menu language to English.
 
 "----------------------------------------------------------------------------
 " Settings
-set autoread 						" Auto read files changed outside VIM.
+set autoread 					" Auto read files changed outside VIM.
 set clipboard=unnamed 				" Use system clipboard.
-set cursorline 						" Highlight line the cursor is on.
-set expandtab 						" Replace tabs with spaces automatically.
-set guioptions+=b 					" Turn on horizontal scroll bar.
-set guioptions-=a 					" Turn off auto clipboarding of selected text.
-set guioptions-=m 					" Turn off GUI text menu options.
-set guioptions-=T 					" Turn off GUI tool buttons.
-set hlsearch 						" highlight search hits
-set ignorecase 						" Ignore case in search patterns.
-set nobackup 						" Don't make backup files, they confuse GIT.
-set noswapfile 						" Disable'swap files' (eg. .myfile.txt.swp) from being created
-set nowrap 							" Horizontal line wrapping off.
-set nu 								" Line numbers on.
+set cursorline 					" Highlight line the cursor is on.
+set expandtab 					" Replace tabs with spaces automatically.
+set guioptions+=b 				" Turn on horizontal scroll bar.
+set guioptions-=a 				" Turn off auto clipboarding of selected text.
+set guioptions-=m 				" Turn off GUI text menu options.
+set guioptions-=T 				" Turn off GUI tool buttons.
+set hlsearch 					" highlight search hits
+set ignorecase 					" Ignore case in search patterns.
+set nobackup 					" Don't make backup files, they confuse GIT.
+set noswapfile 					" Disable'swap files' (eg. .myfile.txt.swp) from being created
+set nowrap 					" Horizontal line wrapping off.
+set nu 						" Line numbers on.
 
 "----------------------------------------------------------------------------
 " Platform specific settings
@@ -39,7 +39,8 @@ endif
 "----------------------------------------------------------------------------
 " Themes & colours
 :syn on 				" Syntax highlighting turned on.
-:colorscheme morning 	" Syntax highlighting colour scheme.
+let g:catppuccin_flavour = 'latte'
+:colorscheme catppuccin	" Syntax highlighting colour scheme.
 
 "----------------------------------------------------------------------------
 " File handling
@@ -76,15 +77,14 @@ nnoremap <silent> <F8> :%s/^[> \t]*//g<CR>:%s/[a-zA-Z0-9_.]*\!//g<CR>:%s/\tC++//
 " Plugins managed by Plug
 call plug#begin('~/vimfiles/plugged')
 
-Plug 'fatih/vim-go', {'for' : 'go'}		" Golang integration
-Plug 'junegunn/fzf' 					" FZF - fuzzy file finder integration
-Plug 'junegunn/fzf.vim' 				" FZF - fuzzy file finder advanced functionality
-Plug 'junegunn/rainbow_parentheses.vim' " Rainbow Parentheses
-Plug 'nfvs/vim-perforce' 				" Perforce integration
-Plug 'scrooloose/nerdtree' 				" NERDTree - directory browser
+Plug 'catppuccin/vim' 				" Catppuccin colourscheme
+Plug 'junegunn/fzf' 				" FZF - fuzzy file finder integration
+Plug 'junegunn/fzf.vim' 			" FZF - fuzzy file finder advanced functionality
+Plug 'junegunn/rainbow_parentheses.vim' 	" Rainbow Parentheses
+Plug 'scrooloose/nerdtree' 			" NERDTree - directory browser
 Plug 'vim-airline/vim-airline' 			" Airline - status bar
-Plug 'vim-scripts/a.vim' 				" Open alternate .cpp/.h file
-Plug 'yegappan/mru' 					" MRU - recently used files
+Plug 'vim-scripts/a.vim' 			" Open alternate .cpp/.h file
+Plug 'yegappan/mru' 				" MRU - recently used files
 
 " Initialize plugin system
 call plug#end()
