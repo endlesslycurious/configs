@@ -1,12 +1,13 @@
-9NBLGGH3ZBJQ
 BurntSushi.ripgrep.MSVC
 chrisant996.Clink
 cURL.cURL
+Ditto.Ditto
 Doist.Todoist
 dotPDN.PaintDotNet
 DuongDieuPhap.ImageGlass
 gerardog.gsudo
 Git.Git
+GoLang.Go
 Grammarly.Grammarly
 Greenshot.Greenshot
 JanDeDobbeleer.OhMyPosh
@@ -17,7 +18,9 @@ Neovim.Neovim
 NerdFonts.JetBrainsMono
 OpenJS.NodeJS
 Python.Python.3.11
+ScooterSoftware.BeyondCompare.5
 SlackTechnologies.Slack
 SpeedCrunch.SpeedCrunch
 WinDirStat.WinDirStat
+zig.zig
 Zoom.Zoom
