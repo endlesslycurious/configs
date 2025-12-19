@@ -22,6 +22,7 @@ if [ "$(uname)" == "Darwin" ]; then
 	ln -F -s $PWD/bash/.bash_profile ~/.bash_profile
 
 	echo "Configuring zed"
+	mkdir -p ~/.config/zed
 	ln -F -s $PWD/zed/settings.json ~/.config/zed/settings.json
 
 	echo "Configuring zsh"
