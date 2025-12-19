@@ -52,4 +52,5 @@ vim.vim
 voidtools.Everything
 WinDirStat.WinDirStat
 Xmind.Xmind.8
+ZedIndustries.Zed
 Zoom.Zoom

@@ -5,9 +5,11 @@
 
 if [ "$(uname)" == "Darwin" ]; then
     # Mac OS X setup
+	
+	# make sure config directory exists
+	mkdir -p ~/.config
 
 	echo "Configuring neovim"
-	mkdir -p ~/.config
 	ln -F -s $PWD/nvim ~/.config/nvim
 
 	echo "Configuring vim"
@@ -18,7 +20,10 @@ if [ "$(uname)" == "Darwin" ]; then
 
 	echo "Configuring bash"
 	ln -F -s $PWD/bash/.bash_profile ~/.bash_profile
-	
+
+	echo "Configuring zed"
+	ln -F -s $PWD/zed/settings.json ~/.config/zed/settings.json
+
 	echo "Configuring zsh"
 	ln -F -s $PWD/zsh/.zshrc ~/.zshrc
 
@@ -28,5 +33,5 @@ if [ "$(uname)" == "Darwin" ]; then
 
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     # GNU/Linux setup
-	echo "Not written yet!"	
+	echo "Not written yet!"
 fi

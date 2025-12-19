@@ -48,6 +48,7 @@ cask "quitter"                  # Auto exit select apps after time period
 cask "speedcrunch"              # Calculator
 cask "stats"                    # System usage monitor
 cask "whatsapp"                 # Messaging app
+cask "zed"                      # Fast text editor
 cask "zoom"                     # Video calling
 
 # Mac AppStore applications

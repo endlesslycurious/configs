@@ -27,7 +27,7 @@ brew "htop"                     # CPU utilisation monitor
 brew "httpie"                   # User friendly cURL replacement
 brew "jupyterlab"               # Jupyter interactive coding notebooks
 brew "llvm"                     # C++ toolchain
-brew "k9s"                      # Kubernetes enhanced CLI 
+brew "k9s"                      # Kubernetes enhanced CLI
 brew "mas"                      # Brew Mac App Store integration
 brew "mongodb-community-shell"  # MongoDB Shell
 brew "ncdu"                     # Command line disk usage
@@ -93,6 +93,7 @@ cask "vlc"                           # Video player
 cask "whatsapp"                      # Whats App chat
 cask "wireshark"                     # Packet sniffer
 cask "xmind"                         # Mind mapping
+cask "zed"                           # Fast text editor
 cask "zoom"                          # Video calling
 cask "zwift"                         # Cycling training
 

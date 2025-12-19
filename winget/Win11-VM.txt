@@ -23,4 +23,5 @@ SlackTechnologies.Slack
 SpeedCrunch.SpeedCrunch
 WinDirStat.WinDirStat
 zig.zig
+ZedIndustries.Zed
 Zoom.Zoom
