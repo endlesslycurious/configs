@@ -35,6 +35,7 @@ brew "neovim"                   # Modern VIM
 brew "npm"                      # Node package manager, required for pyright install
 brew "oh-my-posh"               # prompt theme engine
 brew "oha"                      # HTTP load generator for server profiling
+brew "opencode"                 # Terminal based Ai coding assistent
 brew "pipenv"                   # Python virtual environment management
 brew "protobuf"                 # Google Protocol buffer
 brew "python"                   # Python programming language
@@ -45,6 +46,7 @@ brew "tmux"                     # Better terminal
 brew "tree"                     # Directory lister
 brew "watch"                    # Watch command
 brew "wget"                     # Internet file retriever
+brew "xcodegen"                 # X-Code project generator
 brew "zola"                     # Rust based static site generator
 
 # Applications
@@ -63,6 +65,7 @@ cask "firefox"                       # Browser
 cask "font-hack-nerd-font"	     # Programming fonts
 cask "garmin-express"                # Garmin express
 cask "geekbench"                     # Performance benchmarking
+cask "github-copilot-for-xcode"      # Copilot AI assistent for X-Code
 cask "google-chrome"                 # Browser
 cask "google-earth-pro"              # Google earth
 cask "insomnia"                      # REST/HTTP & GraphQL client
