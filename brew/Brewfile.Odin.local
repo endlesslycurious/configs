@@ -41,6 +41,7 @@ brew "protobuf"                 # Google Protocol buffer
 brew "python"                   # Python programming language
 brew "ripgrep"                  # Faster grep
 brew "sshpass"                  # Required for Ansible bootstrap of pico cluster
+brew "swiftlint"                # Swift linter
 brew "tealdeer"                 # Better man pages
 brew "tmux"                     # Better terminal
 brew "tree"                     # Directory lister
