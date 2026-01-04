@@ -42,6 +42,7 @@ brew "python"                   # Python programming language
 brew "ripgrep"                  # Faster grep
 brew "sshpass"                  # Required for Ansible bootstrap of pico cluster
 brew "swiftlint"                # Swift linter
+brew "swiftformat"              # Swift formatter
 brew "tealdeer"                 # Better man pages
 brew "tmux"                     # Better terminal
 brew "tree"                     # Directory lister
@@ -83,6 +84,7 @@ cask "obsidian"                      # Note taking
 cask "oversight"                     # Webcam security
 cask "parallels"                     # Virtual Machine
 cask "parsec"                        # Desktop streaming for gaming
+cask "periphery"                     # Swift dead code checker
 cask "quitter"                       # Auto exit select apps after time period
 cask "raspberry-pi-imager"           # Raspberry Pi imaging tool
 cask "rectangle"                     # Window managers
