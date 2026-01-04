@@ -7,7 +7,11 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "terminal": {
+    "font_family": "JetBrainsMono Nerd Font Mono",
+  },
   "agent": {
+    "default_profile": "ask",
     "default_model": {
       "provider": "copilot_chat",
       "model": "gpt-5-mini",
@@ -20,6 +24,8 @@
     "docker-compose": true,
     "catppuccin": true,
     "catppuccin-icons": true,
+    "make": true,
+    "swift": true,
   },
   "icon_theme": {
     "mode": "system",
@@ -32,5 +38,16 @@
     "mode": "system",
     "light": "Catppuccin Latte",
     "dark": "Catppuccin Mocha",
+  },
+  "languages": {
+    "Swift": {
+      "formatter": {
+        "external": {
+          "command": "swiftformat",
+          "arguments": ["stdin", "--stdinpath", "{buffer_path}"],
+        },
+      },
+      "format_on_save": "on",
+    },
   },
 }
