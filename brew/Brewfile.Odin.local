@@ -28,6 +28,7 @@ brew "httpie"                   # User friendly cURL replacement
 brew "jupyterlab"               # Jupyter interactive coding notebooks
 brew "llvm"                     # C++ toolchain
 brew "k9s"                      # Kubernetes enhanced CLI
+brew "macvim"                   # Vim for Mac
 brew "mas"                      # Brew Mac App Store integration
 brew "mongodb-community-shell"  # MongoDB Shell
 brew "ncdu"                     # Command line disk usage
@@ -65,33 +66,28 @@ cask "docker"                        # Container engine
 cask "discord"                       # VoIP app
 cask "elgato-camera-hub"             # Facecam settings
 cask "firefox"                       # Browser
-cask "font-hack-nerd-font"	     # Programming fonts
+cask "font-hack-nerd-font"           # Programming fonts
 cask "garmin-express"                # Garmin express
 cask "geekbench"                     # Performance benchmarking
-cask "github-copilot-for-xcode"      # Copilot AI assistent for X-Code
 cask "google-chrome"                 # Browser
 cask "google-earth-pro"              # Google earth
 cask "insomnia"                      # REST/HTTP & GraphQL client
 cask "iterm2"                        # better terminal interface
 cask "font-jetbrains-mono-nerd-font" # Nerd font
 cask "klogg"                         # Log viewer
-cask "macvim"                        # Vim for Mac
 cask "maestral"                      # Dropbox client
 cask "mongodb-compass"               # GUI for MongoDB
 cask "neovide-app"                   # Window mode for NeoVim
 cask "nvidia-geforce-now"            # Game streaming service
 cask "obs"                           # Screen capture
-cask "obsidian"                      # Note taking
 cask "oversight"                     # Webcam security
 cask "parallels"                     # Virtual Machine
-cask "parsec"                        # Desktop streaming for gaming
 cask "quitter"                       # Auto exit select apps after time period
 cask "raspberry-pi-imager"           # Raspberry Pi imaging tool
 cask "rectangle"                     # Window managers
 cask "rode-central"                  # Microphone settings
 cask "slack"                         # modern IRC chat
 cask "sonos"                         # Sonos speaker control
-cask "speedcrunch"                   # Calculator
 cask "stats"                         # System usage monitor
 cask "steam"                         # Games library
 cask "visual-studio-code"            # IDE
@@ -115,7 +111,7 @@ mas "Keynote", id: 409183694                    # Presentations
 mas "Kindle", id:  302584613                    # (new) Kindle reader
 mas "Numbers", id: 409203825                    # Spreadsheets
 mas "Pages", id: 409201541                      # Word processing
-mas "Photomator", id: 1444636541		# Photo editor
+mas "Photomator", id: 1444636541                # Photo editor
 mas "Screeny", id: 440991524                    # Partial screen capture
 mas "SimpleMind - Mind Mapping", id: 439654198  # Mind mapping
 mas "Slack", id: 803453959                      # Chat app
