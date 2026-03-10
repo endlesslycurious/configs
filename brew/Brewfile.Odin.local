@@ -61,7 +61,7 @@ cask "balenaetcher"                  # Card writer
 cask "beyond-compare"                # File/Directory differ
 cask "chatgpt"                       # Chat-GPT client
 cask "cyberduck"                     # FTP client
-cask "docker"                        # Container engine
+cask "docker-desktop"                # Container engine
 cask "discord"                       # VoIP app
 cask "elgato-camera-hub"             # Facecam settings
 cask "firefox"                       # Browser
@@ -92,7 +92,7 @@ cask "steam"                         # Games library
 cask "visual-studio-code"            # IDE
 cask "vlc"                           # Video player
 cask "whatsapp"                      # Whats App chat
-cask "wireshark"                     # Packet sniffer
+cask "wireshark-app"                 # Packet sniffer
 cask "xmind"                         # Mind mapping
 cask "zed"                           # Fast text editor
 cask "zoom"                          # Video calling
