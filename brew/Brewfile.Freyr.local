@@ -51,8 +51,8 @@ cask "zed"                           # Fast text editor
 # Mac AppStore applications
 mas "AdGuard for Safari", id: 1440147259        # Ad blocking
 mas "CopyClip 2", id: 1020812363                # Clipboard manager
-mas "Keynote", id: 409183694                    # Presentations
+mas "Keynote", id: 361285480                    # Presentations
 mas "Kindle", id:  302584613                    # (new) Kindle reader
-mas "Numbers", id: 409203825                    # Spreadsheets
-mas "Pages", id: 409201541                      # Word processing
+mas "Numbers", id: 361304891                    # Spreadsheets
+mas "Pages", id: 361309726                      # Word processing
 mas "Xcode", id: 497799835                      # IDE
