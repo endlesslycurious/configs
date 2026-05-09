@@ -1,0 +1,58 @@
+# Manifest file for homebrew using the brew file addon.
+#   Generate	brew bundle dump
+#   Check		brew bundle check
+#   Update		brew bundle install
+#   Clean		brew bundle cleanup
+# More output with --verbose option
+
+# Brew extensions
+tap "mongodb/brew"              # MongoDB
+
+# Packages
+brew "bash-completion"          # CLI auto complete
+brew "bat"                      # Cat with syntax highlighting and Git integration
+brew "btop"                     # Terminal system monitor
+brew "cloc"                     # Count lines of code
+brew "dust"                     # du (disk usage) port in Rust
+brew "fzf"                      # Fuzzy file finder
+brew "fd"                       # find alternative
+brew "git"                      # Git source control
+brew "go"                       # Go programming language
+brew "gpg"                      # GNO Pretty good privicy package
+brew "htop"                     # CPU utilisation monitor
+brew "mas"                      # Brew Mac App Store integration
+brew "ncdu"                     # Command line disk usage
+brew "neovim"                   # Modern VIM
+brew "oh-my-posh"               # prompt theme engine
+brew "pipenv"                   # Python virtual environment management
+brew "python"                   # Python programming language
+brew "ripgrep"                  # Faster grep
+brew "tealdeer"                 # Better man pages
+brew "tmux"                     # Better terminal
+brew "tree"                     # Directory lister
+brew "watch"                    # Watch command
+brew "wget"                     # Internet file retriever
+
+# Applications
+cask "appcleaner"                    # Application file cleanup
+cask "beyond-compare"                # File/Directory differ
+cask "chatgpt"                       # Chat-GPT client
+cask "docker-desktop"                # Container engine
+cask "font-hack-nerd-font"           # Programming fonts
+cask "iterm2"                        # better terminal interface
+cask "font-jetbrains-mono-nerd-font" # Nerd font
+cask "klogg"                         # Log viewer
+cask "neovide-app"                   # Window mode for NeoVim
+cask "rectangle-pro"                 # Window layout manager
+cask "stats"                         # System usage monitor
+cask "wireshark-app"                 # Packet sniffer
+cask "zed"                           # Fast text editor
+
+# Mac AppStore applications
+mas "AdGuard for Safari", id: 1440147259        # Ad blocking
+mas "CopyClip 2", id: 1020812363                # Clipboard manager
+mas "Keynote", id: 409183694                    # Presentations
+mas "Kindle", id:  302584613                    # (new) Kindle reader
+mas "Numbers", id: 409203825                    # Spreadsheets
+mas "Pages", id: 409201541                      # Word processing
+mas "Xcode", id: 497799835                      # IDE
