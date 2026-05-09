@@ -25,12 +25,14 @@ Sets up symbolic links from files in repo to expected install locations on disk.
 * Bash - `bash/.bash_profile` for Mac
 * Zsh - `zsh/.zshrc` for Mac
 
-### iterm2 themes
+### iterm2 themes & fonts
 Theme setup is a bit manual:
 1. Open iterm2.
 2. Settings -> Profiles -> Colors -> Color Presets.
 3. Navigate to the theme files e.g. `iterm2/catppucin` and select theme.
 4. Select the imported theme from the drop down!
+5. Settings -> Profiles -> Text.
+6. Select 'JetBrainsMono Nerd Font Mono' as font.
 
 ## Package manifests
 * Homebrew for Mac - `brew/Brewfile.*.local`
