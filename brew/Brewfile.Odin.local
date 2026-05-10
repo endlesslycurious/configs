@@ -102,24 +102,24 @@ cask "zoom"                          # Video calling
 cask "zwift"                         # Cycling training
 
 # Mac AppStore applications
-mas "AdGuard for Safari", id: 1440147259        # Ad blocking
-mas "BaseCamp", id: 411052274                   # Garmin Mapping
-mas "Be Focused Pro", id: 961632517             # Pomodoro timer
-mas "Blackmagic Disk Speed Test", id: 425264550 # Disk speed testing
-mas "Collections", id: 1568395334               # Personal database app
-mas "CopyClip 2", id: 1020812363                # Clipboard manager
-mas "Current", id: 6758530974                   # Better RSS Reader
-mas "iMovie", id: 408981434                     # Movie editing
-mas "iA Writer", id: 775737590                  # Minimalist text editor
-mas "KakaoTalk", id: 869223134                  # KakaoTalk chat client
-mas "Keynote", id: 361285480                    # Presentations
-mas "Kindle", id:  302584613                    # (new) Kindle reader
-mas "Numbers", id: 361304891                    # Spreadsheets
-mas "Pages", id: 361309726                      # Word processing
-mas "Photomator", id: 1444636541                # Photo editor
-mas "Screeny", id: 440991524                    # Partial screen capture
-mas "SimpleMind - Mind Mapping", id: 439654198  # Mind mapping
-mas "Slack", id: 803453959                      # Chat app
-mas "Streaks", id: 963034692                    # Habit tracking
-mas "WiFi Explorer", id: 494803304              # Wifi profiler
-mas "Xcode", id: 497799835                      # IDE
+mas "AdGuard for Safari", id: 1440147259             # Ad blocking
+mas "BaseCamp", id: 411052274                        # Garmin Mapping
+mas "Be Focused Pro", id: 961632517                  # Pomodoro timer
+mas "Blackmagic Disk Speed Test", id: 425264550      # Disk speed testing
+mas "Collections", id: 1568395334                    # Personal database app
+mas "CopyClip 2", id: 1020812363                     # Clipboard manager
+mas "Current", id: 6758530974                        # Better RSS Reader
+mas "iMovie", id: 408981434                          # Movie editing
+mas "iA Writer", id: 775737590                       # Minimalist text editor
+mas "KakaoTalk", id: 869223134                       # KakaoTalk chat client
+mas "Keynote: Design Presentations", id: 361285480   # Presentations
+mas "Kindle", id:  302584613                         # (new) Kindle reader
+mas "Numbers: Make Spreadsheets", id: 361304891      # Spreadsheets
+mas "Pages: Create Documents", id: 361309726         # Word processing
+mas "Photomator", id: 1444636541                     # Photo editor
+mas "Screeny", id: 440991524                         # Partial screen capture
+mas "SimpleMind - Mind Mapping", id: 439654198       # Mind mapping
+mas "Slack", id: 803453959                           # Chat app
+mas "Streaks", id: 963034692                         # Habit tracking
+mas "WiFi Explorer", id: 494803304                   # Wifi profiler
+mas "Xcode", id: 497799835                           # Apple IDE
