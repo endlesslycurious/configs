@@ -17,8 +17,8 @@ brew "cloc"                     # Count lines of code
 brew "cmake"                    # C++ build system
 brew "dust"                     # du (disk usage) port in Rust
 brew "exercism"                 # Coding puzzles
-brew "fzf"                      # Fuzzy file finder
 brew "fd"                       # find alternative
+brew "fzf"                      # Fuzzy file finder
 brew "git"                      # Git source control
 brew "go"                       # Go programming language
 brew "gpg"                      # GNO Pretty good privicy package
@@ -26,8 +26,8 @@ brew "graphviz"                 # Graph rendering for dot format
 brew "htop"                     # CPU utilisation monitor
 brew "httpie"                   # User friendly cURL replacement
 brew "jupyterlab"               # Jupyter interactive coding notebooks
-brew "llvm"                     # C++ toolchain
 brew "k9s"                      # Kubernetes enhanced CLI
+brew "llvm"                     # C++ toolchain
 brew "mas"                      # Brew Mac App Store integration
 brew "mongodb-community-shell"  # MongoDB Shell
 brew "ncdu"                     # Command line disk usage
@@ -42,15 +42,19 @@ brew "protobuf"                 # Google Protocol buffer
 brew "python"                   # Python programming language
 brew "ripgrep"                  # Faster grep
 brew "sshpass"                  # Required for Ansible bootstrap of pico cluster
-brew "swiftlint"                # Swift linter
+brew "stylua"                   # Lua formatter
 brew "swiftformat"              # Swift formatter
+brew "swiftlint"                # Swift linter
 brew "tealdeer"                 # Better man pages
 brew "tmux"                     # Better terminal
 brew "tree"                     # Directory lister
+brew "tree-sitter"              # Text parsing library
+brew "tree-sitter-cli"          # Text parsing toolchain
 brew "watch"                    # Watch command
 brew "wget"                     # Internet file retriever
 brew "xcodegen"                 # X-Code project generator
 brew "zola"                     # Rust based static site generator
+brew "zig"                      # Low level programming language, C toolchain replacement
 
 # Applications
 cask "adobe-creative-cloud"          # Adobe creative cloud
@@ -73,7 +77,6 @@ cask "google-earth-pro"              # Google earth
 cask "insomnia"                      # REST/HTTP & GraphQL client
 cask "iterm2"                        # better terminal interface
 cask "font-jetbrains-mono-nerd-font" # Nerd font
-cask "klogg"                         # Log viewer
 cask "maestral"                      # Dropbox client
 cask "mongodb-compass"               # GUI for MongoDB
 cask "neovide-app"                   # Window mode for NeoVim
@@ -103,13 +106,16 @@ mas "AdGuard for Safari", id: 1440147259        # Ad blocking
 mas "BaseCamp", id: 411052274                   # Garmin Mapping
 mas "Be Focused Pro", id: 961632517             # Pomodoro timer
 mas "Blackmagic Disk Speed Test", id: 425264550 # Disk speed testing
+mas "Collections", id: 1568395334               # Personal database app
 mas "CopyClip 2", id: 1020812363                # Clipboard manager
+mas "Current", id: 6758530974                   # Better RSS Reader
 mas "iMovie", id: 408981434                     # Movie editing
+mas "iA Writer", id: 775737590                  # Minimalist text editor
 mas "KakaoTalk", id: 869223134                  # KakaoTalk chat client
-mas "Keynote", id: 409183694                    # Presentations
+mas "Keynote", id: 361285480                    # Presentations
 mas "Kindle", id:  302584613                    # (new) Kindle reader
-mas "Numbers", id: 409203825                    # Spreadsheets
-mas "Pages", id: 409201541                      # Word processing
+mas "Numbers", id: 361304891                    # Spreadsheets
+mas "Pages", id: 361309726                      # Word processing
 mas "Photomator", id: 1444636541                # Photo editor
 mas "Screeny", id: 440991524                    # Partial screen capture
 mas "SimpleMind - Mind Mapping", id: 439654198  # Mind mapping
