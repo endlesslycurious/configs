@@ -16,10 +16,12 @@ brew "cloc"                     # Count lines of code
 brew "dust"                     # du (disk usage) port in Rust
 brew "fzf"                      # Fuzzy file finder
 brew "fd"                       # find alternative
+brew "fzf"                      # Fuzzy file finder
 brew "git"                      # Git source control
 brew "go"                       # Go programming language
 brew "gpg"                      # GNO Pretty good privicy package
 brew "htop"                     # CPU utilisation monitor
+brew "llama.cpp"                # LLM interface and harness
 brew "mas"                      # Brew Mac App Store integration
 brew "ncdu"                     # Command line disk usage
 brew "neovim"                   # Modern VIM
@@ -27,11 +29,15 @@ brew "oh-my-posh"               # prompt theme engine
 brew "pipenv"                   # Python virtual environment management
 brew "python"                   # Python programming language
 brew "ripgrep"                  # Faster grep
+brew "stylua"                   # Lua formatter
 brew "tealdeer"                 # Better man pages
 brew "tmux"                     # Better terminal
 brew "tree"                     # Directory lister
+brew "tree-sitter"              # Text parsing library
+brew "tree-sitter-cli"          # Text parsing toolchain
 brew "watch"                    # Watch command
 brew "wget"                     # Internet file retriever
+brew "zig"                      # Low level programming language, C toolchain replacement
 
 # Applications
 cask "appcleaner"                    # Application file cleanup
@@ -41,7 +47,6 @@ cask "docker-desktop"                # Container engine
 cask "font-hack-nerd-font"           # Programming fonts
 cask "iterm2"                        # better terminal interface
 cask "font-jetbrains-mono-nerd-font" # Nerd font
-cask "klogg"                         # Log viewer
 cask "neovide-app"                   # Window mode for NeoVim
 cask "rectangle-pro"                 # Window layout manager
 cask "stats"                         # System usage monitor
@@ -49,10 +54,10 @@ cask "wireshark-app"                 # Packet sniffer
 cask "zed"                           # Fast text editor
 
 # Mac AppStore applications
-mas "AdGuard for Safari", id: 1440147259        # Ad blocking
-mas "CopyClip 2", id: 1020812363                # Clipboard manager
-mas "Keynote", id: 361285480                    # Presentations
-mas "Kindle", id:  302584613                    # (new) Kindle reader
-mas "Numbers", id: 361304891                    # Spreadsheets
-mas "Pages", id: 361309726                      # Word processing
-mas "Xcode", id: 497799835                      # IDE
+mas "AdGuard for Safari", id: 1440147259             # Ad blocking
+mas "CopyClip 2", id: 1020812363                     # Clipboard manager
+mas "Keynote: Design Presentations", id: 361285480   # Presentations
+mas "Kindle", id:  302584613                         # (new) Kindle reader
+mas "Numbers: Make Spreadsheets", id: 361304891      # Spreadsheets
+mas "Pages: Create Documents", id: 361309726         # Word processing
+mas "Xcode", id: 497799835                           # Apple IDE
