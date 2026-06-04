@@ -4,11 +4,8 @@ export PATH="/opt/homebrew/bin:$PATH"
 # add homebrew LLVM to path
 export PATH="/opt/homebrew/opt/llvm/bin/:$PATH"
 
-# Go variable for project location
-export GOPATH="$HOME/Source/GoWorkspace"
-
-# Add binaries from Go Workspace to path
-export PATH="$GOPATH/bin:$PATH"
+# Add binaries from Go default workspace to path
+export PATH="$PATH:$HOME/go/bin"
 
 # pipenv create virtual environment folders inside projects
 export PIPENV_VENV_IN_PROJECT=1
