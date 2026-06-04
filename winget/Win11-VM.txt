@@ -21,6 +21,7 @@ Python.Python.3.11
 ScooterSoftware.BeyondCompare.5
 SlackTechnologies.Slack
 SpeedCrunch.SpeedCrunch
+tree-sitter.tree-sitter-cli
 WinDirStat.WinDirStat
 zig.zig
 ZedIndustries.Zed

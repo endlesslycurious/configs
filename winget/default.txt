@@ -46,6 +46,7 @@ ScooterSoftware.BeyondCompare4
 SlackTechnologies.Slack
 SpeedCrunch.SpeedCrunch
 suse.RancherDesktop
+tree-sitter.tree-sitter-cli
 variar.klogg
 VideoLAN.VLC
 vim.vim
@@ -53,4 +54,5 @@ voidtools.Everything
 WinDirStat.WinDirStat
 Xmind.Xmind.8
 ZedIndustries.Zed
+zig.zig
 Zoom.Zoom
