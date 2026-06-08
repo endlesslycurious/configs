@@ -47,6 +47,7 @@ brew "tmux"                     # Better terminal
 brew "tree"                     # Directory lister
 brew "tree-sitter"              # Text parsing library
 brew "tree-sitter-cli"          # Text parsing toolchain
+brew "uv"                       # Python package manager
 brew "watch"                    # Watch command
 brew "wget"                     # Internet file retriever
 brew "xcodegen"                 # X-Code project generator
