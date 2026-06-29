@@ -5,8 +5,9 @@
 #   Clean		brew bundle cleanup
 # More output with --verbose option
 
-# Brew extensions
-tap "mongodb/brew"              # MongoDB
+# Third party recipes, requires explicit 'trust' to install
+brew "anomalyco/tap/opencode", trusted: true                  # AI coding agent
+brew "mongodb/brew/mongodb-community-shell", trusted: true    # MongoDB Shell
 
 # Packages
 brew "bash-completion"          # CLI auto complete
@@ -28,7 +29,6 @@ brew "httpie"                   # User friendly cURL replacement
 brew "k9s"                      # Kubernetes enhanced CLI
 brew "llvm"                     # C++ toolchain
 brew "mas"                      # Brew Mac App Store integration
-brew "mongodb-community-shell"  # MongoDB Shell
 brew "ncdu"                     # Command line disk usage
 brew "neovim"                   # Modern VIM
 brew "oh-my-posh"               # prompt theme engine
@@ -51,8 +51,8 @@ brew "uv"                       # Python package manager
 brew "watch"                    # Watch command
 brew "wget"                     # Internet file retriever
 brew "xcodegen"                 # X-Code project generator
-brew "zola"                     # Rust based static site generator
 brew "zig"                      # Low level programming language, C toolchain replacement
+brew "zola"                     # Rust based static site generator
 
 # Applications
 cask "adobe-creative-cloud"          # Adobe creative cloud
