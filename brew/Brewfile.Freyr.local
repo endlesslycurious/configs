@@ -5,7 +5,7 @@
 #   Clean		brew bundle cleanup
 # More output with --verbose option
 
-# Brew extensions
+# Third party recipes, requires explicit 'trust' to install
 tap "jundot/omlx", "https://github.com/jundot/omlx", trusted: true
 
 # Packages
