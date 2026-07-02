@@ -90,6 +90,7 @@ cask "slack"                         # modern IRC chat
 cask "sonos"                         # Sonos speaker control
 cask "stats"                         # System usage monitor
 cask "steam"                         # Games library
+cask "tailscale-app"                 # MESH VPN solution
 cask "visual-studio-code"            # IDE
 cask "vlc"                           # Video player
 cask "whatsapp"                      # Whats App chat
