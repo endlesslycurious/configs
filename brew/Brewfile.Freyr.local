@@ -25,6 +25,7 @@ brew "omlx"                     # MLX native LLM server
 brew "python"                   # Python programming language
 brew "ripgrep"                  # Faster grep
 brew "stylua"                   # Lua formatter
+brew "tailscale"                # Private VPN solution
 brew "tealdeer"                 # Better man pages
 brew "tmux"                     # Better terminal
 brew "tree"                     # Directory lister
