@@ -61,7 +61,7 @@ cask "anki"                          # Flashcards
 cask "appcleaner"                    # Application file cleanup
 cask "balenaetcher"                  # Card writer
 cask "beyond-compare"                # File/Directory differ
-cask "chatgpt"                       # Chat-GPT client
+cask "chatgpt-classic"               # Chat-GPT client
 cask "cyberduck"                     # FTP client
 cask "docker-desktop"                # Container engine
 cask "discord"                       # VoIP app
