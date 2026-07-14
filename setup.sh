@@ -5,7 +5,7 @@
 
 if [ "$(uname)" == "Darwin" ]; then
     # Mac OS X setup
-	
+
 	# make sure config directory exists
 	mkdir -p ~/.config
 
@@ -31,6 +31,9 @@ if [ "$(uname)" == "Darwin" ]; then
 	echo "Configuring Brewfile"
 	brewfile=$PWD/brew/Brewfile.$HOSTNAME
 	ln -sF $brewfile ~/.Brewfile
+
+	echo "Configuring opencode"
+	ln -F -s $PWD/opencode/opencode.jsonc ~/.config/opencode/opencode.jsonc
 
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     # GNU/Linux setup

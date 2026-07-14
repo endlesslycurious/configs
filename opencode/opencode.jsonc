@@ -1,0 +1,77 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+
+  // Enable language servers
+  "lsp": true,
+
+  // default model
+  "model": "freyr/qwen3.5-9b",
+
+  "provider": {
+    // My locally hosted models
+    "Freyr": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Freyr.local",
+      "options": {
+        "baseURL": "http://Freyr.local:8080/v1",
+        "apiKey": "not-needed"
+      },
+      "models": {
+        "Qwen3-14B": {
+          "name": "Qwen3 14B",
+          "limit": {
+            "context": 98304,
+            "output": 8192
+          }
+        },
+        "Qwen3.5-9B": {
+          "name": "Qwen3.5 9B",
+          "limit": {
+            "context": 131072,
+            "output": 8192
+          }
+        },
+        "Qwen3.6-27B": {
+          "name": "Qwen3.6 27B",
+          "limit": {
+            "context": 32768,
+            "output": 8192
+          }
+        }
+      }
+    },
+  },
+
+  // Agent settings: default model by mode
+  "agent": {
+    "build": {
+      "model": "Freyr/Qwen3.5-9B",
+    },
+    "plan": {
+      "model": "Freyr/Qwen3.6-27B",
+    }
+  },
+
+  // Enable context compaction and pruning
+  "compaction": {
+    "auto": true,
+    "prune": true,
+    "reserved": 10000
+  },
+
+  // Deny Git (write) actions and tk close/rm
+  "permission": {
+    "bash": {
+      "git add*": "deny",
+      "git commit*": "deny",
+      "git merge*": "deny",
+      "git rebase*": "deny",
+      "git cherry-pick*": "deny",
+      "git push*": "deny",
+      "git pull*": "deny",
+      "git reset*": "deny",
+      "tk close*": "deny",
+      "tk rm": "deny"
+    }
+  }
+}
