@@ -26,7 +26,9 @@ brew "gpg"                      # GNO Pretty good privicy package
 brew "graphviz"                 # Graph rendering for dot format
 brew "htop"                     # CPU utilisation monitor
 brew "httpie"                   # User friendly cURL replacement
+brew "just"                     # Command runner
 brew "k9s"                      # Kubernetes enhanced CLI
+brew "llama.cpp"                # LLM inference engine
 brew "llvm"                     # C++ toolchain
 brew "mas"                      # Brew Mac App Store integration
 brew "ncdu"                     # Command line disk usage
