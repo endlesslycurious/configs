@@ -17,8 +17,8 @@ Sets up symbolic links from files in repo to expected install locations on disk.
 
 ## Editor Configuration files
 * NeoVim - `nvim` folder
-* Sublime 3  - `sublime/Sublime3.sublime-settings`
 * Vim  - `vim/.vimrc`
+* Zed - `zed` folder
 
 ## Environment Configuration files
 * Bash - `bash/.bash_profile` for Mac
