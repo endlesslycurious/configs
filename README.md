@@ -19,7 +19,6 @@ Sets up symbolic links from files in repo to expected install locations on disk.
 * NeoVim - `nvim` folder
 * Sublime 3  - `sublime/Sublime3.sublime-settings`
 * Vim  - `vim/.vimrc`
-* VS Code  - `vscode` contains profile files to import
 
 ## Environment Configuration files
 * Bash - `bash/.bash_profile` for Mac
@@ -45,5 +44,3 @@ Theme setup is a bit manual:
 
 ### Windows
 * `hosts/hosts.bat` - Setup distracting site blocking in hosts file
-
-
