@@ -24,6 +24,7 @@ brew "git"                      # Git source control
 brew "go"                       # Go programming language
 brew "gpg"                      # GNO Pretty good privicy package
 brew "graphviz"                 # Graph rendering for dot format
+brew "herdr"                    # Ai aware terminal multiplexor
 brew "htop"                     # CPU utilisation monitor
 brew "httpie"                   # User friendly cURL replacement
 brew "just"                     # Command runner
@@ -35,7 +36,6 @@ brew "ncdu"                     # Command line disk usage
 brew "neovim"                   # Modern VIM
 brew "oh-my-posh"               # prompt theme engine
 brew "oha"                      # HTTP load generator for server profiling
-brew "periphery"                # Swift dead code checker
 brew "pipenv"                   # Python virtual environment management
 brew "protobuf"                 # Google Protocol buffer
 brew "python"                   # Python programming language
@@ -45,7 +45,6 @@ brew "stylua"                   # Lua formatter
 brew "swiftformat"              # Swift formatter
 brew "swiftlint"                # Swift linter
 brew "tealdeer"                 # Better man pages
-brew "tmux"                     # Better terminal
 brew "tree"                     # Directory lister
 brew "tree-sitter"              # Text parsing library
 brew "tree-sitter-cli"          # Text parsing toolchain
@@ -118,6 +117,7 @@ mas "Kindle", id:  302584613                         # (new) Kindle reader
 mas "Numbers: Make Spreadsheets", id: 361304891      # Spreadsheets
 mas "Pages: Create Documents", id: 361309726         # Word processing
 mas "Photomator", id: 1444636541                     # Photo editor
+mas "Sauce for Strava™", id: 1570922521              # Better Strava analytics
 mas "Screeny", id: 440991524                         # Partial screen capture
 mas "SimpleMind - Mind Mapping", id: 439654198       # Mind mapping
 mas "Slack", id: 803453959                           # Chat app
