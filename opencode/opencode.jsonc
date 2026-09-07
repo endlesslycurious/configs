@@ -5,50 +5,52 @@
   "lsp": true,
 
   // default model
-  "model": "freyr/qwen3.5-9b",
+  "model": "deepseek/deepseek-v4-flash",
 
   "provider": {
-    // My locally hosted models
-    "Freyr": {
+    // Remote hosted models
+    "remote": {
       "npm": "@ai-sdk/openai-compatible",
-      "name": "Freyr.local",
+      "name": "Remote",
       "options": {
-        "baseURL": "http://Freyr.local:8080/v1",
-        "apiKey": "not-needed"
+        "baseURL": "{env:REMOTE_BASE_URL}",
       },
       "models": {
-        "Qwen3-14B": {
-          "name": "Qwen3 14B",
-          "limit": {
-            "context": 98304,
-            "output": 8192
-          }
+        "gemma4_26B": {
+          "name": "Gemma 4 26B"
         },
-        "Qwen3.5-9B": {
-          "name": "Qwen3.5 9B",
-          "limit": {
-            "context": 131072,
-            "output": 8192
-          }
+        "gemma4_31B": {
+          "name": "Gemma 4 31B"
         },
-        "Qwen3.6-27B": {
-          "name": "Qwen3.6 27B",
-          "limit": {
-            "context": 32768,
-            "output": 8192
-          }
+        "glm4_7_Q8_K_XL": {
+          "name": "GLM 4.7 Q8 K XL"
+        },
+        "ornith_35b_Q4": {
+          "name": "Ornith 35B Q4"
+        },
+        "qwen3_5_122B": {
+          "name": "Qwen 3.5 122B"
+        },
+        "qwen3_6_27B_Q8_MTP": {
+          "name": "Qwen 3.6 27B Q8 MTP"
+        },
+        "qwen3_6_35B_A3B": {
+          "name": "Qwen 3.6 35B A3B"
+        },
+        "qwen3_coder_next": {
+          "name": "Qwen 3 Coder Next"
         }
       }
-    },
+    }
   },
 
   // Agent settings: default model by mode
   "agent": {
     "build": {
-      "model": "Freyr/Qwen3.5-9B",
+      "model": "deepseek/deepseek-v4-flash",
     },
     "plan": {
-      "model": "Freyr/Qwen3.6-27B",
+      "model": "deepseek/deepseek-v4-pro",
     }
   },
 
