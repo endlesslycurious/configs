@@ -12,9 +12,6 @@ if [ "$(uname)" == "Darwin" ]; then
 	echo "Configuring neovim"
 	ln -F -s $PWD/nvim ~/.config/nvim
 
-	echo "Configuring vim"
-	ln -F -s $PWD/vim/.vimrc ~/.vimrc
-
 	echo "Configuring bash"
 	ln -F -s $PWD/bash/.bash_profile ~/.bash_profile
 
