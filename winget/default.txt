@@ -1,3 +1,4 @@
+astral-sh.uv
 BurntSushi.ripgrep.MSVC
 Casey.Just
 chrisant996.Clink
