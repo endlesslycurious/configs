@@ -64,18 +64,18 @@ cask "balenaetcher"                  # Card writer
 cask "beyond-compare"                # File/Directory differ
 cask "chatgpt-classic"               # Chat-GPT client
 cask "cyberduck"                     # FTP client
-cask "docker-desktop"                # Container engine
 cask "discord"                       # VoIP app
+cask "docker-desktop"                # Container engine
 cask "elgato-camera-hub"             # Facecam settings
 cask "firefox"                       # Browser
 cask "font-hack-nerd-font"           # Programming fonts
+cask "font-jetbrains-mono-nerd-font" # Nerd font
 cask "garmin-express"                # Garmin express
 cask "geekbench"                     # Performance benchmarking
+cask "ghostty"                       # better terminal interface
 cask "google-chrome"                 # Browser
-cask "google-earth-pro"              # Google earth
 cask "insomnia"                      # REST/HTTP & GraphQL client
 cask "iterm2"                        # better terminal interface
-cask "font-jetbrains-mono-nerd-font" # Nerd font
 cask "maestral"                      # Dropbox client
 cask "mongodb-compass"               # GUI for MongoDB
 cask "neovide-app"                   # Window mode for NeoVim
@@ -108,8 +108,8 @@ mas "Blackmagic Disk Speed Test", id: 425264550      # Disk speed testing
 mas "Collections", id: 1568395334                    # Personal database app
 mas "CopyClip 2", id: 1020812363                     # Clipboard manager
 mas "Current", id: 6758530974                        # Better RSS Reader
-mas "iMovie", id: 408981434                          # Movie editing
 mas "iA Writer", id: 775737590                       # Minimalist text editor
+mas "iMovie", id: 408981434                          # Movie editing
 mas "KakaoTalk", id: 869223134                       # KakaoTalk chat client
 mas "Keynote: Design Presentations", id: 361285480   # Presentations
 mas "Kindle", id:  302584613                         # (new) Kindle reader
