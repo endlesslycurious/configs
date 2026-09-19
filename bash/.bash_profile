@@ -1,3 +1,7 @@
+# The following lines were added by Docker Desktop to add commands to your PATH.
+export PATH="$PATH:/Users/daniel/.docker/bin"
+# End of Docker Desktop section.
+
 # see https://stackoverflow.com/a/62157937 & https://misc.flogisoft.com/bash/tip_colors_and_formatting
 RED='\033[1;31m'
 GREEN='\033[1;32m'
