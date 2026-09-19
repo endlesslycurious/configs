@@ -75,7 +75,6 @@ cask "geekbench"                     # Performance benchmarking
 cask "ghostty"                       # better terminal interface
 cask "google-chrome"                 # Browser
 cask "insomnia"                      # REST/HTTP & GraphQL client
-cask "iterm2"                        # better terminal interface
 cask "maestral"                      # Dropbox client
 cask "mongodb-compass"               # GUI for MongoDB
 cask "neovide-app"                   # Window mode for NeoVim

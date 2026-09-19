@@ -39,6 +39,6 @@ brew "zig"                      # Low level programming language, C toolchain re
 # Applications
 cask "appcleaner"                    # Application file cleanup
 cask "font-hack-nerd-font"           # Programming fonts
-cask "iterm2"                        # better terminal interface
 cask "font-jetbrains-mono-nerd-font" # Nerd font
+cask "ghostty"                       # better terminal interface
 cask "neovide-app"                   # Window mode for NeoVim

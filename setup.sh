@@ -19,6 +19,10 @@ if [ "$(uname)" == "Darwin" ]; then
 	mkdir -p ~/.config/zed
 	ln -F -s $PWD/zed/settings.json ~/.config/zed/settings.json
 
+	echo "Configuring ghostty"
+	mkdir -p ~/.config/ghostty
+	ln -F -s $PWD/ghostty/config.ghostty ~/.config/ghostty/config.ghostty
+
 	echo "Configuring zsh"
 	ln -F -s $PWD/zsh/.zshrc ~/.zshrc
 
