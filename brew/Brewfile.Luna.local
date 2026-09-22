@@ -40,8 +40,8 @@ cask "appcleaner"               # Application file cleanup
 cask "beyond-compare"           # File/Directory differ
 cask "cyberduck"                # FTP client
 cask "font-hack-nerd-font"      # Programming fonts
+cask "ghostty"                  # Better terminal interface
 cask "google-chrome"            # Browser
-cask "iterm2"                   # Better terminal interface
 cask "lastpass"                 # Password manager
 cask "maestral"                 # Dropbox client
 cask "quitter"                  # Auto exit select apps after time period
