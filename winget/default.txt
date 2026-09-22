@@ -4,6 +4,7 @@ Casey.Just
 chrisant996.Clink
 dbrgn.tealdeer
 Ditto.Ditto
+Doist.Todoist
 dotPDN.PaintDotNet
 DuongDieuPhap.ImageGlass
 gerardog.gsudo
