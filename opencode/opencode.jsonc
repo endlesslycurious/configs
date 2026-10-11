@@ -44,10 +44,41 @@
     }
   },
 
+  // MPC servers
+
+  "mcp": {
+    "pdf-mcp": {
+      "type": "remote",
+      "url": "http://{env:MPC_HOST}:8101/mcp",
+      "enabled": true,
+      "headers": { "Authorization": "Bearer pdfmcp-local" }
+    },
+    "open-meteo": {
+      "type": "remote",
+      "url": "http://{env:MPC_HOST}:8103/mcp",
+      "enabled": true
+    },
+    "wikipedia": {
+      "type": "remote",
+      "url": "http://{env:MPC_HOST}:8104/mcp",
+      "enabled": true
+    },
+    "github": {
+      "type": "remote",
+      "url": "http://{env:MPC_HOST}:8105/",
+      "enabled": true
+    },
+    "paper-search": {
+      "type": "remote",
+      "url": "http://{env:MPC_HOST}:8106/mcp",
+      "enabled": true
+    }
+  },
+
   // Agent settings: default model by mode
   "agent": {
     "build": {
-      "model": "deepseek/deepseek-v4-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
     },
     "plan": {
       "model": "deepseek/deepseek-v4-pro",
