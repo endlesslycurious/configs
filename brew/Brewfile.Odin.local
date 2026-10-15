@@ -17,6 +17,7 @@ brew "btop"                     # Terminal system monitor
 brew "clang-format"             # Clang pretty printer
 brew "cloc"                     # Count lines of code
 brew "cmake"                    # C++ build system
+brew "difftastic"               # Syntax-aware structural diff (tree-sitter)
 brew "dust"                     # du (disk usage) port in Rust
 brew "exercism"                 # Coding puzzles
 brew "fd"                       # find alternative
@@ -53,6 +54,7 @@ brew "uv"                       # Python package manager
 brew "watch"                    # Watch command
 brew "wget"                     # Internet file retriever
 brew "xcodegen"                 # X-Code project generator
+brew "yq"                       # YAML/XML/JSON processor
 brew "zig"                      # Low level programming language, C toolchain replacement
 brew "zola"                     # Rust based static site generator
 

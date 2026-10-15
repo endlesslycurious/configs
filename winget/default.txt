@@ -18,6 +18,7 @@ JanDeDobbeleer.OhMyPosh
 junegunn.fzf
 Kubernetes.kubectl
 Microsoft.WinDbg
+MikeFarah.yq
 Neovide.Neovide
 Neovim.Neovim
 NerdFonts.JetBrainsMono
@@ -29,6 +30,7 @@ sharkdp.fd
 SlackTechnologies.Slack
 tree-sitter.tree-sitter-cli
 variar.klogg
+Wilfred.difftastic
 WinDirStat.WinDirStat
 ZedIndustries.Zed
 zig.zig
