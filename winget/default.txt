@@ -1,3 +1,4 @@
+ast-grep.ast-grep
 astral-sh.uv
 BurntSushi.ripgrep.MSVC
 Casey.Just
@@ -23,6 +24,8 @@ NerdFonts.JetBrainsMono
 Perforce.P4V
 Python.Python.3.11
 ScooterSoftware.BeyondCompare.5
+sharkdp.bat
+sharkdp.fd
 SlackTechnologies.Slack
 tree-sitter.tree-sitter-cli
 variar.klogg

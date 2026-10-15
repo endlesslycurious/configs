@@ -10,6 +10,7 @@ brew "anomalyco/tap/opencode", trusted: true                  # AI coding agent
 brew "mongodb/brew/mongodb-community-shell", trusted: true    # MongoDB Shell
 
 # Packages
+brew "ast-grep"                 # Code search and rewriting
 brew "bash-completion"          # CLI auto complete
 brew "bat"                      # Cat with syntax highlighting and Git integration
 brew "btop"                     # Terminal system monitor
