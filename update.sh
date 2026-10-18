@@ -27,6 +27,25 @@ if [ "$(uname)" == "Darwin" ]; then
 	echo "--- Done! ---"
 
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
-    # GNU/Linux setup
-	echo "Not written yet!"		
+    # GNU/Linux setup (Debian/Ubuntu; includes Raspberry Pi OS and WSL Ubuntu)
+
+	echo "--- Refresh apt package lists ---"
+	sudo apt update
+
+	echo "--- Upgrade system packages ---"
+	sudo apt upgrade -y
+
+	echo "--- Update mise itself ---"
+	mise self-update
+
+	echo "--- Upgrade mise-managed tools ---"
+	mise upgrade
+
+	echo "--- Upgrade declared apt packages ---"
+	mise bootstrap packages upgrade
+
+	echo "--- Remove orphaned packages ---"
+	sudo apt autoremove --purge
+
+	echo "--- Done! ---"
 fi

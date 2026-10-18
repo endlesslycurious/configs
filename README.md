@@ -39,7 +39,18 @@ and colour scheme (Catppuccin Macchiato) are managed in that file.
 ## Package manifests
 
 * Homebrew for Mac - `brew/Brewfile.*.local`
+* mise for Linux - `mise/config.toml` (Raspberry Pi OS + Ubuntu on WSL)
 * Win Get for Windows Store `winget/*.txt`
+
+### Linux (Raspberry Pi OS & WSL Ubuntu)
+
+Both Linux targets share `mise/config.toml`. `setup.sh` installs mise via
+`mise.run`, symlinks the config, then runs `mise bootstrap` (apt packages +
+CLI tools, with shims on PATH).
+
+On WSL, clone this repo into the Linux filesystem (e.g. `~/Source/configs`),
+not `/mnt/c`, so symlinks work and tool I/O is fast. Ensure LF line endings
+(`core.autocrlf=input`) so the shell scripts don't pick up stray `\r`.
 
 ### Package update scripts
 
