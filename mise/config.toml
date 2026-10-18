@@ -37,5 +37,4 @@ neovim     = "latest"  # Modern VIM
 oh-my-posh = "latest"  # Prompt theme engine
 ripgrep    = "latest"  # Faster grep
 tealdeer   = "latest"  # Better man pages (tldr)
-tree       = "latest"  # Directory lister
 yq         = "latest"  # YAML/JSON processor
