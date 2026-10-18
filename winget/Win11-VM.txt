@@ -19,6 +19,6 @@ ScooterSoftware.BeyondCompare.5
 SlackTechnologies.Slack
 tree-sitter.tree-sitter-cli
 WinDirStat.WinDirStat
-zig.zig
 ZedIndustries.Zed
+zig.zig
 Zoom.Zoom

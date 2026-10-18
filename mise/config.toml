@@ -16,26 +16,26 @@ bash = "shims"
 [bootstrap.packages]
 "apt:ca-certificates" = "latest"  # TLS root certificates for HTTPS
 "apt:curl"            = "latest"  # Internet file retriever (also bootstraps mise)
-"apt:wget"            = "latest"  # Internet file retriever
 "apt:git"             = "latest"  # Git source control
 "apt:gnupg"           = "latest"  # GnuPG, for apt repository key verification
 "apt:unzip"           = "latest"  # Zip archive extraction
+"apt:wget"            = "latest"  # Internet file retriever
 
 # User-level CLI tools (prebuilt binaries via mise)
 [tools]
-ripgrep    = "latest"  # Faster grep
-fd         = "latest"  # find alternative
+ast-grep   = "latest"  # Code search and rewriting
 bat        = "latest"  # cat with syntax highlighting
-tree       = "latest"  # Directory lister
-tealdeer   = "latest"  # Better man pages (tldr)
-fzf        = "latest"  # Fuzzy file finder
 btop       = "latest"  # Terminal system monitor
-ncdu       = "latest"  # Command line disk usage
+difftastic = "latest"  # Structural diff
 dust       = "latest"  # du replacement
+fd         = "latest"  # find alternative
+fzf        = "latest"  # Fuzzy file finder
+herdr      = "latest"  # Agent multiplexer
 just       = "latest"  # Command runner
 lazygit    = "latest"  # Git TUI
+ncdu       = "latest"  # Command line disk usage
 neovim     = "latest"  # Modern VIM
-ast-grep   = "latest"  # Code search and rewriting
-difftastic = "latest"  # Structural diff
+ripgrep    = "latest"  # Faster grep
+tealdeer   = "latest"  # Better man pages (tldr)
+tree       = "latest"  # Directory lister
 yq         = "latest"  # YAML/JSON processor
-herdr      = "latest"  # Agent multiplexer

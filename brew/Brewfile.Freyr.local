@@ -14,7 +14,6 @@ brew "bat"                      # Cat with syntax highlighting and Git integrati
 brew "btop"                     # Terminal system monitor
 brew "cloc"                     # Count lines of code
 brew "dust"                     # du (disk usage) port in Rust
-brew "fzf"                      # Fuzzy file finder
 brew "fd"                       # find alternative
 brew "fzf"                      # Fuzzy file finder
 brew "git"                      # Git source control

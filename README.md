@@ -64,18 +64,18 @@ over default shell equivalents.
 
 | Tool | macOS (brew) | Linux (mise) | Windows (winget) | Purpose |
 | --- | --- | --- | --- | --- |
-| ripgrep | `ripgrep` | `ripgrep` | `BurntSushi.ripgrep.MSVC` | Faster grep |
-| fd | `fd` | `fd` | `sharkdp.fd` | find alternative |
+| ast-grep | `ast-grep` | `ast-grep` | `ast-grep.ast-grep` | Structural search and rewrite |
 | bat | `bat` | `bat` | `sharkdp.bat` | cat with syntax highlighting |
-| tealdeer | `tealdeer` | `tealdeer` | `dbrgn.tealdeer` | Better man pages |
+| difftastic | `difftastic` | `difftastic` | `Wilfred.difftastic` | Structural diff |
+| dust | `dust` | `dust` | `bootandy.dust` | du replacement |
+| fd | `fd` | `fd` | `sharkdp.fd` | find alternative |
 | fzf | `fzf` | `fzf` | `junegunn.fzf` | Fuzzy file finder |
 | just | `just` | `just` | `Casey.Just` | Command runner |
-| ast-grep | `ast-grep` | `ast-grep` | `ast-grep.ast-grep` | Structural search and rewrite |
-| difftastic | `difftastic` | `difftastic` | `Wilfred.difftastic` | Structural diff |
-| yq | `yq` | `yq` | `MikeFarah.yq` | YAML/JSON processor |
-| neovim | `neovim` | `neovim` | `Neovim.Neovim` | Editor |
 | lazygit | `lazygit` | `lazygit` | `JesseDuffield.lazygit` | Git TUI |
-| dust | `dust` | `dust` | `bootandy.dust` | du replacement |
+| neovim | `neovim` | `neovim` | `Neovim.Neovim` | Editor |
+| ripgrep | `ripgrep` | `ripgrep` | `BurntSushi.ripgrep.MSVC` | Faster grep |
+| tealdeer | `tealdeer` | `tealdeer` | `dbrgn.tealdeer` | Better man pages |
+| yq | `yq` | `yq` | `MikeFarah.yq` | YAML/JSON processor |
 
 ## Guidelines
 
