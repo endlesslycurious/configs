@@ -13,12 +13,14 @@ tap "mongodb/brew"              # MongoDB
 # Packages
 brew "btop"                     # Terminal system monitor
 brew "cloc"                     # Count lines of code
+brew "dust"                     # du replacement
 brew "exercism"                 # Coding puzzles
 brew "fzf"                      # Fuzzy file finder
 brew "git"                      # Git source control
 brew "go"                       # Go programming language
 brew "graphviz"                 # Graph rendering for dot format
 brew "htop"                     # CPU utilisation monitor
+brew "lazygit"                  # Git TUI
 brew "mas"                      # Brew Mac App Store integration
 brew "ncdu"                     # Command line disk usage
 brew "neovim"                   # Modern VIM

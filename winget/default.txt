@@ -1,5 +1,6 @@
 ast-grep.ast-grep
 astral-sh.uv
+bootandy.dust
 BurntSushi.ripgrep.MSVC
 Casey.Just
 chrisant996.Clink
@@ -15,6 +16,7 @@ Google.GoogleDrive
 Greenshot.Greenshot
 gsass1.NTop
 JanDeDobbeleer.OhMyPosh
+JesseDuffield.lazygit
 junegunn.fzf
 Kubernetes.kubectl
 Microsoft.WinDbg

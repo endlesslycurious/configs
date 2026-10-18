@@ -19,6 +19,7 @@ brew "fd"                       # find alternative
 brew "fzf"                      # Fuzzy file finder
 brew "git"                      # Git source control
 brew "hf"                       # Hugging Face CLI
+brew "lazygit"                  # Git TUI
 brew "neovim"                   # Modern VIM
 brew "oh-my-posh"               # prompt theme engine
 brew "omlx"                     # MLX native LLM server

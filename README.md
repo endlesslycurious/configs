@@ -56,6 +56,39 @@ not `/mnt/c`, so symlinks work and tool I/O is fast. Ensure LF line endings
 
 * `update.sh/bat` - Runs brew/choco package update & cleanup process
 
+## Core tools
+
+These tools are installed on all machines and must be available on all three
+platforms (Homebrew on macOS, mise on Linux, WinGet on Windows). Prefer them
+over default shell equivalents.
+
+| Tool | macOS (brew) | Linux (mise) | Windows (winget) | Purpose |
+| --- | --- | --- | --- | --- |
+| ripgrep | `ripgrep` | `ripgrep` | `BurntSushi.ripgrep.MSVC` | Faster grep |
+| fd | `fd` | `fd` | `sharkdp.fd` | find alternative |
+| bat | `bat` | `bat` | `sharkdp.bat` | cat with syntax highlighting |
+| tealdeer | `tealdeer` | `tealdeer` | `dbrgn.tealdeer` | Better man pages |
+| fzf | `fzf` | `fzf` | `junegunn.fzf` | Fuzzy file finder |
+| just | `just` | `just` | `Casey.Just` | Command runner |
+| ast-grep | `ast-grep` | `ast-grep` | `ast-grep.ast-grep` | Structural search and rewrite |
+| difftastic | `difftastic` | `difftastic` | `Wilfred.difftastic` | Structural diff |
+| yq | `yq` | `yq` | `MikeFarah.yq` | YAML/JSON processor |
+| neovim | `neovim` | `neovim` | `Neovim.Neovim` | Editor |
+| lazygit | `lazygit` | `lazygit` | `JesseDuffield.lazygit` | Git TUI |
+| dust | `dust` | `dust` | `bootandy.dust` | du replacement |
+
+## Guidelines
+
+* Core tools must be available on all three platforms. Verify macOS, Linux,
+  and Windows packaging before adding a tool to the core list.
+* Favour cross-platform tools. OS-specific tools are allowed as extras, but
+  must stay out of the core set.
+* Avoid npm/Node-based tools and dependencies.
+* Core tools must not be language toolchains (Python, Go, Node, C/C++, Rust).
+  Language toolchains may appear as OS-specific extras only.
+* Add tools to every applicable manifest for parity, and annotate each entry
+  with a trailing comment.
+
 ## Automation Scripts
 
 ### Windows

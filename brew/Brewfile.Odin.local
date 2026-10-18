@@ -30,6 +30,7 @@ brew "herdr"                    # Ai aware terminal multiplexor
 brew "htop"                     # CPU utilisation monitor
 brew "httpie"                   # User friendly cURL replacement
 brew "just"                     # Command runner
+brew "lazygit"                  # Git TUI
 brew "k9s"                      # Kubernetes enhanced CLI
 brew "llama.cpp"                # LLM inference engine
 brew "llvm"                     # C++ toolchain
