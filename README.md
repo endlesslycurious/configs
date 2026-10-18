@@ -70,6 +70,7 @@ over default shell equivalents.
 | bat | `bat` | `bat` | `sharkdp.bat` | cat with syntax highlighting |
 | difftastic | `difftastic` | `difftastic` | `Wilfred.difftastic` | Structural diff |
 | dust | `dust` | `dust` | `bootandy.dust` | du replacement |
+| eza | `eza` | `eza` | `eza-community.eza` | Modern ls replacement |
 | fd | `fd` | `fd` | `sharkdp.fd` | find alternative |
 | fzf | `fzf` | `fzf` | `junegunn.fzf` | Fuzzy file finder |
 | just | `just` | `just` | `Casey.Just` | Command runner |

@@ -20,6 +20,7 @@ brew "cmake"                    # C++ build system
 brew "difftastic"               # Syntax-aware structural diff (tree-sitter)
 brew "dust"                     # du (disk usage) port in Rust
 brew "exercism"                 # Coding puzzles
+brew "eza"                      # Modern ls replacement
 brew "fd"                       # find alternative
 brew "fzf"                      # Fuzzy file finder
 brew "git"                      # Git source control

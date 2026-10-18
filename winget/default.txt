@@ -9,6 +9,7 @@ Ditto.Ditto
 Doist.Todoist
 dotPDN.PaintDotNet
 DuongDieuPhap.ImageGlass
+eza-community.eza
 gerardog.gsudo
 Git.Git
 GoLang.Go

@@ -18,6 +18,7 @@ brew "cloc"                     # Count lines of code
 brew "difftastic"               # Syntax-aware structural diff (tree-sitter)
 brew "dust"                     # du replacement
 brew "exercism"                 # Coding puzzles
+brew "eza"                      # Modern ls replacement
 brew "fd"                       # find alternative
 brew "fzf"                      # Fuzzy file finder
 brew "git"                      # Git source control

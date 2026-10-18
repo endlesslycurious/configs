@@ -28,6 +28,7 @@ bat        = "latest"  # cat with syntax highlighting
 btop       = "latest"  # Terminal system monitor
 difftastic = "latest"  # Structural diff
 dust       = "latest"  # du replacement
+eza        = "latest"  # Modern ls replacement
 fd         = "latest"  # find alternative
 fzf        = "latest"  # Fuzzy file finder
 herdr      = "latest"  # Agent multiplexer

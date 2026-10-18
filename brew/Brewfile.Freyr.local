@@ -16,6 +16,7 @@ brew "btop"                     # Terminal system monitor
 brew "cloc"                     # Count lines of code
 brew "difftastic"               # Syntax-aware structural diff (tree-sitter)
 brew "dust"                     # du (disk usage) port in Rust
+brew "eza"                      # Modern ls replacement
 brew "fd"                       # find alternative
 brew "fzf"                      # Fuzzy file finder
 brew "git"                      # Git source control
