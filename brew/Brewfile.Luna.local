@@ -11,28 +11,33 @@ tap "hudochenkov/sshpass"       # Unoffical sshpass
 tap "mongodb/brew"              # MongoDB
 
 # Packages
+brew "ast-grep"                 # Code search and rewriting
+brew "bat"                      # Cat with syntax highlighting and Git integration
 brew "btop"                     # Terminal system monitor
 brew "cloc"                     # Count lines of code
+brew "difftastic"               # Syntax-aware structural diff (tree-sitter)
 brew "dust"                     # du replacement
 brew "exercism"                 # Coding puzzles
+brew "fd"                       # find alternative
 brew "fzf"                      # Fuzzy file finder
 brew "git"                      # Git source control
 brew "go"                       # Go programming language
 brew "graphviz"                 # Graph rendering for dot format
-brew "htop"                     # CPU utilisation monitor
+brew "herdr"                    # Ai aware terminal multiplexor
+brew "just"                     # Command runner
 brew "lazygit"                  # Git TUI
 brew "mas"                      # Brew Mac App Store integration
-brew "ncdu"                     # Command line disk usage
 brew "neovim"                   # Modern VIM
-brew "npm"                      # Node package manager, required for pyright install
 brew "oh-my-posh"               # prompt theme engine
 brew "pipenv"                   # Python virtual environment management
 brew "python"                   # Python programming language
 brew "ripgrep"                  # Faster grep
-brew "tldr"                     # Better man pages
-brew "tmux"                     # Better terminal
+brew "tealdeer"                 # Better man pages
 brew "tree"                     # Directory lister
+brew "ty"                       # Python type checker
+brew "uv"                       # Python package manager
 brew "watch"                    # Watch command
+brew "yq"                       # YAML/XML/JSON processor
 brew "zola"                     # Rust based static site generator
 
 # Applications

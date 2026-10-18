@@ -27,7 +27,6 @@ brew "go"                       # Go programming language
 brew "gpg"                      # GNO Pretty good privicy package
 brew "graphviz"                 # Graph rendering for dot format
 brew "herdr"                    # Ai aware terminal multiplexor
-brew "htop"                     # CPU utilisation monitor
 brew "httpie"                   # User friendly cURL replacement
 brew "just"                     # Command runner
 brew "k9s"                      # Kubernetes enhanced CLI
@@ -35,7 +34,6 @@ brew "lazygit"                  # Git TUI
 brew "llama.cpp"                # LLM inference engine
 brew "llvm"                     # C++ toolchain
 brew "mas"                      # Brew Mac App Store integration
-brew "ncdu"                     # Command line disk usage
 brew "neovim"                   # Modern VIM
 brew "oh-my-posh"               # prompt theme engine
 brew "oha"                      # HTTP load generator for server profiling

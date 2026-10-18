@@ -42,6 +42,8 @@ and colour scheme (Catppuccin Macchiato) are managed in that file.
 * mise for Linux - `mise/config.toml` (Raspberry Pi OS + Ubuntu on WSL)
 * Win Get for Windows Store `winget/*.txt`
 
+Note: `herdr` is installed manually on Windows (no WinGet package).
+
 ### Linux (Raspberry Pi OS & WSL Ubuntu)
 
 Both Linux targets share `mise/config.toml`. `setup.sh` installs mise via

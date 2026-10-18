@@ -9,15 +9,19 @@
 tap "jundot/omlx", "https://github.com/jundot/omlx", trusted: true
 
 # Packages
+brew "ast-grep"                 # Code search and rewriting
 brew "bash-completion"          # CLI auto complete
 brew "bat"                      # Cat with syntax highlighting and Git integration
 brew "btop"                     # Terminal system monitor
 brew "cloc"                     # Count lines of code
+brew "difftastic"               # Syntax-aware structural diff (tree-sitter)
 brew "dust"                     # du (disk usage) port in Rust
 brew "fd"                       # find alternative
 brew "fzf"                      # Fuzzy file finder
 brew "git"                      # Git source control
+brew "herdr"                    # Ai aware terminal multiplexor
 brew "hf"                       # Hugging Face CLI
+brew "just"                     # Command runner
 brew "lazygit"                  # Git TUI
 brew "neovim"                   # Modern VIM
 brew "oh-my-posh"               # prompt theme engine
@@ -27,13 +31,13 @@ brew "ripgrep"                  # Faster grep
 brew "stylua"                   # Lua formatter
 brew "tailscale"                # Private VPN solution
 brew "tealdeer"                 # Better man pages
-brew "tmux"                     # Better terminal
 brew "tree"                     # Directory lister
 brew "tree-sitter"              # Text parsing library
 brew "tree-sitter-cli"          # Text parsing toolchain
 brew "uv"                       # Modern python package management
 brew "watch"                    # Watch command
 brew "wget"                     # Internet file retriever
+brew "yq"                       # YAML/XML/JSON processor
 brew "zig"                      # Low level programming language, C toolchain replacement
 
 # Applications
