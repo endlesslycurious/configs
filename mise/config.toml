@@ -31,6 +31,7 @@ dust       = "latest"  # du replacement
 eza        = "latest"  # Modern ls replacement
 fd         = "latest"  # find alternative
 fzf        = "latest"  # Fuzzy file finder
+github-cli = "latest"  # Github cli tools
 herdr      = "latest"  # Agent multiplexer
 just       = "latest"  # Command runner
 lazygit    = "latest"  # Git TUI
