@@ -18,6 +18,7 @@ bash = "shims"
 "apt:curl"            = "latest"  # Internet file retriever (also bootstraps mise)
 "apt:git"             = "latest"  # Git source control
 "apt:gnupg"           = "latest"  # GnuPG, for apt repository key verification
+"apt:python3-venv"    = "latest"  # Python venvs (Mason pip-based tools)
 "apt:unzip"           = "latest"  # Zip archive extraction
 "apt:wget"            = "latest"  # Internet file retriever
 
@@ -39,4 +40,5 @@ neovim     = "latest"  # Modern VIM
 oh-my-posh = "latest"  # Prompt theme engine
 ripgrep    = "latest"  # Faster grep
 tealdeer   = "latest"  # Better man pages (tldr)
+tree-sitter = "latest" # Parser CLI (nvim-treesitter builds parsers with it)
 yq         = "latest"  # YAML/JSON processor
