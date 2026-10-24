@@ -25,6 +25,7 @@ bash = "shims"
 # User-level CLI tools (prebuilt binaries via mise)
 [tools]
 ast-grep   = "latest"  # Code search and rewriting
+aws-cli    = { version = "latest", symlink_bins = "true" }  # AWS CLI v2: SSO login, ECR auth, EKS kubeconfig
 bat        = "latest"  # cat with syntax highlighting
 btop       = "latest"  # Terminal system monitor
 difftastic = "latest"  # Structural diff
@@ -33,8 +34,12 @@ eza        = "latest"  # Modern ls replacement
 fd         = "latest"  # find alternative
 fzf        = "latest"  # Fuzzy file finder
 github-cli = "latest"  # Github cli tools
+golangci-lint = "2.14.0"  # Go linter; pinned to match CI (ci-service-workflows service-go-lint)
+helm       = "3"       # Kubernetes charts; Helm 3 (3.19+), not 4
 herdr      = "latest"  # Agent multiplexer
 just       = "latest"  # Command runner
+k9s        = "latest"  # Kubernetes TUI
+kubectl    = "1.34"    # Kubernetes CLI; keep within one minor of the cluster
 lazygit    = "latest"  # Git TUI
 neovim     = "latest"  # Modern VIM
 oh-my-posh = "latest"  # Prompt theme engine
