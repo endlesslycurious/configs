@@ -31,7 +31,9 @@ if [ "$(uname)" == "Darwin" ]; then
 	ln -sF $brewfile ~/.Brewfile
 
 	echo "Configuring opencode"
+	mkdir -p ~/.config/opencode
 	ln -F -s $PWD/opencode/opencode.jsonc ~/.config/opencode/opencode.jsonc
+	ln -F -s $PWD/opencode/tui.jsonc ~/.config/opencode/tui.jsonc
 
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     # GNU/Linux setup (Debian/Ubuntu; includes Raspberry Pi OS and WSL Ubuntu)
