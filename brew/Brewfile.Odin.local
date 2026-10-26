@@ -24,6 +24,7 @@ brew "eza"                      # Modern ls replacement
 brew "fd"                       # find alternative
 brew "fzf"                      # Fuzzy file finder
 brew "git"                      # Git source control
+brew "git-delta"                # Syntax-highlighting pager for git and diff output
 brew "go"                       # Go programming language
 brew "gpg"                      # GNO Pretty good privicy package
 brew "graphviz"                 # Graph rendering for dot format

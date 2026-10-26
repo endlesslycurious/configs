@@ -4,6 +4,7 @@ bootandy.dust
 BurntSushi.ripgrep.MSVC
 Casey.Just
 chrisant996.Clink
+dandavison.delta
 dbrgn.tealdeer
 Ditto.Ditto
 Doist.Todoist

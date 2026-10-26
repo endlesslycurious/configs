@@ -1,0 +1,14 @@
+# Lazygit configuration
+#   Docs:    https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md
+#   Schema:  lazygit --config  (prints the defaults for the installed version)
+#
+# Lazygit does not honour git's core.pager, so delta is registered here as well
+# as in ~/.gitconfig (see setup.sh / setup.bat).
+
+git:
+  # Replaces the older git.paging block, removed in lazygit 0.66.
+  diffRenderers:
+    - type: stdinFilter
+      name: delta
+      colorArg: always
+      command: delta --dark --paging=never --line-numbers

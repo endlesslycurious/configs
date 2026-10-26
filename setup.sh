@@ -23,6 +23,10 @@ if [ "$(uname)" == "Darwin" ]; then
 	mkdir -p ~/.config/ghostty
 	ln -F -s $PWD/ghostty/config.ghostty ~/.config/ghostty/config.ghostty
 
+	echo "Configuring lazygit"
+	mkdir -p ~/Library/Application\ Support/lazygit
+	ln -F -s $PWD/lazygit/config.yml ~/Library/Application\ Support/lazygit/config.yml
+
 	echo "Configuring zsh"
 	ln -F -s $PWD/zsh/.zshrc ~/.zshrc
 
@@ -70,6 +74,10 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
 	mkdir -p ~/.config/opencode
 	ln -sf $PWD/opencode/opencode.jsonc ~/.config/opencode/opencode.jsonc
 
+	echo "Configuring lazygit"
+	mkdir -p ~/.config/lazygit
+	ln -sf $PWD/lazygit/config.yml ~/.config/lazygit/config.yml
+
 	echo "Configuring mise"
 	mkdir -p ~/.config/mise
 	ln -sf $PWD/mise/config.toml ~/.config/mise/config.toml
@@ -77,3 +85,11 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
 	echo "Applying mise bootstrap"
 	mise bootstrap
 fi
+
+# Common configuration (~/.gitconfig is not symlinked, so set keys individually)
+echo "Configuring git to use delta"
+git config --global core.pager "delta"
+git config --global interactive.diffFilter "delta --color-only"
+git config --global delta.navigate true
+git config --global delta.dark true
+git config --global merge.conflictStyle zdiff3

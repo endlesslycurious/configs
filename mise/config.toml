@@ -28,6 +28,7 @@ ast-grep   = "latest"  # Code search and rewriting
 aws-cli    = { version = "latest", symlink_bins = "true" }  # AWS CLI v2: SSO login, ECR auth, EKS kubeconfig
 bat        = "latest"  # cat with syntax highlighting
 btop       = "latest"  # Terminal system monitor
+delta      = "latest"  # Syntax-highlighting pager for git and diff output
 difftastic = "latest"  # Structural diff
 dust       = "latest"  # du replacement
 eza        = "latest"  # Modern ls replacement
