@@ -36,6 +36,7 @@ brew "lazygit"                  # Git TUI
 brew "llama.cpp"                # LLM inference engine
 brew "llvm"                     # C++ toolchain
 brew "mas"                      # Brew Mac App Store integration
+brew "mise"                     # Package manager used for blog's zola toolchain
 brew "neovim"                   # Modern VIM
 brew "oh-my-posh"               # prompt theme engine
 brew "oha"                      # HTTP load generator for server profiling
@@ -56,7 +57,6 @@ brew "wget"                     # Internet file retriever
 brew "xcodegen"                 # X-Code project generator
 brew "yq"                       # YAML/XML/JSON processor
 brew "zig"                      # Low level programming language, C toolchain replacement
-brew "zola"                     # Rust based static site generator
 
 # Applications
 cask "adobe-creative-cloud"          # Adobe creative cloud
