@@ -49,4 +49,5 @@ oh-my-posh = "latest"  # Prompt theme engine
 ripgrep    = "latest"  # Faster grep
 tealdeer   = "latest"  # Better man pages (tldr)
 tree-sitter = "latest" # Parser CLI (nvim-treesitter builds parsers with it)
+uv         = "latest"  # Python package and project manager
 yq         = "latest"  # YAML/JSON processor
