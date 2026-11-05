@@ -41,8 +41,8 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
 	echo "--- Upgrade mise-managed tools ---"
 	mise upgrade
 
-	echo "--- Upgrade declared apt packages ---"
-	mise bootstrap packages upgrade
+	echo "--- Install missing and upgrade declared apt packages ---"
+	mise bootstrap --upgrade
 
 	echo "--- Remove orphaned packages ---"
 	sudo apt autoremove --purge
