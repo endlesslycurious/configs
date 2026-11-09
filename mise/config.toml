@@ -51,3 +51,6 @@ tealdeer   = "latest"  # Better man pages (tldr)
 tree-sitter = "latest" # Parser CLI (nvim-treesitter builds parsers with it)
 uv         = "latest"  # Python package and project manager
 yq         = "latest"  # YAML/JSON processor
+
+# Not in the mise registry - backend specified explicitly
+"github:agavra/tuicr" = "latest"  # Code review TUI with vim keybindings
