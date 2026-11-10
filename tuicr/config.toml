@@ -2,5 +2,6 @@
 #   Docs    https://github.com/agavra/tuicr/blob/main/docs/CONFIG.md
 # Linked to ~/.config/tuicr/config.toml by setup.sh
 
-theme = "catppuccin-latte"   # Light Catppuccin flavour
-diff_view = "side-by-side"   # Default diff layout, toggle in-app with ':diff'
+theme = "catppuccin-latte"       # Light Catppuccin flavour
+diff_view = "side-by-side"       # Default diff layout, toggle in-app with ':diff'
+transparent_background = false   # Paint latte's light panel_bg, don't show Ghostty's dark background
