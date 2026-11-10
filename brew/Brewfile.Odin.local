@@ -51,6 +51,7 @@ brew "swiftlint"                # Swift linter
 brew "tealdeer"                 # Better man pages
 brew "tree-sitter"              # Text parsing library
 brew "tree-sitter-cli"          # Text parsing toolchain
+brew "tuicr"                    # Code review TUI with vim keybindings
 brew "uv"                       # Python package manager
 brew "watch"                    # Watch command
 brew "wget"                     # Internet file retriever

@@ -1,0 +1,6 @@
+# Configuration file for tuicr, the code review TUI.
+#   Docs    https://github.com/agavra/tuicr/blob/main/docs/CONFIG.md
+# Linked to ~/.config/tuicr/config.toml by setup.sh
+
+theme = "catppuccin-latte"   # Light Catppuccin flavour
+diff_view = "side-by-side"   # Default diff layout, toggle in-app with ':diff'

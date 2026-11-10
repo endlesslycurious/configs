@@ -27,6 +27,10 @@ if [ "$(uname)" == "Darwin" ]; then
 	mkdir -p ~/Library/Application\ Support/lazygit
 	ln -F -s $PWD/lazygit/config.yml ~/Library/Application\ Support/lazygit/config.yml
 
+	echo "Configuring tuicr"
+	mkdir -p ~/.config/tuicr
+	ln -F -s $PWD/tuicr/config.toml ~/.config/tuicr/config.toml
+
 	echo "Configuring zsh"
 	ln -F -s $PWD/zsh/.zshrc ~/.zshrc
 
@@ -77,6 +81,10 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
 	echo "Configuring lazygit"
 	mkdir -p ~/.config/lazygit
 	ln -sf $PWD/lazygit/config.yml ~/.config/lazygit/config.yml
+
+	echo "Configuring tuicr"
+	mkdir -p ~/.config/tuicr
+	ln -sf $PWD/tuicr/config.toml ~/.config/tuicr/config.toml
 
 	echo "Configuring mise"
 	mkdir -p ~/.config/mise
