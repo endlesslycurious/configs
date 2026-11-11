@@ -1,12 +1,9 @@
 # Global agent instructions
 
-In general:
-
-- Be concise in your responses.
-- Supply references with links or file:line for local code in answers.
+- Be concise in your responses; don't over elaborate.
 - Don't guess! When different readings could produce significantly different output, ask the user for clarification.
-- Keep changes pragmatic; don't refactor unrelated code or add functionality that was not requested.
-- Where configured, changes must be verified by linting, building and testing.
+- In plan mode, explore and discuss the problem, then agree a direction with the user; don't rush to present a plan.
+- Cite the source when attributing a claim to a white paper, specification or documentation; don't paraphrase one from memory.
 
 ## Language
 
@@ -15,15 +12,33 @@ In general:
 - One term per concept — never vary wording for style.
 - Define each acronym on first use.
 
-## Things to avoid
+## Programming
 
-- Treat source control as read-only; do not commit, merge, rebase, push or pull changes with Git.
-- Do not install packages via Homebrew (macOS), mise (Linux), or WinGet (Windows).
-- Do not add Python or Go module dependencies without user approval.
+- Keep changes pragmatic; don't refactor unrelated code, create frameworks or add functionality that was not requested.
+- Minimise the solution, never the completeness: update every affected caller, test, fixture, config and doc in the same change.
+- Prefer code solutions in this order: the current repo, existing dependencies, the standard library, then new code or dependencies.
+- Verify changes by formatting, linting, building and testing, when tools are configured.
+- Make one change at a time and verify it before starting the next.
+
+## Testing
+
+- Write tests with real assertions, verify they fail, then implement the code and verify they pass.
+- Test observable behaviour, not implementation detail; a passing test should survive a refactor.
+- Tests cover the error paths, not just the happy path!
+- Fuzz parsers, decoders and anything handling untrusted input.
+- If a test breaks, fix the root cause; never skip or weaken a test to make it pass.
+
+## User approval required
+
+- Treat source control as read-only unless the user directs otherwise; do not run mutating commands, for example `git add`, `git commit`, `git merge`, `git rebase`, `git push`, `git pull`, `p4 edit`, `p4 submit`, `p4 revert` or `p4 sync`.
+- Treat cloud and cluster state as read-only unless the user directs otherwise. Reads are fine (`aws describe-*`, `aws list-*`, `aws get-*`, `kubectl get`, `kubectl describe`, `kubectl logs`, `helm list`, `terraform plan`); anything that creates, changes or destroys needs approval first.
+- Treat databases as read-only unless the instance is local development or the user directs otherwise; writes and schema changes (`INSERT`, `UPDATE`, `DELETE`, `DROP`, `ALTER`, `TRUNCATE`, `mongosh` write methods) and schema migrations need approval first.
+- Do not install packages or software via Homebrew (macOS), mise (Linux), or WinGet (Windows). Instead edit the package manifests in `~/configs/`; the user applies them.
+- Do not add external dependencies, for example `uv add` or `go get`, without user approval.
 
 ## Tooling
 
-Tools an agent should prefer when running shell commands. The installed set is recorded in `mise/config.toml`, `brew/Brewfile.*` and `winget/*.txt`.
+Tools an agent should prefer when running shell commands. The installed set is recorded in `~/configs/mise/config.toml`, `~/configs/brew/Brewfile.*` and `~/configs/winget/*.txt`.
 
 - [ast-grep](https://github.com/ast-grep/ast-grep) (`ast-grep`) — AST-based code search and rewrite across languages; use for structural queries and safe refactors, and `ast-grep outline` to explore symbols/imports/exports.
 - [difftastic](https://github.com/Wilfred/difftastic) (`difft`) — syntax-aware structural diff; use to review changes without formatting noise, and to distinguish refactors from behavioural changes.

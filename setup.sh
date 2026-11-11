@@ -15,6 +15,15 @@ if [ "$(uname)" == "Darwin" ]; then
 	echo "Configuring bash"
 	ln -F -s $PWD/bash/.bash_profile ~/.bash_profile
 
+	echo "Configuring shell colours"
+	mkdir -p ~/.config/shell
+	ln -F -s $PWD/shell/ls_colors.sh ~/.config/shell/ls_colors.sh
+
+	echo "Configuring oh-my-posh themes"
+	mkdir -p ~/.config/oh-my-posh/themes
+	ln -F -s $PWD/oh-my-posh/themes/catppuccin_latte.omp.json ~/.config/oh-my-posh/themes/
+	ln -F -s $PWD/oh-my-posh/themes/catppuccin_frappe.omp.json ~/.config/oh-my-posh/themes/
+
 	echo "Configuring zed"
 	mkdir -p ~/.config/zed
 	ln -F -s $PWD/zed/settings.json ~/.config/zed/settings.json
@@ -26,6 +35,11 @@ if [ "$(uname)" == "Darwin" ]; then
 	echo "Configuring lazygit"
 	mkdir -p ~/Library/Application\ Support/lazygit
 	ln -F -s $PWD/lazygit/config.yml ~/Library/Application\ Support/lazygit/config.yml
+
+	echo "Configuring k9s skins"
+	mkdir -p ~/Library/Application\ Support/k9s/skins
+	ln -sf $PWD/k9s/skins/catppuccin-latte.yaml ~/Library/Application\ Support/k9s/skins/
+	ln -sf $PWD/k9s/skins/catppuccin-frappe.yaml ~/Library/Application\ Support/k9s/skins/
 
 	echo "Configuring tuicr"
 	mkdir -p ~/.config/tuicr
@@ -63,6 +77,15 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
 
 	mkdir -p ~/.config
 
+	echo "Configuring shell colours"
+	mkdir -p ~/.config/shell
+	ln -sf $PWD/shell/ls_colors.sh ~/.config/shell/ls_colors.sh
+
+	echo "Configuring oh-my-posh themes"
+	mkdir -p ~/.config/oh-my-posh/themes
+	ln -sf $PWD/oh-my-posh/themes/catppuccin_latte.omp.json ~/.config/oh-my-posh/themes/
+	ln -sf $PWD/oh-my-posh/themes/catppuccin_frappe.omp.json ~/.config/oh-my-posh/themes/
+
 	echo "Configuring neovim"
 	ln -sfn $PWD/nvim ~/.config/nvim
 
@@ -74,13 +97,15 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
 	mkdir -p ~/.config/ghostty
 	ln -sf $PWD/ghostty/config.ghostty ~/.config/ghostty/config.ghostty
 
-	echo "Configuring opencode"
-	mkdir -p ~/.config/opencode
-	ln -sf $PWD/opencode/opencode.jsonc ~/.config/opencode/opencode.jsonc
-
 	echo "Configuring lazygit"
 	mkdir -p ~/.config/lazygit
 	ln -sf $PWD/lazygit/config.yml ~/.config/lazygit/config.yml
+
+	echo "Configuring k9s skins"
+	k9s_skins="${XDG_CONFIG_HOME:-$HOME/.config}/k9s/skins"
+	mkdir -p "$k9s_skins"
+	ln -sf $PWD/k9s/skins/catppuccin-latte.yaml "$k9s_skins/"
+	ln -sf $PWD/k9s/skins/catppuccin-frappe.yaml "$k9s_skins/"
 
 	echo "Configuring tuicr"
 	mkdir -p ~/.config/tuicr
@@ -95,9 +120,41 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
 fi
 
 # Common configuration (~/.gitconfig is not symlinked, so set keys individually)
+echo "Configuring herdr"
+mkdir -p ~/.config/herdr
+ln -sf "$PWD/herdr/config.toml" ~/.config/herdr/config.toml
+if command -v herdr >/dev/null 2>&1; then
+    herdr server reload-config >/dev/null 2>&1 || true
+fi
+
+echo "Configuring btop themes"
+btop_theme_dir="$HOME/.config/btop/themes"
+mkdir -p "$btop_theme_dir"
+ln -sf "$PWD/btop/themes/catppuccin_latte.theme" "$btop_theme_dir/"
+ln -sf "$PWD/btop/themes/catppuccin_frappe.theme" "$btop_theme_dir/"
+ln -sf "$btop_theme_dir/catppuccin_latte.theme" "$btop_theme_dir/catppuccin.theme"
+btop_conf="$HOME/.config/btop/btop.conf"
+if [ -f "$btop_conf" ]; then
+    awk 'BEGIN { done = 0 }
+         /^color_theme[[:space:]]*=/ { print "color_theme = \"catppuccin\""; done = 1; next }
+         { print }
+         END { if (!done) print "color_theme = \"catppuccin\"" }' "$btop_conf" > "$btop_conf.tmp" \
+        && mv "$btop_conf.tmp" "$btop_conf"
+else
+    printf 'color_theme = "catppuccin"\n' > "$btop_conf"
+fi
+
 echo "Configuring git to use delta"
+mkdir -p ~/.config/delta
+ln -sf "$PWD/delta/catppuccin.gitconfig" ~/.config/delta/catppuccin.gitconfig
+delta_include="$HOME/.config/delta/catppuccin.gitconfig"
+if ! git config --global --get-all include.path 2>/dev/null | grep -qxF "$delta_include"; then
+    git config --global --add include.path "$delta_include"
+fi
 git config --global core.pager "delta"
 git config --global interactive.diffFilter "delta --color-only"
 git config --global delta.navigate true
-git config --global delta.dark true
+git config --global delta.features "catppuccin-latte"
+git config --global --unset-all delta.dark 2>/dev/null || true
+git config --global --unset-all delta.light 2>/dev/null || true
 git config --global merge.conflictStyle zdiff3

@@ -11,6 +11,11 @@ bash = "shims"
 [dotfiles]
 "~/.bashrc/local-bin"       = { line = 'export PATH="$HOME/.local/bin:$PATH"', position = "prepend" }
 "~/.bash_profile/local-bin" = { line = 'export PATH="$HOME/.local/bin:$PATH"', position = "prepend" }
+"~/.bashrc/ls-colors"       = { line = 'source "$HOME/.config/shell/ls_colors.sh"', position = "prepend" }
+"~/.bash_profile/ls-colors" = { line = 'source "$HOME/.config/shell/ls_colors.sh"', position = "prepend" }
+# Prompt last so THEME_MODE from ls_colors.sh is already set
+"~/.bashrc/oh-my-posh"       = { line = 'if [ -z "$posh_loaded" ]; then posh_loaded=1; posh_theme=catppuccin_latte; if [ "$THEME_MODE" = dark ]; then posh_theme=catppuccin_frappe; fi; posh_config="$HOME/.config/oh-my-posh/themes/$posh_theme.omp.json"; if [ -f "$posh_config" ]; then eval "$(oh-my-posh init bash --config "$posh_config")"; fi; fi', position = "append" }
+"~/.bash_profile/oh-my-posh" = { line = 'if [ -z "$posh_loaded" ]; then posh_loaded=1; posh_theme=catppuccin_latte; if [ "$THEME_MODE" = dark ]; then posh_theme=catppuccin_frappe; fi; posh_config="$HOME/.config/oh-my-posh/themes/$posh_theme.omp.json"; if [ -f "$posh_config" ]; then eval "$(oh-my-posh init bash --config "$posh_config")"; fi; fi', position = "append" }
 
 # System packages (installed via apt-get; sudo required)
 [bootstrap.packages]

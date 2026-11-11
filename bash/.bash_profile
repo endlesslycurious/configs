@@ -17,6 +17,9 @@ export PS1="$GREEN\u@$GREEN\h $BLUE\w$RESET$ "
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxbxegedabagaced
 
+# shared shell colours (light/dark LS_COLORS, delta, bat, k9s and btop theme selection)
+[ -f "$HOME/.config/shell/ls_colors.sh" ] && . "$HOME/.config/shell/ls_colors.sh"
+
 # Add homebrew to path
 export PATH="/opt/homebrew/bin:$PATH"
 

@@ -6,8 +6,9 @@ You need to close this repository with the `--recurse-submodules` option or run 
 
 ### Submodules
 
-* Catppucin CMD color scheme.
 * Neovim configuration from my kickstart fork.
+
+The Catppuccin Windows Terminal schemes and themes are vendored in `cmd/windows-terminal`.
 
 ## Windows Setup
 
@@ -22,19 +23,53 @@ Sets up symbolic links from files in repo to expected install locations on disk.
 
 ## Editor Configuration files
 
-* NeoVim - `nvim` folder
-* Zed - `zed` folder
+* NeoVim - `nvim` folder (Catppuccin Latte; Frappe definition retained)
+* Zed - `zed` folder (Catppuccin Latte; Frappe definition retained)
 
 ## Environment Configuration files
 
 * Bash - `bash/.bash_profile` for Mac
+* Delta - `delta` folder (Catppuccin Latte/Frappe diff themes)
 * Ghostty - `ghostty` folder
+* Herdr - `herdr/config.toml` (Catppuccin Latte UI; Frappe retained). Managed
+  as a symlink; Herdr's Settings UI writes to this file, so prefer editing the
+  repo copy to keep the working tree clean.
+* oh-my-posh - `oh-my-posh/themes` (vendored Catppuccin Latte and Frappe prompt
+  themes; selected by `THEME_MODE`; used by zsh on Mac and bash on Linux/WSL)
+* Shell theme - `shell/ls_colors.sh` (Catppuccin Latte `LS_COLORS`, delta, bat,
+  k9s and btop theme selection; Frappe retained)
 * Zsh - `zsh/.zshrc` for Mac
 
 ### Ghostty themes & fonts
 
 Theme setup is handled by the `theme` key in `ghostty/config.ghostty`. The font
-and colour scheme (Catppuccin Macchiato) are managed in that file.
+and colours are managed in that file, pinned to Catppuccin Latte.
+
+### Switching to Frappe
+
+The config is static (Catppuccin Latte) so the terminal background and tool
+colours cannot drift apart. To switch the whole setup to the dark Frappe theme,
+change these values:
+
+1. `ghostty/config.ghostty` - `theme = Catppuccin Frappe`
+2. `shell/ls_colors.sh` - `THEME_MODE="dark"` (also switches the oh-my-posh theme)
+3. `nvim/lua/custom/plugins/catppuccin.lua` - `flavour = 'frappe'` and
+   `vim.o.background = 'dark'`
+4. `zed/settings.json` - `"mode": "dark"`
+5. `herdr/config.toml` - `name = "catppuccin"`
+6. Windows: change `LIGHT` to `DARK` in `cmd/apply-windows-terminal.py`, rerun
+   `setup.bat`, and set the clink prompt to `catppuccin_frappe.omp.json`
+
+`setup.sh` also sets `delta.features` to `catppuccin-latte`; change it to
+`catppuccin-frappe` at the same time. lazygit and opencode follow the terminal,
+so they switch automatically.
+
+## Tool Configuration files
+
+* btop - `btop` folder (Catppuccin Latte; Frappe theme retained)
+* k9s - `k9s` folder (Catppuccin Latte; Frappe skin retained)
+* Lazygit - `lazygit` folder (Catppuccin Latte/Frappe UI; follows the terminal)
+* opencode - `opencode` folder (theme: system, follows the terminal)
 
 ## Package manifests
 
@@ -48,7 +83,8 @@ Note: `herdr` is installed manually on Windows (no WinGet package).
 
 Both Linux targets share `mise/config.toml`. `setup.sh` installs mise via
 `mise.run`, symlinks the config, then runs `mise bootstrap` (apt packages +
-CLI tools, with shims on PATH).
+CLI tools, with shims on PATH). The bash prompt is oh-my-posh, using the
+vendored Catppuccin themes selected by `THEME_MODE`.
 
 On WSL, clone this repo into the Linux filesystem (e.g. `~/Source/configs`),
 not `/mnt/c`, so symlinks work and tool I/O is fast. Ensure LF line endings

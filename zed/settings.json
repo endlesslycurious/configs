@@ -81,9 +81,9 @@
     "swift": true
   },
   "theme": {
-    "mode": "system",
+    "mode": "light",
     "light": "Catppuccin Latte",
-    "dark": "Catppuccin Mocha"
+    "dark": "Catppuccin Frappe"
   },
   "ui_font_size": 16,
   "buffer_font_size": 12.0,

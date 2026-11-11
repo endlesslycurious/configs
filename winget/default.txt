@@ -25,7 +25,6 @@ Microsoft.WinDbg
 MikeFarah.yq
 Neovide.Neovide
 Neovim.Neovim
-NerdFonts.JetBrainsMono
 Perforce.P4V
 Python.Python.3.11
 ScooterSoftware.BeyondCompare.5

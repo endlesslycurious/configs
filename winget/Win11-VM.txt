@@ -13,7 +13,6 @@ JanDeDobbeleer.OhMyPosh
 junegunn.fzf
 Neovide.Neovide
 Neovim.Neovim
-NerdFonts.JetBrainsMono
 Python.Python.3.11
 ScooterSoftware.BeyondCompare.5
 SlackTechnologies.Slack

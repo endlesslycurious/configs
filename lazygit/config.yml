@@ -5,10 +5,71 @@
 # Lazygit does not honour git's core.pager, so delta is registered here as well
 # as in ~/.gitconfig (see setup.sh / setup.bat).
 
+gui:
+  # "auto" asks the terminal whether its background is light or dark.
+  colorScheme: auto
+  # Catppuccin Latte (light) / Frappe (dark), from catppuccin/lazygit.
+  theme:
+    activeBorderColor:
+      - '#1e66f5'
+      - bold
+    inactiveBorderColor:
+      - '#6c6f85'
+    searchingActiveBorderColor:
+      - '#df8e1d'
+    optionsTextColor:
+      - '#1e66f5'
+    selectedLineBgColor:
+      - '#ccd0da'
+    inactiveViewSelectedLineBgColor:
+      - '#9ca0b0'
+    cherryPickedCommitFgColor:
+      - '#1e66f5'
+    cherryPickedCommitBgColor:
+      - '#bcc0cc'
+    markedBaseCommitFgColor:
+      - '#1e66f5'
+    markedBaseCommitBgColor:
+      - '#df8e1d'
+    unstagedChangesColor:
+      - '#d20f39'
+    defaultFgColor:
+      - '#4c4f69'
+    authorColors:
+      '*': '#7287fd'
+  darkTheme:
+    activeBorderColor:
+      - '#8caaee'
+      - bold
+    inactiveBorderColor:
+      - '#a5adce'
+    searchingActiveBorderColor:
+      - '#e5c890'
+    optionsTextColor:
+      - '#8caaee'
+    selectedLineBgColor:
+      - '#414559'
+    inactiveViewSelectedLineBgColor:
+      - '#737994'
+    cherryPickedCommitFgColor:
+      - '#8caaee'
+    cherryPickedCommitBgColor:
+      - '#51576d'
+    markedBaseCommitFgColor:
+      - '#8caaee'
+    markedBaseCommitBgColor:
+      - '#e5c890'
+    unstagedChangesColor:
+      - '#e78284'
+    defaultFgColor:
+      - '#c6d0f5'
+    authorColors:
+      '*': '#babbf1'
+
 git:
   # Replaces the older git.paging block, removed in lazygit 0.66.
   diffRenderers:
     - type: stdinFilter
       name: delta
       colorArg: always
-      command: delta --dark --paging=never --line-numbers
+      command: delta --paging=never --line-numbers --features={{if eq .colorScheme "light"}}catppuccin-latte{{else}}catppuccin-frappe{{end}}

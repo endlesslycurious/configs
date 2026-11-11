@@ -1,8 +1,8 @@
 # Ghostty configuration
-# Based on the old iTerm2 setup (Catppuccin Macchiato, JetBrainsMono Nerd Font)
+# Based on the old iTerm2 setup (Catppuccin, JetBrainsMono Nerd Font)
 
-# Theme
-theme = light:Catppuccin Frappe,dark:Catppuccin Macchiato
+# Theme (static; switch to "Catppuccin Frappe" to use the dark flavour)
+theme = Catppuccin Latte
 
 # Font
 font-family = JetBrainsMono Nerd Font Mono
