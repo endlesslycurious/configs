@@ -26,6 +26,14 @@ if exist %target% del %target%
 mklink %target% %CD%\herdr\config.toml
 where herdr >nul 2>&1 && herdr server reload-config >nul 2>&1
 
+REM Configuring agent instructions
+if not exist "%USERPROFILE%\.config\opencode" mkdir "%USERPROFILE%\.config\opencode"
+if not exist "%USERPROFILE%\.claude" mkdir "%USERPROFILE%\.claude"
+if exist "%USERPROFILE%\.config\opencode\AGENTS.md" del "%USERPROFILE%\.config\opencode\AGENTS.md"
+if exist "%USERPROFILE%\.claude\CLAUDE.md" del "%USERPROFILE%\.claude\CLAUDE.md"
+mklink "%USERPROFILE%\.config\opencode\AGENTS.md" "%CD%\agents\README.md"
+mklink "%USERPROFILE%\.claude\CLAUDE.md" "%CD%\agents\README.md"
+
 REM Configuring Windows Terminal colour schemes
 set wt_fragment=%LOCALAPPDATA%\Microsoft\Windows Terminal\Fragments\Catppuccin
 if not exist "%wt_fragment%" mkdir "%wt_fragment%"

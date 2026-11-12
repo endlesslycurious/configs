@@ -3,61 +3,61 @@
 # Use 'chmod u+x setup.sh' to make this script executable
 # Run with './setup.sh'
 
-if [ "$(uname)" == "Darwin" ]; then
+if [ "$(uname -s)" = "Darwin" ]; then
     # Mac OS X setup
 
 	# make sure config directory exists
 	mkdir -p ~/.config
 
 	echo "Configuring neovim"
-	ln -F -s $PWD/nvim ~/.config/nvim
+	ln -F -s "$PWD/nvim" ~/.config/nvim
 
 	echo "Configuring bash"
-	ln -F -s $PWD/bash/.bash_profile ~/.bash_profile
+	ln -F -s "$PWD/bash/.bash_profile" ~/.bash_profile
 
 	echo "Configuring shell colours"
 	mkdir -p ~/.config/shell
-	ln -F -s $PWD/shell/ls_colors.sh ~/.config/shell/ls_colors.sh
+	ln -F -s "$PWD/shell/ls_colors.sh" ~/.config/shell/ls_colors.sh
 
 	echo "Configuring oh-my-posh themes"
 	mkdir -p ~/.config/oh-my-posh/themes
-	ln -F -s $PWD/oh-my-posh/themes/catppuccin_latte.omp.json ~/.config/oh-my-posh/themes/
-	ln -F -s $PWD/oh-my-posh/themes/catppuccin_frappe.omp.json ~/.config/oh-my-posh/themes/
+	ln -F -s "$PWD/oh-my-posh/themes/catppuccin_latte.omp.json" ~/.config/oh-my-posh/themes/
+	ln -F -s "$PWD/oh-my-posh/themes/catppuccin_frappe.omp.json" ~/.config/oh-my-posh/themes/
 
 	echo "Configuring zed"
 	mkdir -p ~/.config/zed
-	ln -F -s $PWD/zed/settings.json ~/.config/zed/settings.json
+	ln -F -s "$PWD/zed/settings.json" ~/.config/zed/settings.json
 
 	echo "Configuring ghostty"
 	mkdir -p ~/.config/ghostty
-	ln -F -s $PWD/ghostty/config.ghostty ~/.config/ghostty/config.ghostty
+	ln -F -s "$PWD/ghostty/config.ghostty" ~/.config/ghostty/config.ghostty
 
 	echo "Configuring lazygit"
 	mkdir -p ~/Library/Application\ Support/lazygit
-	ln -F -s $PWD/lazygit/config.yml ~/Library/Application\ Support/lazygit/config.yml
+	ln -F -s "$PWD/lazygit/config.yml" ~/Library/Application\ Support/lazygit/config.yml
 
 	echo "Configuring k9s skins"
 	mkdir -p ~/Library/Application\ Support/k9s/skins
-	ln -sf $PWD/k9s/skins/catppuccin-latte.yaml ~/Library/Application\ Support/k9s/skins/
-	ln -sf $PWD/k9s/skins/catppuccin-frappe.yaml ~/Library/Application\ Support/k9s/skins/
+	ln -sf "$PWD/k9s/skins/catppuccin-latte.yaml" ~/Library/Application\ Support/k9s/skins/
+	ln -sf "$PWD/k9s/skins/catppuccin-frappe.yaml" ~/Library/Application\ Support/k9s/skins/
 
 	echo "Configuring tuicr"
 	mkdir -p ~/.config/tuicr
-	ln -F -s $PWD/tuicr/config.toml ~/.config/tuicr/config.toml
+	ln -F -s "$PWD/tuicr/config.toml" ~/.config/tuicr/config.toml
 
 	echo "Configuring zsh"
-	ln -F -s $PWD/zsh/.zshrc ~/.zshrc
+	ln -F -s "$PWD/zsh/.zshrc" ~/.zshrc
 
 	echo "Configuring Brewfile"
-	brewfile=$PWD/brew/Brewfile.$HOSTNAME
-	ln -sF $brewfile ~/.Brewfile
+	brewfile="$PWD/brew/Brewfile.$HOSTNAME"
+	ln -sF "$brewfile" ~/.Brewfile
 
 	echo "Configuring opencode"
 	mkdir -p ~/.config/opencode
-	ln -F -s $PWD/opencode/opencode.jsonc ~/.config/opencode/opencode.jsonc
-	ln -F -s $PWD/opencode/tui.jsonc ~/.config/opencode/tui.jsonc
+	ln -F -s "$PWD/opencode/opencode.jsonc" ~/.config/opencode/opencode.jsonc
+	ln -F -s "$PWD/opencode/tui.jsonc" ~/.config/opencode/tui.jsonc
 
-elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+elif [ "$(uname -s)" = "Linux" ]; then
     # GNU/Linux setup (Debian/Ubuntu; includes Raspberry Pi OS and WSL Ubuntu)
 
 	if [ ! -f /etc/debian_version ]; then
@@ -79,47 +79,52 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
 
 	echo "Configuring shell colours"
 	mkdir -p ~/.config/shell
-	ln -sf $PWD/shell/ls_colors.sh ~/.config/shell/ls_colors.sh
+	ln -sf "$PWD/shell/ls_colors.sh" ~/.config/shell/ls_colors.sh
 
 	echo "Configuring oh-my-posh themes"
 	mkdir -p ~/.config/oh-my-posh/themes
-	ln -sf $PWD/oh-my-posh/themes/catppuccin_latte.omp.json ~/.config/oh-my-posh/themes/
-	ln -sf $PWD/oh-my-posh/themes/catppuccin_frappe.omp.json ~/.config/oh-my-posh/themes/
+	ln -sf "$PWD/oh-my-posh/themes/catppuccin_latte.omp.json" ~/.config/oh-my-posh/themes/
+	ln -sf "$PWD/oh-my-posh/themes/catppuccin_frappe.omp.json" ~/.config/oh-my-posh/themes/
 
 	echo "Configuring neovim"
-	ln -sfn $PWD/nvim ~/.config/nvim
+	ln -sfn "$PWD/nvim" ~/.config/nvim
 
 	echo "Configuring zed"
 	mkdir -p ~/.config/zed
-	ln -sf $PWD/zed/settings.json ~/.config/zed/settings.json
+	ln -sf "$PWD/zed/settings.json" ~/.config/zed/settings.json
 
 	echo "Configuring ghostty"
 	mkdir -p ~/.config/ghostty
-	ln -sf $PWD/ghostty/config.ghostty ~/.config/ghostty/config.ghostty
+	ln -sf "$PWD/ghostty/config.ghostty" ~/.config/ghostty/config.ghostty
 
 	echo "Configuring lazygit"
 	mkdir -p ~/.config/lazygit
-	ln -sf $PWD/lazygit/config.yml ~/.config/lazygit/config.yml
+	ln -sf "$PWD/lazygit/config.yml" ~/.config/lazygit/config.yml
 
 	echo "Configuring k9s skins"
 	k9s_skins="${XDG_CONFIG_HOME:-$HOME/.config}/k9s/skins"
 	mkdir -p "$k9s_skins"
-	ln -sf $PWD/k9s/skins/catppuccin-latte.yaml "$k9s_skins/"
-	ln -sf $PWD/k9s/skins/catppuccin-frappe.yaml "$k9s_skins/"
+	ln -sf "$PWD/k9s/skins/catppuccin-latte.yaml" "$k9s_skins/"
+	ln -sf "$PWD/k9s/skins/catppuccin-frappe.yaml" "$k9s_skins/"
 
 	echo "Configuring tuicr"
 	mkdir -p ~/.config/tuicr
-	ln -sf $PWD/tuicr/config.toml ~/.config/tuicr/config.toml
+	ln -sf "$PWD/tuicr/config.toml" ~/.config/tuicr/config.toml
 
 	echo "Configuring mise"
 	mkdir -p ~/.config/mise
-	ln -sf $PWD/mise/config.toml ~/.config/mise/config.toml
+	ln -sf "$PWD/mise/config.toml" ~/.config/mise/config.toml
 
 	echo "Applying mise bootstrap"
 	mise bootstrap
 fi
 
 # Common configuration (~/.gitconfig is not symlinked, so set keys individually)
+echo "Configuring agent instructions"
+mkdir -p ~/.config/opencode ~/.claude
+ln -sf "$PWD/agents/README.md" ~/.config/opencode/AGENTS.md
+ln -sf "$PWD/agents/README.md" ~/.claude/CLAUDE.md
+
 echo "Configuring herdr"
 mkdir -p ~/.config/herdr
 ln -sf "$PWD/herdr/config.toml" ~/.config/herdr/config.toml

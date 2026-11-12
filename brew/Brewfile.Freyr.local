@@ -29,6 +29,7 @@ brew "oh-my-posh"               # prompt theme engine
 brew "omlx"                     # MLX native LLM server
 brew "python"                   # Python programming language
 brew "ripgrep"                  # Faster grep
+brew "shellcheck"               # Shell script static analysis
 brew "stylua"                   # Lua formatter
 brew "tailscale"                # Private VPN solution
 brew "tealdeer"                 # Better man pages

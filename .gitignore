@@ -6,3 +6,5 @@ Brewfile.lock.json
 default.profraw
 # Mac file
 .DS_Store
+# Local environment and secrets
+.env

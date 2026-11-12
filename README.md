@@ -2,7 +2,7 @@ This repo contains various configuration files I use for development.
 
 ## Cloning
 
-You need to close this repository with the `--recurse-submodules` option or run `git submodule init` then `git submodule update` after cloning to update the submodules.
+You need to clone this repository with the `--recurse-submodules` option or run `git submodule init` then `git submodule update` after cloning to update the submodules.
 
 ### Submodules
 
@@ -12,14 +12,40 @@ The Catppuccin Windows Terminal schemes and themes are vendored in `cmd/windows-
 
 ## Windows Setup
 
-You need to set `HOME` environment vairable to `%USERPROFILE%` then open new console to get git to clone this repo!
+You need to set `HOME` environment variable to `%USERPROFILE%` then open new console to get git to clone this repo!
 
 ## Setup scripts
 
 Sets up symbolic links from files in repo to expected install locations on disk.
 
-* Mac & Linux - setup.sh (use 'chmod u+x setup.sh' to make this script executable)
-* Windows - setup.bat
+### Prerequisites
+
+* `git` (to clone, with submodules)
+* A package manager: Homebrew (macOS), `apt` and `sudo` (Linux), WinGet (Windows)
+* An elevated Command Prompt on Windows (`gsudo` is optional)
+* Network access for package and tool installation
+
+### First install
+
+Run the scripts directly, because `just` is not installed yet:
+
+* macOS: install Homebrew, then `./setup.sh`, then `./update.sh`
+* Linux: `./setup.sh` (installs `mise` and `just`), then `./update.sh`
+* Windows: set `HOME` per [Windows Setup](#windows-setup), then run
+  `setup.bat` and `update.bat` from an elevated Command Prompt
+
+Linux may need a new shell for the mise shims to resolve `just`.
+
+### Subsequent runs
+
+`just` is the recommended entry point:
+
+* `just setup` - create the symlinks (Windows: elevated prompt, or
+  `gsudo just setup`)
+* `just update` - update installed packages and tools (Windows: elevated
+  prompt, or `gsudo just update`)
+* `just dry-run` - preview package/tool changes using native dry-run support
+* `just check` - run shellcheck on the shell scripts (macOS/Linux)
 
 ## Editor Configuration files
 
@@ -70,6 +96,8 @@ so they switch automatically.
 * k9s - `k9s` folder (Catppuccin Latte; Frappe skin retained)
 * Lazygit - `lazygit` folder (Catppuccin Latte/Frappe UI; follows the terminal)
 * opencode - `opencode` folder (theme: system, follows the terminal)
+* Agent instructions - `agents/README.md` (global agent instructions; linked to
+  `~/.config/opencode/AGENTS.md` and `~/.claude/CLAUDE.md`)
 
 ## Package manifests
 
@@ -86,7 +114,7 @@ Both Linux targets share `mise/config.toml`. `setup.sh` installs mise via
 CLI tools, with shims on PATH). The bash prompt is oh-my-posh, using the
 vendored Catppuccin themes selected by `THEME_MODE`.
 
-On WSL, clone this repo into the Linux filesystem (e.g. `~/Source/configs`),
+On WSL, clone this repo into the Linux filesystem (e.g. `~/configs`),
 not `/mnt/c`, so symlinks work and tool I/O is fast. Ensure LF line endings
 (`core.autocrlf=input`) so the shell scripts don't pick up stray `\r`.
 
@@ -114,6 +142,7 @@ over default shell equivalents.
 | neovim | `neovim` | `neovim` | `Neovim.Neovim` | Editor |
 | ripgrep | `ripgrep` | `ripgrep` | `BurntSushi.ripgrep.MSVC` | Faster grep |
 | tealdeer | `tealdeer` | `tealdeer` | `dbrgn.tealdeer` | Better man pages |
+| uv | `uv` | `uv` | `astral-sh.uv` | Python package and project manager |
 | yq | `yq` | `yq` | `MikeFarah.yq` | YAML/JSON processor |
 
 ## Guidelines
@@ -122,14 +151,11 @@ over default shell equivalents.
   and Windows packaging before adding a tool to the core list.
 * Favour cross-platform tools. OS-specific tools are allowed as extras, but
   must stay out of the core set.
-* Avoid npm/Node-based tools and dependencies.
+* Avoid `npm` or `Node` based tools and dependencies.
 * Core tools must not be language toolchains (Python, Go, Node, C/C++, Rust).
   Language toolchains may appear as OS-specific extras only.
+* Sort packages and tools alphabetically in every manifest.
 * Add tools to every applicable manifest for parity, and annotate each entry
-  with a trailing comment.
-
-## Automation Scripts
-
-### Windows
-
-* `hosts/hosts.bat` - Setup distracting site blocking in hosts file
+  with a trailing comment describing its purpose.
+* Machine-specific overrides are limited to the filename
+  `brew/Brewfile.<hostname>.local`; hostnames must not appear anywhere else.

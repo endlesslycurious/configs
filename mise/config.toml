@@ -52,6 +52,7 @@ lazygit    = "latest"  # Git TUI
 neovim     = "latest"  # Modern VIM
 oh-my-posh = "latest"  # Prompt theme engine
 ripgrep    = "latest"  # Faster grep
+shellcheck = "latest"  # Shell script static analysis
 tealdeer   = "latest"  # Better man pages (tldr)
 tree-sitter = "latest" # Parser CLI (nvim-treesitter builds parsers with it)
 uv         = "latest"  # Python package and project manager

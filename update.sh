@@ -3,7 +3,7 @@
 # Use 'chmod u+x update.sh' to make this script executable
 # Run with './update.sh'
 
-if [ "$(uname)" == "Darwin" ]; then
+if [ "$(uname -s)" = "Darwin" ]; then
     # Mac OS X setup 
 
 	echo "--- Refresh brew version & forumulas ---"
@@ -26,7 +26,7 @@ if [ "$(uname)" == "Darwin" ]; then
 
 	echo "--- Done! ---"
 
-elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+elif [ "$(uname -s)" = "Linux" ]; then
     # GNU/Linux setup (Debian/Ubuntu; includes Raspberry Pi OS and WSL Ubuntu)
 
 	echo "--- Refresh apt package lists ---"

@@ -44,6 +44,7 @@ brew "pipenv"                   # Python virtual environment management
 brew "protobuf"                 # Google Protocol buffer
 brew "python"                   # Python programming language
 brew "ripgrep"                  # Faster grep
+brew "shellcheck"               # Shell script static analysis
 brew "sshpass"                  # Required for Ansible bootstrap of pico cluster
 brew "stylua"                   # Lua formatter
 brew "swiftformat"              # Swift formatter
