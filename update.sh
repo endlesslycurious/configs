@@ -24,6 +24,9 @@ if [ "$(uname -s)" = "Darwin" ]; then
 	echo "--- Checking for issues ---"
 	brew doctor
 
+	echo "--- Update tldr page cache ---"
+	tldr -u
+
 	echo "--- Done! ---"
 
 elif [ "$(uname -s)" = "Linux" ]; then
@@ -46,6 +49,9 @@ elif [ "$(uname -s)" = "Linux" ]; then
 
 	echo "--- Remove orphaned packages ---"
 	sudo apt autoremove --purge
+
+	echo "--- Update tldr page cache ---"
+	tldr -u
 
 	echo "--- Done! ---"
 fi

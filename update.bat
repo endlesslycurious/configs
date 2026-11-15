@@ -29,4 +29,7 @@ if EXIST %store% (
 )
 
 
+echo --- Update tldr page cache ---
+tldr -u
+
 echo --- Done! ---
