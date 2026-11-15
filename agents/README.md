@@ -28,6 +28,7 @@
 ## Programming
 
 - Keep changes to what was requested: no new frameworks or unrequested features.
+- Match the style and formatting of the file being edited, deferring to its formatter config; don't reformat untouched lines or impose a new convention.
 - When a workflow is repetitive or fiddly, propose a script or a `just` recipe instead of brute-force repetition. If unrelated, propose it separately.
 - Prefer code solutions in this order: the current repo, the standard library, an installed dependency, then new code or a new dependency.
 - For mechanical work such as counting, searching, sorting, diffing, arithmetic or linting, run a tool or script and analyse its output.
@@ -83,17 +84,6 @@ Treat the following as read-only unless the user directs otherwise:
 - **Package managers** (`brew`/macOS, `mise`/Linux, `winget`/Windows): no installs, upgrades or removals; to change the toolset, edit the manifests the repo defines; the user applies them.
 - **Dependencies**: no adding, for example `uv add` or `go get`.
 
-## Delegating to other agents with Herdr
-
-> Herdr runs other coding agents in panes; use it only when the user asks to delegate. For command syntax run `herdr --skill`.
-
-- Confirm you are inside Herdr: `HERDR_ENV` must equal `1`, else say you are not inside Herdr and stop.
-- Starting or prompting an agent is a write. Default to a sibling pane, your cwd, `--no-focus`; do not change topology unless asked.
-- `herdr agent prompt <name> "<task>" --wait`: `idle`/`done`/`blocked` means a turn ran, not that the task is done; some agents go idle while subagents keep working.
-- A timeout or `stalled` result does not mean the prompt failed to arrive; read the pane before resending.
-- `blocked` means an approval or question dialog: inspect it and **ask the user**; never auto-approve.
-- Read results with `herdr agent read --source recent-unwrapped`; for a long answer, have the agent write a Markdown file and return the path.
-
 ## Tooling
 
 Query the package managers for the installed toolset: `brew list` (macOS), `mise ls` (Linux), `winget list` (Windows).
@@ -104,3 +94,4 @@ Query the package managers for the installed toolset: `brew list` (macOS), `mise
 - Use `difft` to review changes without formatting noise, and to separate refactors from behavioural changes.
 - Check `just --list` before assuming a project's build, test or lint commands.
 - Use `uv run` and `uv sync` for Python projects. `uv sync` installs only what the lockfile declares, so it is allowed.
+- `herdr` runs other coding agents in panes; use it only when the user asks to delegate, and run `herdr --skill` for command syntax.
