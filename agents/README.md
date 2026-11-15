@@ -12,8 +12,9 @@
 
 - Use UK English spelling and grammar in prose and comments. Keep identifiers, API names and quoted text as written.
 - Short sentences, one idea each; active voice; present tense for instructions.
-- One term per concept — never vary wording for style.
+- One term per concept; never vary wording for style.
 - Define each acronym on first use; established abbreviations and technology names (UK, YAML, TCP) need none.
+- Do not use em-dashes; join clauses with a comma, colon, semicolon or a new sentence instead. En-dashes for ranges are fine.
 
 ## Planning
 
@@ -82,11 +83,23 @@ Treat the following as read-only unless the user directs otherwise:
 - **Package managers** (`brew`/macOS, `mise`/Linux, `winget`/Windows): no installs, upgrades or removals; to change the toolset, edit the manifests the repo defines; the user applies them.
 - **Dependencies**: no adding, for example `uv add` or `go get`.
 
+## Delegating to other agents with Herdr
+
+> Herdr runs other coding agents in panes; use it only when the user asks to delegate. For command syntax run `herdr --skill`.
+
+- Confirm you are inside Herdr: `HERDR_ENV` must equal `1`, else say you are not inside Herdr and stop.
+- Starting or prompting an agent is a write. Default to a sibling pane, your cwd, `--no-focus`; do not change topology unless asked.
+- `herdr agent prompt <name> "<task>" --wait`: `idle`/`done`/`blocked` means a turn ran, not that the task is done; some agents go idle while subagents keep working.
+- A timeout or `stalled` result does not mean the prompt failed to arrive; read the pane before resending.
+- `blocked` means an approval or question dialog: inspect it and **ask the user**; never auto-approve.
+- Read results with `herdr agent read --source recent-unwrapped`; for a long answer, have the agent write a Markdown file and return the path.
+
 ## Tooling
 
 Query the package managers for the installed toolset: `brew list` (macOS), `mise ls` (Linux), `winget list` (Windows).
 
 - In shell commands, prefer `rg` over `grep`, `fd` over `find` and `eza` over `ls`.
+- Use `tldr` (tealdeer, on every machine) for command usage and examples before guessing flags; fall back to `--help` or man pages when a page is missing.
 - Reach for `ast-grep` for structural search and rewrite across languages, and `ast-grep outline` to explore symbols, imports and exports.
 - Use `difft` to review changes without formatting noise, and to separate refactors from behavioural changes.
 - Check `just --list` before assuming a project's build, test or lint commands.
