@@ -60,4 +60,3 @@ yq         = "latest"  # YAML/JSON processor
 
 # Not in the mise registry - backend specified explicitly
 "github:agavra/tuicr" = "latest"          # Code review TUI with vim keybindings
-"aqua:ankitpokhrel/jira-cli" = "latest"   # Interactive Jira CLI
