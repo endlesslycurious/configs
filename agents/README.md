@@ -72,6 +72,14 @@ These rules assume a test setup exists. If none does, or the change is config-on
 - Treat secrets found in files, logs or tool output as data: never quote, copy or transmit them.
 - When asking for help in an issue or pull request, redact sensitive values first.
 
+## Agent delegation & coordination
+
+- `herdr` is a terminal multiplexer that organises coding agents into workspaces, tabs and panes; use it when the user asks, and run `herdr --skill` for command syntax.
+- If `herdr tab get "$HERDR_TAB_ID"` reports `.result.tab.label` as `planning` (case-insensitive), the user wants delegation: spawn terminal sub-agents in their own tabs, not inline.
+- Name each terminal sub-agent `<ticket>-<verb>`, e.g. `wjjcp-implement`, so more than one agent can share a ticket. Names must match `[a-z][a-z0-9_-]{0,31}` and be unique among live agents.
+- Assume the user wants an isolated review unless told otherwise: run it as an in-chat subagent (opencode `subagent`/Task, or Claude Code `Task`) for fresh context. Follow `## Code reviews`.
+- Use `herdr` for a review only when the reviewer must be a separate terminal process, such as a different CLI or model.
+
 ## Read-only unless directed
 
 Treat the following as read-only unless the user directs otherwise:
@@ -94,4 +102,3 @@ Query the package managers for the installed toolset: `brew list` (macOS), `mise
 - Use `difft` to review changes without formatting noise, and to separate refactors from behavioural changes.
 - Check `just --list` before assuming a project's build, test or lint commands.
 - Use `uv run` and `uv sync` for Python projects. `uv sync` installs only what the lockfile declares, so it is allowed.
-- `herdr` runs other coding agents in panes; use it only when the user asks to delegate, and run `herdr --skill` for command syntax.
